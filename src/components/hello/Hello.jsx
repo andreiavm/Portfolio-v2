@@ -3,7 +3,6 @@ import './hello.css';
 import { data } from '../../data/data.js';
 import ButtonPrimary from '../button/ButtonPrimary.jsx'
 import ButtonSecondary from '../button/ButtonSecondary.jsx'
-import renderLogo from '../../assets/images/3d-illustration.webp';
 
 const HelloSection = () => {
     return (
@@ -20,8 +19,6 @@ const HelloSection = () => {
                 <ButtonPrimary label={data.helloSection.buttons.buttonPrimary} />
                 <ButtonSecondary label={data.helloSection.buttons.buttonSecondary} />
             </div>
-
-
         </section >
     );
 }

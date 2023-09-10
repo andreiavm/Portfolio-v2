@@ -46,20 +46,20 @@ const data = {
     },
     divider: [
         {
-            text: "Work",
-            number: "about",
-            color: "var(--primary-white)",
-            background: "var(--secondary-orange)",
-            number: 1,
+            text: "About",
+            number: "01",
+            color: "var(--secondary-orange)",
         },
         {
-            title: "Work",
-            slug: "work",
-            color: "var(--primary-white)",
-            background: "var(--secondary-blue)",
-            number: 2,
-
-        }]
+            text: "Work",
+            number: "02",
+            color: "var(--secondary-blue)",
+        }, {
+            text: "Contact",
+            number: "03",
+            color: "var(--tertiary-yellow)",
+        }
+    ]
 }
 
 export { data };

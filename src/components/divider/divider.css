@@ -16,15 +16,6 @@
 .section-divider-text-wrapper {
     display: flex;
     width: 100%;
-    background-color: var(--secondary-blue);
-}
-
-.section-divider_description-wrapper::after {
-    height: 12px;
-    content: "";
-    border-radius: 9px;
-    width: 100%;
-    background-color: var(--secondary-blue);
 }
 
 .section-divider_number {
