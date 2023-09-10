@@ -1,0 +1,13 @@
+.hello-section_title>span {
+    display: block;
+}
+
+.hello-section-wrapper {
+    display: flex;
+}
+
+.hello-button-wrapper {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}

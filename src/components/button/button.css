@@ -1,0 +1,60 @@
+button {
+    font-family: var(font);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: var(--shadow-small);
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+    /* box-shadow: var(--shadow-mid); */
+    text-decoration: underline;
+}
+
+.button-primary:focus,
+.button-secondary:focus {
+    outline: 1px solid var(--secondary-orange);
+    border: 3px solid var(--secondary-orange);
+    box-shadow: none;
+}
+
+.button-primary:focus:not(:focus-visible),
+.button-secondary:focus:not(:focus-visible) {
+    outline: none;
+    border: 3px solid var(--primary-black);
+    box-shadow: var(--shadow-small);
+}
+
+.button-primary {
+    display: inline-flex;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    background: var(--secondary-blue);
+    color: var(--primary-white);
+    align-items: center;
+    border-radius: 9px;
+    border: 3px solid var(--primary-black);
+    font-size: 1.5rem;
+}
+
+.button-secondary {
+    display: inline-flex;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    background: var(--primary-white);
+    color: var(--primary-black);
+    align-items: center;
+    border-radius: 9px;
+    border: 3px solid var(--primary-black);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .button-primary {
+        font-size: 1rem;
+    }
+
+    .button-secondary {
+        font-size: 1rem;
+    }
+}
