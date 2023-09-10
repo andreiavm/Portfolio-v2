@@ -10,9 +10,9 @@ const ButtonPrimary = ({ label, onClick }) => {
     );
 }
 
-ButtonPrimary.propTypes = {
-    label: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
-};
+// ButtonPrimary.propTypes = {
+//     label: PropTypes.string.isRequired,
+//     onClick: PropTypes.func.isRequired,
+// };
 
 export default ButtonPrimary;

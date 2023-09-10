@@ -10,9 +10,9 @@ const ButtonSecondary = ({ label, onClick }) => {
     );
 }
 
-ButtonSecondary.propTypes = {
-    label: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
-};
+// ButtonSecondary.propTypes = {
+//     label: PropTypes.string.isRequired,
+//     onClick: PropTypes.func.isRequired,
+// };
 
 export default ButtonSecondary;

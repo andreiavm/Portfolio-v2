@@ -89,7 +89,7 @@ img {
 
 /* General  */
 body {
-  font-family: "NeueMontreal", sans-serif;
+  font-family: var(--font), sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: var(--primary-black);
@@ -140,7 +140,7 @@ body {
 .text-body {
   font-size: 1rem;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   line-height: normal;
 }
 
@@ -166,7 +166,7 @@ body {
 }
 
 section {
-  height: 60%;
+  height: 65%;
   border: 3px solid var(--primary-black);
   border-radius: 9px;
   padding: 3rem;
@@ -174,8 +174,8 @@ section {
 
 /* Media queries */
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1350px) {
   body {
-    width: 60%;
+    width: 55%;
   }
 }

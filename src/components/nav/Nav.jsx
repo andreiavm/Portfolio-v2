@@ -25,8 +25,9 @@ const Nav = ({ onClick }) => {
         </nav>
     );
 }
-Nav.propTypes = {
-    onClick: PropTypes.func.isRequired,
-};
+
+// Nav.propTypes = {
+//     onClick: PropTypes.func.isRequired,
+// };
 
 export default Nav;

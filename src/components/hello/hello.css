@@ -1,13 +1,34 @@
-.hello-section_title>span {
-    display: block;
-}
-
-.hello-section-wrapper {
+.hello-section {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
 }
-
 .hello-button-wrapper {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
     display: flex;
     gap: 1rem;
+}
+
+.hello-logo-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo-render {
+    height: 48px;
+    right: 6rem;
+}
+
+.logo-text {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-left: 0.75rem;
+}
+
+.logo-tags {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-left: auto;
 }
