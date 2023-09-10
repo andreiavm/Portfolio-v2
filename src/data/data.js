@@ -21,13 +21,13 @@ const data = {
             background: "var(--tertiary-yellow)",
             number: 3,
         },
-        // {
-        //     title: "Play",
-        //     slug: "play",
-        //     color: "var(--primary-white)",
-        //     background: "var(--tertiary-purple)",
-        //     number: 4,
-        // }
+        {
+            title: "Play",
+            slug: "play",
+            color: "var(--primary-white)",
+            background: "var(--tertiary-purple)",
+            number: 4,
+        }
     ],
     helloSection: {
         hello: {
