@@ -154,7 +154,7 @@ body {
 
 /* Layout */
 body {
-width: 90%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 2rem;
 }
@@ -174,8 +174,8 @@ section {
 
 /* Media queries */
 
-/* @media screen and (min-width: 2300px) {
+@media screen and (min-width: 1800px) {
   body {
-    width: 60%;
+    width: 70%;
   }
-} */
+}
