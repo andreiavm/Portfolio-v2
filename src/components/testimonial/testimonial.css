@@ -26,6 +26,6 @@
 .testimonial-image {
     width: 2rem;
     height: 2rem;
-    background-color: var(--tertiary-purple);
+    border: 1px solid var(--primary-black);
     border-radius: 100vh;
 }
