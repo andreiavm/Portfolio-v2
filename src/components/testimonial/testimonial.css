@@ -1,0 +1,31 @@
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+    border-radius: 9px;
+    border: 3px solid var(--primary-black);
+    max-width: 23rem;
+    min-height: 10rem;
+}
+
+.testimonial-card_text {
+    margin-bottom: 0.75rem;
+}
+
+
+.testimonial-card_name {
+    margin-top: auto;
+}
+
+.testimonial-card_name>span {
+    display: block;
+}
+
+.testimonial-image {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--tertiary-purple);
+    border-radius: 100vh;
+}

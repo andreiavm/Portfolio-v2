@@ -1,7 +1,8 @@
 .hello-section {
     display: flex;
+    gap: 3rem;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     /* justify-content: space-evenly; */
 }
 .hello-button-wrapper {

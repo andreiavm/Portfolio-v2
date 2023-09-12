@@ -1,0 +1,17 @@
+.about-section {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-section_testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.testimonial-header-wrapper {
+    align-self: center;
+    text-align: center;
+}

@@ -144,11 +144,17 @@ body {
   line-height: normal;
 }
 
+.text-body-bold {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
 .text-note {
   font-size: 0.75rem;
   font-style: normal;
-  font-weight: lighter;
-  line-height: normal;
+  font-weight: normal;
 }
 
 
@@ -166,7 +172,6 @@ body {
 }
 
 section {
-  height: 65%;
   border: 3px solid var(--primary-black);
   border-radius: 9px;
   padding: 3rem;
@@ -176,6 +181,12 @@ section {
 
 @media screen and (min-width: 1800px) {
   body {
-    width: 70%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 2900px) {
+  body {
+    width: 40%;
   }
 }
