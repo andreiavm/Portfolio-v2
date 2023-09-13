@@ -91,8 +91,7 @@ const data = {
             image: "src/assets/images/sp-logo.svg",
             alt: "Studyportals Logo",
             title: "Optimising Mastersportal's Article Section for Better Engagement and Conversion",
-            color: "var(--secondary-orange)"
-
+            color: "var(--secondary-orange)",
         },
         {
             name: "Onboarding Questionnaire",
@@ -100,7 +99,8 @@ const data = {
             image: "src/assets/images/sp-logo.svg",
             alt: "Studyportals Logo",
             title: "Helping Students Find Their Dream Study through a Personalised Onboarding",
-            color: "var(--secondary-blue)"
+            color: "var(--secondary-blue)",
+            
         },
         {
             name: "CID Hub",
@@ -108,7 +108,7 @@ const data = {
             image: "src/assets/images/dh-logo.svg",
             alt: "Studyportals Logo",
             title: "Designing a Public Space for The Hague's Innovation District and it's Residents",
-            color: "var(--tertiary-green)"
+            color: "var(--tertiary-green)",
         },
     ],
 }

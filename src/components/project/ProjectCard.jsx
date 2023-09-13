@@ -2,20 +2,21 @@ import './projectcard.css';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import ButtonPrimary from '../button/ButtonPrimary';
 
 const TitleHeader = styled.h1`
 
     color: ${(props) => props.color};
 `;
 
-function ProjectCard({ name, role, image, title, color }) {
-    const [isOpen, setIsOpen] = useState(false);
-
+function ProjectCard({ name, role, image, title, color, isOpen, onClick }) {
     return (
         <motion.div
-            layout transition={{ duration: 0.25 }}
-            onClick={() => setIsOpen(!isOpen)}
-            className="project-card">
+            layout
+            transition={{ duration: 0.25 }}
+            onClick={onClick}
+            className={`project-card ${isOpen ? 'open' : ''}`}
+        >
             <motion.div
                 layout transition={{ duration: 0.35 }}
                 className="project-card_top-wrapper">
@@ -37,7 +38,8 @@ function ProjectCard({ name, role, image, title, color }) {
                     <img className="project-card_image" src={image} alt={name} />
                 </motion.div >
             </motion.div>
-            {isOpen &&
+            {
+                isOpen &&
                 <motion.div
                     layout
                     initial={{ opacity: 0, y: -20 }}
@@ -46,6 +48,7 @@ function ProjectCard({ name, role, image, title, color }) {
                     transition={{ duration: 0.35 }}
                     className="project-card_title-wrapper">
                     <TitleHeader className="text-header" color={color}>{title}</TitleHeader>
+                    <ButtonPrimary className="project-button" label={"view case study"} />
                 </motion.div>
             }
         </motion.div >
