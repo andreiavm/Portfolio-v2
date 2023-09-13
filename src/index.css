@@ -25,6 +25,7 @@
   --font: "NeueMontreal", sans-serif;
   --primary-black: #0D0D0B;
   --primary-white: #F1F1F1;
+  /* --primary-bg: #9999a0; */
   --secondary-orange: #DA5116;
   --secondary-blue: #112FA7;
   --tertiary-yellow: #FBDF00;
@@ -172,7 +173,7 @@ body {
 }
 
 section {
-  border: 3px solid var(--primary-black);
+  border: 2px solid var(--primary-black);
   border-radius: 9px;
   padding: 3rem;
 }
@@ -181,12 +182,22 @@ section {
 
 @media screen and (min-width: 1800px) {
   body {
-    width: 60%;
+    width: 65%;
   }
 }
 
 @media screen and (min-width: 2900px) {
   body {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+
+  .content-container {
+    width: 100%;
   }
 }

@@ -5,9 +5,13 @@
     gap: 0.5rem;
     padding: 1rem 1rem;
     border-radius: 9px;
-    border: 3px solid var(--primary-black);
+    border: 2px solid var(--primary-black);
     max-width: 23rem;
     min-height: 10rem;
+}
+
+.testimonial-card:hover>.testimonial-card_text-wrapper {
+    text-decoration: underline;
 }
 
 .testimonial-card_text {

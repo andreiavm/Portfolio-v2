@@ -1,4 +1,3 @@
-import React from 'react';
 import './testimonial.css';
 import { data } from '../../data/data.js';
 

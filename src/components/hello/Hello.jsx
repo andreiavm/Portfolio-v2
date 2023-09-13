@@ -1,4 +1,3 @@
-import React from 'react';
 import './hello.css';
 import { data } from '../../data/data.js';
 import ButtonPrimary from '../button/ButtonPrimary.jsx'
