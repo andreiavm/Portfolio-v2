@@ -3,18 +3,22 @@
     gap: 3rem;
     flex-direction: column;
     justify-content: space-between;
-    /* justify-content: space-evenly; */
 }
+
 .hello-button-wrapper {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     display: flex;
     gap: 1rem;
 }
 
 .hello-logo-wrapper {
     display: flex;
-    align-items: center;
     margin-bottom: 1.5rem;
+}
+
+.logo {
+    display: flex;
+
 }
 
 .logo-render {

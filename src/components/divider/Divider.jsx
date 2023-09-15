@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import './divider.css';
 import styled from 'styled-components';
 
@@ -30,12 +29,5 @@ function SectionDivider({ text, number, color, slug }) {
         </SectionDividerWrapper>
     );
 }
-
-
-// ButtonPrimary.propTypes = {
-//     text: PropTypes.string.isRequired,
-//     number: PropTypes.string.isRequired,
-//     color: PropTypes.string.isRequired,
-// };
 
 export default SectionDivider;

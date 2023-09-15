@@ -7,8 +7,10 @@ const HelloSection = () => {
     return (
         <section className="hello-section">
             <div className="hello-logo-wrapper">
-                <img src={data.helloSection.logo.src} alt={data.helloSection.logo.alt} className="logo-render" />
-                <p className="logo-text">{data.helloSection.logo.text}</p>
+                <div className="logo">
+                    <img src={data.helloSection.logo.src} alt={data.helloSection.logo.alt} className="logo-render" />
+                    <p className="logo-text">{data.helloSection.logo.text}</p>
+                </div>
                 <p className="logo-tags">{data.helloSection.logo.tags}</p>
             </div>
             <h1 className="hello-section_title text-display">

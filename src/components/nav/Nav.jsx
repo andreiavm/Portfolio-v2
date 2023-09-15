@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import './nav.css';
 import { data } from '../../data/data.js';
 
@@ -25,8 +24,5 @@ const Nav = ({ onClick }) => {
     );
 }
 
-// Nav.propTypes = {
-//     onClick: PropTypes.func.isRequired,
-// };
 
 export default Nav;

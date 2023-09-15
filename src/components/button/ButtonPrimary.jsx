@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import './button.css';
 
 const ButtonPrimary = ({ label, onClick }) => {
@@ -8,10 +7,5 @@ const ButtonPrimary = ({ label, onClick }) => {
         </button>
     );
 }
-
-// ButtonPrimary.propTypes = {
-//     label: PropTypes.string.isRequired,
-//     onClick: PropTypes.func.isRequired,
-// };
 
 export default ButtonPrimary;

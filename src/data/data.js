@@ -100,7 +100,7 @@ const data = {
             alt: "Studyportals Logo",
             title: "Helping Students Find Their Dream Study through a Personalised Onboarding",
             color: "var(--secondary-blue)",
-            
+
         },
         {
             name: "CID Hub",
@@ -111,6 +111,25 @@ const data = {
             color: "var(--tertiary-green)",
         },
     ],
+    article: {
+
+        mockup: "src/assets/images/mock-up-article.png",
+        alt: "Mock-up of the Article Section",
+        illustration1: "src/assets/images/illustration-article-1.svg",
+        illustration2: "src/assets/images/illustration-article-2.svg",
+        illustration1Alt: "Studyportals Illustration of a student waving their hand",
+        illustration2Alt: "Studyportals Illustration of a girl holding a book",
+        challengeTitle: "Challange",
+        challengeTitleColor: "var(--secondary-blue)",
+        challengeBody: "Although articles are one of the main landing pages of the website, the current design is unable to convince visitors to explore more within the portal and convert.",
+        challengeBody2: "The articles have a high bounce, with visitors going back to the search engine after browsing for a a couple of minutes.",
+        discoveryTitle: "Research",
+        discoveryTitleColor: "var(--secondary-orange)",
+        discoveryTitleBody: "First, I performed a heuristic evaluation to identify possible usability issues, and then, I benchmarked our website against other websites.",
+        discoveryTitleBody2: "The hypothesis that emerged is that users don’t take action because the page lacks incentives and navigational elements to facilitate them.",
+        discoveryTitleBody3: "Even if the content is relevant for their goal, the lack of guidance and triggers on the page drives users to click the back button and return to the search engine.",
+        discoveryTitleBody4: "Next, I performed three user interviews and usability testing sessions with students to find out more about how they experience the current design.",
+    }
 }
 
 export { data };

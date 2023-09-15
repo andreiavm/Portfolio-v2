@@ -25,12 +25,12 @@
   --font: "NeueMontreal", sans-serif;
   --primary-black: #0D0D0B;
   --primary-white: #F1F1F1;
-  /* --primary-bg: #9999a0; */
+  --primary-grey: #cacad7;
   --secondary-orange: #DA5116;
   --secondary-blue: #112FA7;
   --tertiary-yellow: #FBDF00;
   --tertiary-purple: #9610FE;
-  --tertiary-green: #18b51a;
+  --tertiary-green: #11cf14;
   --shadow-small: 2px 3px 0px 0px var(--primary-black);
   --shadow-mid: 2px 5px 0px 0px var(--primary-black);
   --shadow-large: 2px 7px 0px 0px var(--primary-black);
@@ -94,7 +94,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   color: var(--primary-black);
-  background-color: var(--primary-white);
+  background-color: var(--primary-grey);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -117,6 +117,13 @@ body {
   line-height: normal;
 }
 
+.text-header-large {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
 .text-header {
   font-size: 2rem;
   font-style: normal;
@@ -132,6 +139,13 @@ body {
 }
 
 .text-title {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.text-body-large {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: normal;
@@ -173,31 +187,65 @@ body {
 }
 
 section {
+  background-color: var(--primary-white);
   border: 2px solid var(--primary-black);
   border-radius: 9px;
   padding: 3rem;
+}
+
+.casestudy-section {
+  margin-top: 2rem;
 }
 
 /* Media queries */
 
 @media screen and (min-width: 1800px) {
   body {
-    width: 65%;
+    width: 55%;
   }
 }
 
-@media screen and (min-width: 2900px) {
-  body {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .navigation {
     display: none;
   }
 
+
+  .content-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hello-logo-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .logo-tags {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+
   .content-container {
     width: 100%;
+  }
+
+  .section-divider_description>s {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .button-primary {
+    font-size: 1rem;
+  }
+
+  .button-secondary {
+    font-size: 1rem;
   }
 }

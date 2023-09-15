@@ -1,15 +1,14 @@
 import './testimonial.css';
-import { data } from '../../data/data.js';
 
 function Testimonial({ name, text, company, position }) {
     return (
         <div className="testimonial-card">
             <div className="testimonial-image">
             </div>
-            <h3 className="testimonial-card_text text-body-bold">
+            <h3 className="testimonial-card_text text-header-small">
                 {text}
             </h3>
-            <p className="testimonial-card_name text-note">
+            <p className="testimonial-card_name text-body">
                 <span>{name}</span><span>{position}</span><span>{company}</span>
             </p>
         </div >

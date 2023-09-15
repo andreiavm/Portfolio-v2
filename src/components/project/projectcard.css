@@ -5,10 +5,11 @@
     gap: 2rem;
     justify-content: space-between;
     border-radius: 9px;
-    padding: 2rem 2rem;
+    padding: 2rem 3rem;
     border: 2px solid var(--primary-black);
     width: 100%;
     cursor: pointer;
+    background-color: var(--primary-white);
     box-shadow: var(--shadow-small);
 }
 
@@ -43,7 +44,7 @@
 }
 
 .project-card_title-wrapper {
-    width: 75%;
+    width: 70ch;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

@@ -1,5 +1,6 @@
 .work-section {
     display: flex;
+    background-color: var(--primary-grey);
     flex-direction: column;
     gap: 1.5rem;
     border: none;

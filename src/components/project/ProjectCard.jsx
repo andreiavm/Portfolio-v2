@@ -1,7 +1,6 @@
 import './projectcard.css';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import ButtonPrimary from '../button/ButtonPrimary';
 
 const TitleHeader = styled.h1`
@@ -26,8 +25,8 @@ function ProjectCard({ name, role, image, title, color, isOpen, onClick }) {
                     <motion.div
                         layout transition={{ duration: 0.35 }}
                         className="project-card_name-container">
-                        <h1
-                            className="project-card_name text-header">{name}</h1>
+                        <h2
+                            className="project-card_name text-header">{name}</h2>
                     </motion.div>
                     <p
                         className="project-card_role text-body">{role}</p>
@@ -48,7 +47,7 @@ function ProjectCard({ name, role, image, title, color, isOpen, onClick }) {
                     transition={{ duration: 0.35 }}
                     className="project-card_title-wrapper">
                     <TitleHeader className="text-header" color={color}>{title}</TitleHeader>
-                    <ButtonPrimary className="project-button" label={"view case study"} />
+                    {/* <ButtonPrimary className="project-button" label={"view case study"} /> */}
                 </motion.div>
             }
         </motion.div >
