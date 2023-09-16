@@ -5,6 +5,9 @@
 }
 
 .article-section_mock-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -17,6 +20,11 @@
     top: 200px;
     left: 75px;
     width: 15%;
+}
+
+.article-section {
+    display: flex;
+    justify-content: space-between;
 }
 
 .article-section_challenge {

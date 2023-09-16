@@ -94,7 +94,7 @@ const data = {
             color: "var(--secondary-orange)",
         },
         {
-            name: "Onboarding Questionnaire",
+            name: "Onboarding",
             role: "research & design",
             image: "src/assets/images/sp-logo.svg",
             alt: "Studyportals Logo",

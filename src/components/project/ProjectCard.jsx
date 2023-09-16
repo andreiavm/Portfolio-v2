@@ -46,8 +46,7 @@ function ProjectCard({ name, role, image, title, color, isOpen, onClick }) {
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.35 }}
                     className="project-card_title-wrapper">
-                    <TitleHeader className="text-header" color={color}>{title}</TitleHeader>
-                    {/* <ButtonPrimary className="project-button" label={"view case study"} /> */}
+                    <TitleHeader className="text-header-small" color={color}>{title}</TitleHeader>
                 </motion.div>
             }
         </motion.div >

@@ -1,7 +1,6 @@
 .project-card {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 2rem;
     justify-content: space-between;
     border-radius: 9px;
@@ -39,16 +38,25 @@
     width: 65%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    ;
 
 }
 
 .project-card_title-wrapper {
-    width: 70ch;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
+}
+
+.project-card_image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-card_image {
+    width: 70%;
 }
 
 .project-button {

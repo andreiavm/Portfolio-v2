@@ -14,7 +14,7 @@ function CaseTitle({ title, color }) {
   return (
     <CaseTitleWrapper color={color}>
       <div className="case-title_wrapper">
-        <h2 className="case-title_header text-header">{title}</h2>
+        <h2 className="case-title_header text-title-bold">{title}</h2>
         <div className="case-title_line"></div>
       </div>
     </CaseTitleWrapper >

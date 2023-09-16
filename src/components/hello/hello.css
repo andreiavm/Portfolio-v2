@@ -11,13 +11,19 @@
     gap: 1rem;
 }
 
+.hello-section_title {
+    width: 100%;
+}
+
 .hello-logo-wrapper {
     display: flex;
+    align-items: center;
     margin-bottom: 1.5rem;
 }
 
 .logo {
     display: flex;
+    align-items: center;
 
 }
 

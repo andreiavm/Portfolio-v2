@@ -3,7 +3,7 @@ import './onboarding.css';
 const Onboarding = () => {
     return (
         <section className="casestudy-section">
-            <h1 className="text-header">Coming soon!</h1>
+            <h1 style={{ display: 'flex', justifyContent: 'center' }} className="text-header-large">Coming soon! 🦺</h1>
         </section >
     );
 }

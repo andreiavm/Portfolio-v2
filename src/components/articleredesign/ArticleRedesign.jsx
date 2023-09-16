@@ -5,7 +5,7 @@ import CaseTitle from '../casetitle/CaseTitle';
 function ArticleRedesign() {
     return (
         <>
-            <section className="casestudy-section article-section_mock">
+            <section className="casestudy-section article-section">
                 <div className="article-section_mock-wrapper">
                     <img className="article-section_mock-illustration"
                         src={data.article.illustration1}
@@ -14,7 +14,7 @@ function ArticleRedesign() {
                         src={data.article.mockup} alt="" />
                 </div>
             </section>
-            <section className="casestudy-section article-section_challenge">
+            <section className="casestudy-section article-section">
                 <div className="article-section_challenge-text-wrapper">
                     <CaseTitle
                         title={data.article.challengeTitle}
@@ -42,6 +42,7 @@ function ArticleRedesign() {
                 </div>
             </section >
             <section className="casestudy-section">
+                <h1 style={{ display: 'flex', justifyContent: 'center' }} className="text-header-large">Coming soon! 🦺</h1>
             </section>
         </>
     );
