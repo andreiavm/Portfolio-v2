@@ -156,14 +156,13 @@ body {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: normal;
-  line-height: normal;
+  line-height: 130%;
 }
 
 .text-body {
   font-size: 1rem;
   font-style: normal;
   font-weight: normal;
-  line-height: normal;
 }
 
 .text-body-bold {
@@ -322,6 +321,10 @@ section {
     display: none;
   }
 
+  .nav-item-mobile {
+    min-width: 10rem;
+    justify-content: space-between;
+  }
   .content-container {
     margin: 0 auto;
     width: 100%;
@@ -353,6 +356,7 @@ section {
     left: 15px;
     width: 20%;
   }
+
 }
 
 @media screen and (min-width: 800px) {
@@ -377,5 +381,16 @@ section {
 @media screen and (min-width: 3300px) {
   body {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-span-mobile {
+    display: none;
+  }
+
+  .nav-item-mobile {
+    min-width: 5rem;
+    justify-content: center;
   }
 }

@@ -1,19 +1,24 @@
 import './projectcard.css';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import ButtonPrimary from '../button/ButtonPrimary';
-
 const TitleHeader = styled.h1`
 
     color: ${(props) => props.color};
 `;
 
 function ProjectCard({ name, role, image, title, color, isOpen, onClick }) {
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            onClick();
+        }
+    };
     return (
         <motion.div
             layout
             transition={{ duration: 0.25 }}
             onClick={onClick}
+            onKeyDown={handleKeyPress}
+            tabIndex={0}
             className={`project-card ${isOpen ? 'open' : ''}`}
         >
             <motion.div

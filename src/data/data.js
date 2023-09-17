@@ -56,11 +56,18 @@ const data = {
             slug: "work",
             number: "02",
             color: "var(--secondary-blue)",
-        }, {
+        },
+        {
             text: "Contact",
             slug: "contact",
             number: "03",
             color: "var(--tertiary-yellow)",
+        },
+        {
+            text: "Play",
+            slug: "play",
+            number: "04",
+            color: "var(--tertiary-purple)",
         }
     ],
     testimonial: [

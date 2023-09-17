@@ -1,0 +1,6 @@
+.play-section {
+    display: flex;
+    padding: 10rem 2rem;
+    text-align: center;
+    justify-content: center;
+}

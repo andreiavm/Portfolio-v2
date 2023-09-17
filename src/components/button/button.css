@@ -16,7 +16,7 @@ button {
 
 .button-primary:focus,
 .button-secondary:focus {
-    outline: 1px solid var(--secondary-orange);
+    outline: 1px solid var(--primary-orange);
     border: 2px solid var(--secondary-orange);
     box-shadow: none;
 }
@@ -44,8 +44,8 @@ button {
     display: inline-flex;
     padding: 1rem 1.5rem;
     justify-content: center;
-    background: var(--secondary-orange);
-    color: var(--primary-white);
+    background: var(--primary-white);
+    color: var(--primary-black);
     align-items: center;
     border-radius: 9px;
     border: 2px solid var(--primary-black);

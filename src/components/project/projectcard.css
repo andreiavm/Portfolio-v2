@@ -12,6 +12,19 @@
     box-shadow: var(--shadow-small);
 }
 
+.project-card:focus {
+    outline: 1px solid var(--secondary-orange);
+    border: 2px solid var(--secondary-orange);
+    box-shadow: none;
+}
+
+
+.project-card:focus:not(:focus-visible) {
+    outline: none;
+    border: 2px solid var(--primary-black);
+    box-shadow: var(--shadow-small);
+}
+
 .project-card_top-wrapper {
     display: flex;
     justify-content: space-between;

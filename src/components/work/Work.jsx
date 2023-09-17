@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './work.css';
 import { data } from '../../data/data.js';
 import ProjectCard from '../project/ProjectCard';
@@ -9,10 +9,24 @@ import CidHub from '../cidhub/CidHub';
 const WorkSection = () => {
     const [openCardIndex, setOpenCardIndex] = useState(-1);
 
+    const cardRefs = useRef([]);
+    useEffect(() => {
+        if (openCardIndex >= 0) {
+            cardRefs.current[openCardIndex]?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    }, [openCardIndex]);
+
     return (
-        <section className="work-section">
+        <section
+            transition={{ duration: 0.35 }}
+            className="work-section">
             {data.project.map((project, index) => (
-                <div key={index}>
+                <div
+                    key={index}
+                    ref={(el) => (cardRefs.current[index] = el)}>
                     <ProjectCard
                         name={project.name}
                         role={project.role}
