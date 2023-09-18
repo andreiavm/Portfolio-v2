@@ -42,6 +42,7 @@ const data = {
             src: "src/assets/images/3d-illustration.webp",
             text: "andreiavram.design",
             tags: "designer/ developer/ digital artisan",
+            alt: "3D render of my initials"
         },
     },
     divider: [
@@ -120,7 +121,7 @@ const data = {
     ],
     article: {
 
-        mockup: "src/assets/images/mock-up-article.png",
+        mockup: "src/assets/images/mock-up-article.webp",
         alt: "Mock-up of the Article Section",
         illustration1: "src/assets/images/illustration-article-1.svg",
         illustration2: "src/assets/images/illustration-article-2.svg",
@@ -136,6 +137,20 @@ const data = {
         discoveryTitleBody2: "The hypothesis that emerged is that users don’t take action because the page lacks incentives and navigational elements to facilitate them.",
         discoveryTitleBody3: "Even if the content is relevant for their goal, the lack of guidance and triggers on the page drives users to click the back button and return to the search engine.",
         discoveryTitleBody4: "Next, I performed three user interviews and usability testing sessions with students to find out more about how they experience the current design.",
+        affinityImage: "src/assets/images/article-redesign-affinity-diagram.webp",
+        affinityTitle: "Affinity Diagram",
+        affinityColor: "var(--tertiary-yellow)",
+        affinityAlt: "Research data clustered in an affinity diagram using Miro",
+        insightTitle: "Key Insights",
+        insightColor: "var(--secondary-blue)",
+        insight1: "Users expect to have filtering options available when browsing",
+        insight2: "Users need to have a search bar dedicated to the articles",
+        insight3: "Users feel overwhelmed by the number of articles presented in the index page",
+        insight4: "The site lacks the adequate navigation elements for users to achieve their goal",
+        insight5: "Tagging articles by different criteria will enable users to find what they look for with ease",
+        insight6: "Redesigning the taxonomy of the website should improve how easy users can browse for content",
+        insight7: "The article page is cluttered with CTA’s that lead users to unexpected pages",
+        insight8: "Adding a voting system to articles will give us quantitative data about what type of content our visitors want to see, and help them filter through it",
     }
 }
 

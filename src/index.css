@@ -4,6 +4,7 @@
   src: url(./fonts/PPNeueMontreal-Bold.otf);
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,14 +12,9 @@
   src: url(./fonts/PPNeueMontreal-Medium.otf);
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
-  font-family: 'NeueMontreal';
-  src: url(./fonts/PPNeueMontreal-Book.otf);
-  font-weight: lighter;
-  font-style: normal;
-}
 
 /* Variables  */
 :root {
@@ -114,28 +110,28 @@ body {
   font-size: 4.5rem;
   font-style: normal;
   font-weight: normal;
-  line-height: normal;
+  line-height: 130%;
 }
 
 .text-header-large {
   font-size: 3rem;
   font-style: normal;
   font-weight: normal;
-  line-height: normal;
+  line-height: 150%;
 }
 
 .text-title-bold {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: bold;
-  line-height: normal;
+  line-height: 150%;
 }
 
 .text-header {
   font-size: 2rem;
   font-style: normal;
   font-weight: normal;
-  line-height: normal;
+  line-height: 130%;
 }
 
 .text-header-small {
@@ -149,33 +145,34 @@ body {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: normal;
-  line-height: normal;
+  line-height: 130%;
 }
 
 .text-body-large {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 130%;
+  line-height: 150%;
 }
 
 .text-body {
   font-size: 1rem;
   font-style: normal;
   font-weight: normal;
+  line-height: 150%;
 }
 
 .text-body-bold {
   font-size: 1rem;
   font-style: normal;
   font-weight: bold;
-  line-height: normal;
+  line-height: 150%;
 }
 
 .text-note {
   font-size: 0.75rem;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 130%;
 }
 
 
@@ -188,7 +185,6 @@ body {
 
 .content-container {
   width: calc(100% - 184px);
-  height: 1000px;
   margin-left: auto;
 }
 
@@ -325,6 +321,7 @@ section {
     min-width: 10rem;
     justify-content: space-between;
   }
+
   .content-container {
     margin: 0 auto;
     width: 100%;

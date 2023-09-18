@@ -8,8 +8,8 @@ import CidHub from '../cidhub/CidHub';
 
 const WorkSection = () => {
     const [openCardIndex, setOpenCardIndex] = useState(-1);
-
     const cardRefs = useRef([]);
+
     useEffect(() => {
         if (openCardIndex >= 0) {
             cardRefs.current[openCardIndex]?.scrollIntoView({

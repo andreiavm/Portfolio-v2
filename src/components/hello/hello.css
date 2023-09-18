@@ -1,6 +1,6 @@
 .hello-section {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -28,8 +28,7 @@
 }
 
 .logo-render {
-    height: 48px;
-    right: 6rem;
+    width: 48px;
 }
 
 .logo-text {

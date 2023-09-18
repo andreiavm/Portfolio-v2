@@ -9,7 +9,6 @@ import ContactSection from './components/contact/Contact';
 import NavMobile from './components/navmobile/NavMobile';
 import PlaySection from './components/play/Play';
 
-
 function App() {
   return (
     <>

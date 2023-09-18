@@ -39,7 +39,7 @@ function ProjectCard({ name, role, image, title, color, isOpen, onClick }) {
                 <motion.div
                     layout transition={{ duration: 0.35 }}
                     className="project-card_image-container">
-                    <img className="project-card_image" src={image} alt={name} />
+                    <img width="50" height="50" className="project-card_image" src={image} alt={name} />
                 </motion.div >
             </motion.div>
             {
