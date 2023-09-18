@@ -119,6 +119,20 @@ const data = {
             color: "var(--tertiary-green)",
         },
     ],
+
+    aboutList: [
+        {
+            title: "Technology",
+            number: "01",
+            skill: "Design",
+        },
+        {
+            title: "Design",
+            number: "02",
+            skill: "Design",
+        }
+    ],
+
     article: {
 
         mockup: "src/assets/images/mock-up-article.webp",
@@ -151,6 +165,10 @@ const data = {
         insight6: "Redesigning the taxonomy of the website should improve how easy users can browse for content",
         insight7: "The article page is cluttered with CTA’s that lead users to unexpected pages",
         insight8: "Adding a voting system to articles will give us quantitative data about what type of content our visitors want to see, and help them filter through it",
+        ideationTitle: "Ideation",
+        ideationColor: "var(--secondary-orange)",
+        ideationImage: "src/assets/images/article-redesign-ideation.webp",
+        ideationAlt: "Ideation and Brainstorming screenshot from Miro",
     }
 }
 

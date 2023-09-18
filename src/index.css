@@ -310,6 +310,10 @@ section {
     top: 130px;
     left: 40px;
   }
+
+  .article-section_title-wrapper {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {

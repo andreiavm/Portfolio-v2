@@ -4,6 +4,20 @@ import ButtonPrimary from '../button/ButtonPrimary.jsx'
 import ButtonSecondary from '../button/ButtonSecondary.jsx'
 
 const HelloSection = () => {
+    const scrollToContact = () => {
+        const sectionId = 'contact';
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+    const scrollToWork = () => {
+        const sectionId = 'work';
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <section className="hello-section">
             <div className="hello-logo-wrapper">
@@ -17,8 +31,8 @@ const HelloSection = () => {
                 {data.helloSection.hello.title}
             </h1>
             <div className="hello-button-wrapper">
-                <ButtonPrimary label={data.helloSection.buttons.buttonPrimary} />
-                <ButtonSecondary label={data.helloSection.buttons.buttonSecondary} />
+                <ButtonPrimary label={data.helloSection.buttons.buttonPrimary} onClick={scrollToContact} />
+                <ButtonSecondary label={data.helloSection.buttons.buttonSecondary} onClick={scrollToWork} />
             </div>
         </section >
     );

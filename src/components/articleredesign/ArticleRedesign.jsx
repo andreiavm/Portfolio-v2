@@ -48,9 +48,7 @@ function ArticleRedesign() {
                         color={data.article.affinityColor}>
                     </CaseTitle>
                 </div>
-                <div className="article-section_affinity-wrapper">
-                    <img src={data.article.affinityImage} alt={data.article.affinityAlt} className="article-section_affinity-image" />
-                </div>
+                <img src={data.article.affinityImage} alt={data.article.affinityAlt} className="article-section_affinity-image" />
             </section>
             <section className="casestudy-section">
                 <div className="article-section_title-wrapper">
@@ -58,33 +56,16 @@ function ArticleRedesign() {
                         title={data.article.insightTitle}
                         color={data.article.insightColor}>
                     </CaseTitle>
-                    <div className="article-section_insights-wrapper">
-                        <h1 className="article-section_insight">
-                            {data.article.insight1}
-                        </h1>
-                        <h1 className="article-section_insight">
-                            {data.article.insight2}
-                        </h1>
-                        <h1 className="article-section_insight">
-                            {data.article.insight3}
-                        </h1>
-                        <h1 className="article-section_insight">
-                            {data.article.insight4}
-                        </h1>
-                        <h1 className="article-section_insight">
-                            {data.article.insight5}
-                        </h1>
-                        <h1 className="article-section_insight">
-                            {data.article.insight6}
-                        </h1>
-                        <h1 className="article-section_insight">
-                            {data.article.insight7}
-                        </h1>
-                        <h1 className="article-section_insight">
-                            {data.article.insight8}
-                        </h1>
-                    </div>
                 </div>
+            </section>
+            <section className="casestudy-section">
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.ideationTitle}
+                        color={data.article.ideationColor}>
+                    </CaseTitle>
+                </div>
+                <img className="article-section_ideation-image" src={data.article.ideationImage} alt={data.article.ideationAlt} />
             </section>
             <section className="casestudy-section">
                 <h1 style={{ display: 'flex', justifyContent: 'center' }} className="text-header-large">Coming soon! 🦺</h1>

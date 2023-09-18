@@ -50,3 +50,11 @@
 .article-section_span+.article-section_span {
     margin-top: 2rem;
 }
+
+.article-section_insight+.article-section_insight {
+    margin-top: 2rem;
+}
+
+.casestudy-section>img {
+    margin-top: 1rem;
+}
