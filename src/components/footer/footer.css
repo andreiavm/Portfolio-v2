@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.footer_logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo-body {
+    margin-left: 0.75rem;
+}
+
+.footer_links-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer_links-container a+a {
+    margin-left: 2rem;
+}
+
+.footer_links-container a:hover {
+    text-decoration: underline;
+}

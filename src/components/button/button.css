@@ -44,7 +44,7 @@ button {
     display: inline-flex;
     padding: 1rem 1.5rem;
     justify-content: center;
-    background: var(--primary-white);
+    background: var(--pure-white);
     color: var(--primary-black);
     align-items: center;
     border-radius: 9px;

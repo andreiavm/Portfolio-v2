@@ -25,7 +25,7 @@ const data = {
             title: "Play",
             slug: "play",
             color: "var(--primary-white)",
-            background: "var(--tertiary-purple)",
+            background: "var(--tertiary-red)",
             number: 4,
         }
     ],
@@ -68,7 +68,7 @@ const data = {
             text: "Play",
             slug: "play",
             number: "04",
-            color: "var(--tertiary-purple)",
+            color: "var(--tertiary-red)",
         }
     ],
     testimonial: [
@@ -98,11 +98,11 @@ const data = {
             role: "research & design",
             image: "src/assets/images/sp-logo.svg",
             alt: "Studyportals Logo",
-            title: "Optimising Mastersportal's Article Section for Better Engagement and Conversion",
+            title: "Optimising Mastersportal's Article Section for Engagement and Conversion",
             color: "var(--secondary-orange)",
         },
         {
-            name: "Onboarding",
+            name: "Onboarding Questionnaire",
             role: "research & design",
             image: "src/assets/images/sp-logo.svg",
             alt: "Studyportals Logo",
@@ -111,7 +111,7 @@ const data = {
 
         },
         {
-            name: "CID Hub",
+            name: "CID Hub Public Space",
             role: "service design",
             image: "src/assets/images/dh-logo.svg",
             alt: "Studyportals Logo",
@@ -122,15 +122,44 @@ const data = {
 
     aboutList: [
         {
-            title: "Technology",
+            title: "Design",
             number: "01",
-            skill: "Design",
+            skill1: "Experience Design",
+            skill2: "Product Design",
+            skill3: "Interaction Design",
+            skill4: "Visual Design",
+            skill5: "Research",
+            skill6: "Information Architecture",
+            skill7: "Conversion Optimization",
+            skill8: "User Testing",
+            skill9: "Web Development",
         },
         {
-            title: "Design",
+            title: "Technology",
             number: "02",
-            skill: "Design",
-        }
+            skill1: "Figma",
+            skill2: "Adobe CC",
+            skill3: "Protopie",
+            skill4: "Sketch",
+            skill5: "Miro",
+            skill6: "Jira",
+            skill7: "Maze",
+            skill8: "Webflow",
+            skill9: "Javascript / React",
+        },
+        {
+            title: "Skills",
+            number: "03",
+            skill1: "Empathy",
+            skill2: "Communication",
+            skill3: "Collaboration",
+            skill4: "Problem Solving",
+            skill5: "Creativity",
+            skill6: "Technical Proficiency",
+            skill7: "Agile Methodology",
+            skill8: "Data Analysis",
+            skill9: "Product Innovation",
+        },
     ],
 
     article: {
@@ -155,7 +184,7 @@ const data = {
         affinityTitle: "Affinity Diagram",
         affinityColor: "var(--tertiary-yellow)",
         affinityAlt: "Research data clustered in an affinity diagram using Miro",
-        insightTitle: "Key Insights",
+        insightTitle: "Insights",
         insightColor: "var(--secondary-blue)",
         insight1: "Users expect to have filtering options available when browsing",
         insight2: "Users need to have a search bar dedicated to the articles",
@@ -169,6 +198,13 @@ const data = {
         ideationColor: "var(--secondary-orange)",
         ideationImage: "src/assets/images/article-redesign-ideation.webp",
         ideationAlt: "Ideation and Brainstorming screenshot from Miro",
+    },
+    contactForm: {
+        title: "Get in touch",
+        body: "I am currently available for collaborations. Feel free to reach out for any inquiries.",
+    },
+    footer: {
+        body: "Designed and developed by Andrei Avram",
     }
 }
 

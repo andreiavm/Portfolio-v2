@@ -68,6 +68,23 @@ function ArticleRedesign() {
                 <img className="article-section_ideation-image" src={data.article.ideationImage} alt={data.article.ideationAlt} />
             </section>
             <section className="casestudy-section">
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.requiermentsTitle}
+                        color={data.article.requiermentsColor}>
+                    </CaseTitle>
+                </div>
+            </section>
+            <section className="casestudy-section">
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.mapTitle}
+                        color={data.article.mapColor}>
+                    </CaseTitle>
+                </div>
+                <img src={data.article.mapImage} alt={data.article.mapAlt} className="article-section_map-image" />
+            </section>
+            <section className="casestudy-section">
                 <h1 style={{ display: 'flex', justifyContent: 'center' }} className="text-header-large">Coming soon! 🦺</h1>
             </section>
         </>

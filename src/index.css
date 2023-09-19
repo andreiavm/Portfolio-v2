@@ -21,12 +21,14 @@
   --font: "NeueMontreal", sans-serif;
   --primary-black: #0D0D0B;
   --primary-white: #F1F1F1;
-  --primary-grey: #cacad7;
+  --pure-white: #FFFFFF;
+  --primary-grey: #CACAD5;
   --secondary-orange: #DA5116;
   --secondary-blue: #112FA7;
   --tertiary-yellow: #FBDF00;
+  --tertiary-red: #C51919;
   --tertiary-purple: #9610FE;
-  --tertiary-green: #0dbb10;
+  --tertiary-green: #189d1a;
   --shadow-small: 2px 3px 0px 0px var(--primary-black);
   --shadow-mid: 2px 5px 0px 0px var(--primary-black);
   --shadow-large: 2px 7px 0px 0px var(--primary-black);
@@ -314,6 +316,29 @@ section {
   .article-section_title-wrapper {
     width: 100%;
   }
+
+  .about-list_wrapper {
+    width: 70%;
+  }
+
+  .about-list_wrapper+.about-list_wrapper {
+    margin-top: 1rem;
+  }
+
+  .about-section_list-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form_text-wrapper {
+    margin-bottom: 0.75rem;
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -328,10 +353,6 @@ section {
 
   .content-container {
     margin: 0 auto;
-    width: 100%;
-  }
-
-  .content-container {
     width: 100%;
   }
 
@@ -356,6 +377,31 @@ section {
     top: 35px;
     left: 15px;
     width: 20%;
+  }
+
+  .about-list_wrapper {
+    width: 100%;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+
+  .contact-form input[type="submit"] {
+    font-size: 0.75rem;
+  }
+
+  footer {
+    margin-bottom: 8rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer_logo-container {
+    text-align: right;
+    margin-bottom: 1rem;
   }
 
 }

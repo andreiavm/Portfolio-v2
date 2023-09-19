@@ -8,6 +8,7 @@ import WorkSection from './components/work/Work';
 import ContactSection from './components/contact/Contact';
 import NavMobile from './components/navmobile/NavMobile';
 import PlaySection from './components/play/Play';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -28,10 +29,11 @@ function App() {
           <SectionDivider text={data.divider[2].text} number={data.divider[2].number} color={data.divider[2].color} slug={data.divider[2].slug} />
         </div>
         <div><ContactSection /></div>
-        <div id="play">
+        {/* <div id="play">
           <SectionDivider text={data.divider[3].text} number={data.divider[3].number} color={data.divider[3].color} slug={data.divider[3].slug} />
         </div>
-        <PlaySection />
+        <PlaySection /> */}
+        <Footer />
       </div>
     </>
   )
