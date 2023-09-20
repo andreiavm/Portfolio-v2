@@ -16,7 +16,9 @@ function App() {
       <Nav />
       <NavMobile />
       <div className="content-container">
-        <HelloSection />
+        <div id="hello">
+          <HelloSection />
+        </div>
         <div id="about">
           <SectionDivider text={data.divider[0].text} number={data.divider[0].number} color={data.divider[0].color} slug={data.divider[0].slug} />
         </div>

@@ -2,7 +2,7 @@ import './contactform.css';
 import { useRef, useState, useEffect } from 'react';
 import { data } from '../../data/data.js';
 import emailjs from '@emailjs/browser';
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 
 export const ContactForm = () => {
     const [captchaSize, setCaptchaSize] = useState('normal');
@@ -62,7 +62,7 @@ export const ContactForm = () => {
     return (
         <div className="contact-form">
             <div className="contact-form_text-wrapper">
-                <h1 className="contact-form_header text-header">{data.contactForm.title}</h1>
+                <h1 className="contact-form_header text-header-large">{data.contactForm.title}</h1>
                 <p className="contact-form_body text-body-large">{data.contactForm.body}</p>
             </div>
             <form className="contact-form" ref={form} onSubmit={sendEmail}>

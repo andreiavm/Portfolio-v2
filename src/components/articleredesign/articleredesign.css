@@ -27,11 +27,6 @@
     justify-content: space-between;
 }
 
-.article-section_challenge {
-    display: flex;
-    justify-content: space-between;
-}
-
 .article-section_title-wrapper {
     display: flex;
     flex-direction: column;
@@ -39,22 +34,72 @@
     width: 50%;
 }
 
-.article-section_challenge-illustration {
-    width: 85%;
+.article-section_title {
+    margin-top: 2rem;
 }
 
+.article-section_body {
+    margin: 0;
+}
 .article-section_span {
     display: block;
 }
-
 .article-section_span+.article-section_span {
     margin-top: 2rem;
 }
 
-.article-section_insight+.article-section_insight {
+.article-section_list + .article-section_list {
     margin-top: 2rem;
+}
+
+.article-section_challenge-illustration {
+    width: 35%;
+    align-self: flex-start;
+    max-width: 300px;
+}
+
+.article-section_insight-wrapper {
+    display: flex;
+    gap: 8rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.article-section_insight {
+    flex: 1;
 }
 
 .casestudy-section>img {
     margin-top: 1rem;
+}
+
+.article-section_persona-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.article-section_persona-image {
+    width: 60%;
+}
+
+.article-section_empathy-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.article-section_empathy-map {
+    width: 70%;
+}
+
+
+li {
+    margin-top: 1rem;
+
+}
+
+.article-section_search-explore {
+    height: 45%;
+    width: 45%;
 }

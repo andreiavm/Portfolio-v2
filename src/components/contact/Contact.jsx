@@ -1,5 +1,4 @@
 import './contact.css';
-import { data } from '../../data/data.js';
 import ContactForm from '../contactform/ContactForm.jsx';
 
 const ContactSection = () => {

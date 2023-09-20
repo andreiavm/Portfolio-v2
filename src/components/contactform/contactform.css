@@ -60,7 +60,12 @@
 }
 
 .contact-form input[type="submit"]:focus {
-    border: solid 2px var(--primary-black);
+    border: solid 2px var(--secondary-blue);
+    box-shadow: none;
+}
+
+.contact-form input[type="submit"]:hover {
+    box-shadow: var(--shadow-mid);
 }
 
 .contact-form input[type="submit"]:focus:not(:focus-visible) {

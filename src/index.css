@@ -63,7 +63,7 @@ ul {
 
 ul,
 ol {
-  list-style: none;
+  list-style: square;
 }
 
 a {
@@ -198,7 +198,7 @@ section {
 }
 
 .casestudy-section {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 /* Media queries */
@@ -293,7 +293,7 @@ section {
   .article-section {
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .article-section_challenge-text-wrapper {
@@ -314,6 +314,23 @@ section {
   }
 
   .article-section_title-wrapper {
+    width: 100%;
+  }
+
+  .article-section_span {
+    margin: 0;
+  }
+
+  .article-section_insight-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .article-section_persona-image {
+    width: 100%;
+  }
+
+  .article-section_empathy-map {
     width: 100%;
   }
 
@@ -377,6 +394,11 @@ section {
     top: 35px;
     left: 15px;
     width: 20%;
+  }
+
+  .article-section_challenge-illustration {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .about-list_wrapper {

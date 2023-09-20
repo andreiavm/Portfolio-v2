@@ -9,9 +9,9 @@ function Footer() {
                 <p className="text-body-large footer_logo-body">{data.footer.body}</p>
             </div>
             <div className="footer_links-container">
-                <a className="text-body-large" href="http://">Linkedin</a>
+                {/* <a className="text-body-large" href="http://">Linkedin</a>
                 <a className="text-body-large" href="http://">Github</a>
-                <a className="text-body-large" href="http://">Email</a>
+                <a className="text-body-large" href="http://">Email</a> */}
             </div>
         </footer>
     )

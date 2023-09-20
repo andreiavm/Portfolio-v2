@@ -7,6 +7,7 @@ const AboutSection = () => {
     return (
         <>
             <section className="about-section">
+                <h1 className="contact-form_header text-header-large">{data.about.title}</h1>
                 {/* <h2 className="text-display">Under Construction 🚧</h2> */}
                 {/* <Testimonial name={data.testimonial[0].name} text={data.testimonial[0].text} company={data.testimonial[0].company} position={data.testimonial[0].position} /> */}
                 {/* <Testimonial name={data.testimonial[1].name} text={data.testimonial[1].text} company={data.testimonial[1].company} position={data.testimonial[1].position} /> */}
