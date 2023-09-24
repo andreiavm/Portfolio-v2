@@ -6,8 +6,10 @@
     padding: 1rem 1rem;
     border-radius: 9px;
     border: 2px solid var(--primary-black);
-    min-height: 10rem;
+    min-height: 400px;
+    width: 32%;
 }
+
 
 .testimonial-card:hover>.testimonial-card_text-wrapper {
     text-decoration: underline;

@@ -1,6 +1,7 @@
 import './articleredesign.css';
 import { data } from '../../data/data.js';
 import CaseTitle from '../casetitle/CaseTitle';
+import Vote from '../vote/Vote';
 
 function ArticleRedesign() {
     return (
@@ -49,11 +50,9 @@ function ArticleRedesign() {
                         <span className="article-section_span">{data.article.affinityBody}</span>
                     </p>
                 </div>
-                <p className="text-body-large">
-                </p>
-                <h2 className="text-body-large article-section_title">{data.article.affinityHeader}</h2>
+                <h2 className="text-note-bold article-section_title">{data.article.affinityHeader}</h2>
                 <img src={data.article.affinityImage} alt={data.article.affinityAlt} className="article-section_affinity-image" />
-                <h2 className="text-body-large article-section_title">{data.article.affinityHeader2}</h2>
+                <h2 className="text-note-bold article-section_title">{data.article.affinityHeader2}</h2>
                 <img src={data.article.affinityImage2} alt={data.article.affinityAlt2} className="article-section_affinity-image" />
             </section>
             <section className="casestudy-section">
@@ -161,15 +160,217 @@ function ArticleRedesign() {
                     </CaseTitle>
                     <span className="text-body-large article-section_span">{data.article.conceptBody1}</span>
                     <ul className="text-body-large article-section_list">
-                        <li><span className="article-section_span">{data.article.conceptBody2}</span></li>
-                        <li><span className="article-section_span">{data.article.conceptBody3}</span></li>
-                        <li><span className="article-section_span">{data.article.conceptBody4}</span></li>
+                        <li className="article-section_span">{data.article.conceptBody2}</li>
+                        <li className="article-section_span">{data.article.conceptBody3}</li>
+                        <li className="article-section_span">{data.article.conceptBody4}</li>
                     </ul>
                 </div>
                 <img src={data.article.conceptImage} alt="" className="article-section_search-explore" />
             </section>
             <section className="casestudy-section">
-                <h1 style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }} className="text-header-large">Coming soon! 🦺</h1>
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.firstIterationTitle}
+                        color={data.article.firstIterationColor}>
+                    </CaseTitle>
+                    <h2 className="text-note-bold article-section_title">{data.article.firstIterationHeader1}</h2>
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.firstIterationBody1}</span>
+                        <span className="article-section_span">{data.article.firstIterationBody2}</span>
+                        <span className="article-section_span">{data.article.firstIterationBody3}</span>
+                    </p>
+                </div>
+                <img src={data.article.firstIterationDesktopMock1} alt={data.article.firstIterationDesktopAlt} className="article-section_desktop-mock" />
+                <div className="article-section_title-wrapper">
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.firstIterationBody4}</span>
+                        <span className="article-section_span">{data.article.firstIterationBody5}</span>
+                        <span className="article-section_span">{data.article.firstIterationBody6}</span>
+                    </p>
+                </div>
+                <img src={data.article.firstIterationDesktopMock2} alt={data.article.firstIterationDesktopAlt} className="article-section_desktop-mock" />
+                <div className="article-section_title-wrapper">
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.firstIterationBody8}</span>
+                        <span className="article-section_span">{data.article.firstIterationBody9}</span>
+                    </p>
+                </div>
+                <img src={data.article.firstIterationDesktopMock3} alt={data.article.firstIterationDesktopAlt} className="article-section_desktop-mock" />
+                <div className="article-section_title-wrapper">
+                    <p className="text-body-large">{data.article.upvotePrototypeBody}</p>
+                    <h2 className="text-note-bold article-section_title">{data.article.upvotePrototypeHeader}</h2>
+                </div>
+                <div className="article-section_vote-wrapper">
+                    <Vote></Vote>
+                </div>
+                <div className="article-section_title-wrapper">
+                    <h2 className="text-note-bold article-section_title">{data.article.firstIterationHeader2}</h2>
+                    <p className="text-body-large">{data.article.firstIterationBody10}</p>
+                    <p className="text-body-large">{data.article.firstIterationBody11}</p>
+                </div>
+                <div className="article-section_mobile-container">
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock1} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock2} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock7} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                </div>
+                <div className="article-section_title-wrapper">
+                    <h2 className="text-note-bold article-section_title">{data.article.firstIterationHeader3}</h2>
+                    <p className="text-body-large">{data.article.firstIterationBody12}</p>
+                </div>
+                <div className="article-section_mobile-container">
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock4} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock5} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock6} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                </div>
+                <div className="article-section_title-wrapper">
+                    <h2 className="text-note-bold article-section_title">{data.article.firstIterationHeader4}</h2>
+                    <p className="text-body-large">{data.article.firstIterationBody13}</p>
+                </div>
+                <div className="article-section_mobile-container">
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock9} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock8} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock3} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                </div>
+            </section>
+            <section className="casestudy-section">
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.usertestingTitle}
+                        color={data.article.usertestingColor}>
+                    </CaseTitle>
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.usertestingBody}</span>
+                        <span className="article-section_span">{data.article.usertestingBody2}</span>
+                        <span className="article-section_span">{data.article.usertestingBody3}</span>
+                    </p>
+                    <h2 className="text-note-bold article-section_title">{data.article.usertestingHeader}</h2>
+                </div>
+                <div className="article-section_image-wrapper">
+                    <img src={data.article.usertestingImage1} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage2} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage3} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage4} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage5} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage6} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage7} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage8} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage9} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                    <img src={data.article.usertestingImage10} alt={data.article.usertestingAlt} className="article-section_usertesting-image" />
+                </div>
+                <div className="article-section_title-wrapper">
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.usertestingBody4}</span>
+                        <span className="article-section_span">{data.article.usertestingBody5}</span>
+                    </p>
+                </div>
+            </section>
+            <section className="casestudy-section">
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.secondIterationTitle}
+                        color={data.article.secondIterationColor}>
+                    </CaseTitle>
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.prototypeBody}</span>
+                        <span className="article-section_span">{data.article.prototypeBody2}</span>
+                        <span className="article-section_span">{data.article.prototypeBody3}</span>
+
+                    </p>
+                </div>
+                <h2 className="text-note-bold article-section_title">{data.article.prototypeHeader}</h2>
+                <div className="casestudy-section_prototype-wrapper">
+                    <iframe
+                        className="article-section_prototype"
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFa697QzwkA9YfpRGMSQ9oG%2FArticle-Prototype%3Fpage-id%3D2%253A2%26type%3Ddesign%26node-id%3D2-439%26viewport%3D188%252C521%252C0.09%26t%3DxQOMLDfAMYwexMPn-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D2%253A439%26mode%3Ddesign">
+                    </iframe>
+                </div>
+                <div className="article-section_title-wrapper">
+                    <h2 className="text-note-bold article-section_title">{data.article.prototypeHeader2}</h2>
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.prototypeBody4}</span>
+                        <span className="article-section_span">{data.article.prototypeBody5}</span>
+
+                    </p>
+                </div>
+                <div className="article-section_mobile-container">
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock10} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock11} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                    <div className="article-section_mobile-mock-wrapper"><img src={data.article.firstIterationMobileMock12} alt={data.article.firstIterationMobileAlt} className="article-section_mobile-mock" /></div>
+                </div>
+                <div className="article-section_title-wrapper">
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.prototypeBody7}</span>
+                        <span className="article-section_span">{data.article.prototypeBody6}</span>
+                    </p>
+                </div>
+            </section >
+            <section className="casestudy-section">
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.taxonomyTitle}
+                        color={data.article.taxonomyColor}>
+                    </CaseTitle>
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.taxonomyBody}</span>
+                        <span className="article-section_span">{data.article.taxonomyBody2}</span>
+                        <span className="article-section_span">{data.article.taxonomyBody3}</span>
+                    </p>
+                </div>
+                <img src={data.article.taxonomyImage} alt={data.article.taxonomyAlt} className="article-redesign_taxonomy" />
+                <div className="article-section_title-wrapper">
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.taxonomyBody4}</span>
+                    </p>
+                    <ul className="text-body-large article-section_list">
+                        <li className="article-section_list">{data.article.taxonomyBody5}</li>
+                        <li className="article-section_list">{data.article.taxonomyBody6}</li>
+                        <li className="article-section_list">{data.article.taxonomyBody7}</li>
+                        <li className="article-section_list">{data.article.taxonomyBody8}</li>
+                        <li className="article-section_list">{data.article.taxonomyBody9}</li>
+                    </ul>
+                </div>
+            </section >
+            <section className="casestudy-section">
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.treeTitle}
+                        color={data.article.treeColor}>
+                    </CaseTitle>
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.treeBody}</span>
+                        <span className="article-section_span">{data.article.treeBody2}</span>
+                    </p>
+                </div>
+                <div className="article-section_image-wrapper">
+                    <img src={data.article.treeImage} alt={data.article.treeAlt} className="article-section_tree-image" />
+                    <img src={data.article.treeImage2} alt={data.article.treeAlt} className="article-section_tree-image" />
+                    <img src={data.article.treeImage3} alt={data.article.treeAlt} className="article-section_tree-image" />
+                    <img src={data.article.treeImage4} alt={data.article.treeAlt} className="article-section_tree-image" />
+                    <img src={data.article.treeImage5} alt={data.article.treeAlt} className="article-section_tree-image" />
+                    <img src={data.article.treeImage6} alt={data.article.treeAlt} className="article-section_tree-image" />
+                    <img src={data.article.treeImage7} alt={data.article.treeAlt} className="article-section_tree-image" />
+                    <img src={data.article.treeImage8} alt={data.article.treeAlt} className="article-section_tree-image" />
+                </div>
+            </section>
+            <section className="casestudy-section">
+                <div className="article-section_title-wrapper">
+                    <CaseTitle
+                        title={data.article.conclusionTitle}
+                        color={data.article.conclusionColor}>
+                    </CaseTitle>
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.conclusionBody}</span>
+                        <span className="article-section_span">{data.article.conclusionBody2}</span>
+                    </p>
+                    <h2 className="text-note-bold article-section_title">{data.article.conclusionHeader}</h2>
+                </div>
+                <img src={data.article.conclusionOldImage} alt={data.article.conclusionOldAlt} className="article-section_desktop-mock" />
+                <img src={data.article.conclusionOldImage2} alt={data.article.conclusionOldAlt} className="article-section_desktop-mock" />
+                <div className="article-section_title-wrapper">
+                    <h2 className="text-note-bold article-section_title">{data.article.conclusionHeader2}</h2>
+                </div>
+                <img src={data.article.conclusionNewImage} alt={data.article.conclusionNewAlt} className="article-section_desktop-mock" />
+                <img src={data.article.conclusionNewImage2} alt={data.article.conclusionNewAlt} className="article-section_desktop-mock" />
             </section>
         </>
     );

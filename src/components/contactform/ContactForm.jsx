@@ -5,44 +5,44 @@ import emailjs from '@emailjs/browser';
 // import ReCAPTCHA from "react-google-recaptcha";
 
 export const ContactForm = () => {
-    const [captchaSize, setCaptchaSize] = useState('normal');
+    // const [captchaSize, setCaptchaSize] = useState('normal');
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth <= 400) {
-                setCaptchaSize('compact');
-            } else {
-                setCaptchaSize('normal');
-            }
-        };
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         if (window.innerWidth <= 400) {
+    //             setCaptchaSize('compact');
+    //         } else {
+    //             setCaptchaSize('normal');
+    //         }
+    //     };
 
-        handleResize();
-        window.addEventListener('resize', handleResize);
+    //     handleResize();
+    //     window.addEventListener('resize', handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('resize', handleResize);
+    //     };
+    // }, []);
 
     const form = useRef();
     const [fromName, setFromName] = useState('');
     const [fromEmail, setFromEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const [captchaValue, setCaptchaValue] = useState(null);
+    // const [captchaValue, setCaptchaValue] = useState(null);
 
-    const handleCaptchaChange = (value) => {
-        setCaptchaValue(value);
-    }
+    // const handleCaptchaChange = (value) => {
+    //     setCaptchaValue(value);
+    // }
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        if (!captchaValue) {
-            const errorMessageElement = document.getElementById('captcha-error-message');
-            errorMessageElement.textContent = 'Please complete the CAPTCHA.';
-            return;
-        }
+        // if (!captchaValue) {
+        //     const errorMessageElement = document.getElementById('captcha-error-message');
+        //     errorMessageElement.textContent = 'Please complete the CAPTCHA.';
+        //     return;
+        // }
 
         const templateParams = {
             from_name: fromName,

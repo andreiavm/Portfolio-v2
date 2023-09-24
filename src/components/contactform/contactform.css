@@ -72,12 +72,3 @@
     border: none;
     box-shadow: none;
 }
-
-
-.contact-form_error-message {
-    margin-bottom: 0.5rem;
-    text-align: left;
-    color: red;
-    font-weight: bold;
-
-}

@@ -31,8 +31,8 @@ const HelloSection = () => {
                 {data.helloSection.hello.title}
             </h1>
             <div className="hello-button-wrapper">
-                <ButtonPrimary label={data.helloSection.buttons.buttonPrimary} onClick={scrollToContact} />
-                <ButtonSecondary label={data.helloSection.buttons.buttonSecondary} onClick={scrollToWork} />
+                <ButtonPrimary label={data.helloSection.buttons.buttonPrimary} onClick={scrollToWork} />
+                <ButtonSecondary label={data.helloSection.buttons.buttonSecondary} onClick={scrollToContact} />
             </div>
         </section >
     );

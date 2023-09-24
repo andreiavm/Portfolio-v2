@@ -150,6 +150,13 @@ body {
   line-height: 130%;
 }
 
+.text-note-bold {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 150%;
+}
+
 .text-body-large {
   font-size: 1.5rem;
   font-style: normal;
@@ -202,8 +209,8 @@ section {
 }
 
 /* Media queries */
-/* Fonts */
 
+/* Fonts */
 @media screen and (max-width: 1100px) {
   .text-display-large {
     font-size: 4.5rem;
@@ -231,7 +238,43 @@ section {
 
 }
 
+/* Layout */
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+  body {
+    width: 75%;
+
+  }
+}
+
+@media screen and (min-width: 1800px) and (max-width:3300px) {
+  body {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 3300px) {
+  body {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-span-mobile {
+    display: none;
+  }
+
+  .nav-item-mobile {
+    min-width: 5rem;
+    justify-content: center;
+  }
+}
+
 /* General  */
+@media screen and (min-width:1200px) and (max-width: 1400px) {
+  .testimonial-card {
+    min-height: 400px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .hello-section {
@@ -247,6 +290,35 @@ section {
   .logo-tags {
     margin-top: 1rem;
     margin-left: 0;
+  }
+
+  .about-section_testimonial-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+
+  }
+
+  .about-section_list-wrapper {
+    gap: 1rem;
+  }
+
+  .about-list_wrapper {
+    width: 70%;
+  }
+
+  .about-section_list-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 70%;
+    min-height: none;
+    justify-content: center;
+  }
+
+  .testimonial-card_name {
+    margin-top: 1rem;
   }
 
   .project-card_top-wrapper {
@@ -334,17 +406,9 @@ section {
     width: 100%;
   }
 
-  .about-list_wrapper {
-    width: 70%;
-  }
 
-  .about-list_wrapper+.about-list_wrapper {
-    margin-top: 1rem;
-  }
-
-  .about-section_list-wrapper {
-    flex-direction: column;
-    align-items: center;
+  .article-section_search-explore {
+    width: 100%;
   }
 
   .contact-form {
@@ -397,12 +461,30 @@ section {
   }
 
   .article-section_challenge-illustration {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
+  }
+
+  .about-section_testimonial-wrapper {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    width: 100%;
   }
 
   .about-list_wrapper {
     width: 100%;
+  }
+
+  .article-section_vote-wrapper {
+    margin: 0;
+  }
+
+  .upvote {
+    width: 85%;
+    margin: 0 auto;
+    gap: 0;
   }
 
   .contact-form input[type="text"],
@@ -428,38 +510,11 @@ section {
 
 }
 
+/* Navigation */
 @media screen and (min-width: 800px) {
   .navigation-mobile {
     display: none;
   }
 }
 
-@media screen and (min-width: 1500px) and (max-width: 1800px) {
-  body {
-    width: 75%;
-
-  }
-}
-
-@media screen and (min-width: 1800px) and (max-width:3300px) {
-  body {
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 3300px) {
-  body {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .nav-span-mobile {
-    display: none;
-  }
-
-  .nav-item-mobile {
-    min-width: 5rem;
-    justify-content: center;
-  }
-}
+/* Layout */
