@@ -8,7 +8,7 @@ const AboutSection = () => {
         <>
             <section className="about-section">
                 <section className="play-section">
-                    <h2 className="text-display">Under construction 🚧</h2>
+                    <h2 style={{ height: '20rem', display: "flex", justifyContent: "center", alignItems: "center" }} className="text-display">Under construction 🚧</h2>
                 </section >
                 {/* <h1 className="hello-section_title text-display">
                     {data.about.body1}
@@ -20,7 +20,7 @@ const AboutSection = () => {
                     <Testimonial name={data.testimonial[2].name} text={data.testimonial[2].text} company={data.testimonial[2].company} position={data.testimonial[2].position} />
                 </div>
                 <section className="play-section">
-                    <h2 className="text-display">Under construction 🚧</h2>
+                    <h2 style={{ height: '20rem', display: "flex", justifyContent: "center", alignItems: "center" }} className="text-display">Under construction 🚧</h2>
                 </section >
                 <h1 className="contact-form_header text-header-large">{data.about.title}</h1>
                 <div className="about-section_list-wrapper">
@@ -61,9 +61,9 @@ const AboutSection = () => {
                         skill8={data.aboutList[2].skill8}
                         skill9={data.aboutList[2].skill9} />
                 </div>
-                <section className="play-section">
+                {/* <section className="play-section">
                     <h2 className="text-display">Under construction 🚧</h2>
-                </section >
+                </section > */}
             </section >
         </>
     );
