@@ -1,17 +1,29 @@
 import './about.css';
-// import { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
+
 import { data } from '../../data/data.js';
 import Testimonial from '../testimonial/Testimonial.jsx';
 import AboutList from '../aboutlist/AboutList.jsx';
 
 const AboutSection = () => {
+    useEffect(() => {
+        const bars = document.querySelectorAll('.bar');
+
+        function getRandomDelay() {
+            return Math.random() * 2000;
+        }
+
+        bars.forEach(bar => {
+            bar.style.animationDelay = `${getRandomDelay()}ms`;
+        });
+    }, []);
+
     return (
         <>
             <section className="about-section">
                 <div className="about-section_me-wrapper">
                     <div className="about-section_me-text-wrapper">
-                        <h2 className="text-header-large">{data.about.title2}</h2>
+                        {/* <h2 className="text-header-large">{data.about.title2}</h2> */}
                         <h1 className="hello-section_title text-display">
                             <span className="hello-section_span-orange">{data.about.span}</span>
                             {data.about.body2}
@@ -21,8 +33,17 @@ const AboutSection = () => {
                     </div>
                     <img className="about-section_image" src={data.about.mePic} alt={data.about.meAlt} />
                 </div>
-                <section>
-                    <h2 className="about-section_title-2 text-header-large">{data.about.body}</h2>
+                <section className="about-section">
+                    <div className="about-graph_wrapper">
+                        <h2 className="about-section_title-2 text-header-large">{data.about.body}</h2>
+                        <div className="graph">
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                            <div className="bar"></div>
+                        </div>
+                    </div>
                 </section>
                 <h2 className=" text-header-large">{data.about.testimonialTitle}</h2>
                 <div className="about-section_testimonial-wrapper">
@@ -30,9 +51,22 @@ const AboutSection = () => {
                     <Testimonial name={data.testimonial[1].name} text={data.testimonial[1].text} company={data.testimonial[1].company} position={data.testimonial[1].position} />
                     <Testimonial name={data.testimonial[2].name} text={data.testimonial[2].text} company={data.testimonial[2].company} position={data.testimonial[2].position} />
                 </div>
-                <section>
-                    <h1 className="about-section_title-2 text-header-large`~~">{data.about.body5}</h1>
-                </section >
+                <section className="about-section">
+                    <div className="about-cube_wrapper">
+                        <h1 className="about-section_title-2 text-header-large">{data.about.body5}</h1>
+                        <div className="cube-container">
+                            <div className="cube">
+                                <div className="face front"></div>
+                                <div className="face back"></div>
+                                <div className="face left"></div>
+                                <div className="face right"></div>
+                                <div className="face top"></div>
+                                <div className="face bottom"></div>
+                            </div>
+                        </div>
+                        <div className="line"></div>
+                    </div>
+                </section>
                 <h1 className="contact-form_header text-header-large">{data.about.title}</h1>
                 <div className="about-section_list-wrapper">
                     <AboutList
