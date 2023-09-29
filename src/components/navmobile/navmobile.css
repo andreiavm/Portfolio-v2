@@ -1,17 +1,18 @@
 .navigation-mobile {
     position: fixed;
-    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0;
+    left: 0;
     padding: 1rem 0.5rem;
     background-color: var(--primary-grey);
     border-top: 2px solid var(--primary-black);
-    left: 0px;
-    display: flex;
-    justify-content: space-evenly;
     gap: 0.5rem;
-    overflow-x: auto;
     width: 100%;
     transform-origin: 0%;
-    z-index: 1000;
+    z-index: 1001;
+    
 
 }
 
@@ -21,9 +22,10 @@
     box-shadow: none;
     border: none;
     border-radius: 9px;
+    
 }
 
-.nav-mobile-span {
+.nav-span-mobile {
     margin-left: auto;
 }
 

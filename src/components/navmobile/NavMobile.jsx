@@ -28,9 +28,6 @@ const NavMobile = () => {
                     }}
                 >
                     <p className="nav-text-mobile text-body-bold">{item.title}</p>
-                    <span className="nav-span-mobile text-note">
-                        {item.number}
-                    </span>
                 </button>
             ))
             }

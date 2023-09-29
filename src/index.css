@@ -150,6 +150,13 @@ body {
   line-height: 130%;
 }
 
+.text-note {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 130%;
+}
+
 .text-note-bold {
   font-size: 1.25rem;
   font-style: normal;
@@ -176,12 +183,6 @@ body {
   font-style: normal;
   font-weight: bold;
   line-height: 150%;
-}
-
-.text-note {
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 130%;
 }
 
 
@@ -301,6 +302,20 @@ section {
   .logo-tags {
     margin-top: 1rem;
     margin-left: 0;
+  }
+
+  .about-section_me-wrapper {
+    flex-direction: column;
+  }
+
+  .about-section_title {
+    max-width: none;
+    width: 100%;
+  }
+
+  .about-section_image {
+    width: 60%;
+    align-self: center;
   }
 
   .about-section_testimonial-wrapper {
@@ -429,7 +444,7 @@ section {
   }
 
   .nav-item-mobile {
-    min-width: 10rem;
+    min-width: 7rem;
     justify-content: space-between;
   }
 
@@ -517,5 +532,3 @@ section {
     display: none;
   }
 }
-
-/* Layout */

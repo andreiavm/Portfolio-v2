@@ -13,6 +13,8 @@
 
 .article-section_mock-image {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .article-section_mock-illustration {
@@ -51,7 +53,7 @@
     margin-top: 2rem;
 }
 
-.article-section_list+.article-section_list {
+.article-section_list {
     margin-top: 2rem;
 }
 
@@ -80,10 +82,6 @@
     margin-top: 2rem;
 }
 
-.article-section_persona-image {
-    width: 80%;
-}
-
 .article-section_empathy-wrapper {
     margin-top: 2rem;
     display: flex;
@@ -95,8 +93,8 @@
 }
 
 .article-section_map-image {
-    width: 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
+
 }
 
 .article-section_search-explore {

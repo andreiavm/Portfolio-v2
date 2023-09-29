@@ -1,0 +1,12 @@
+.onboarding_funnel-image,
+.onboarding_fogg-image,
+.onboarding_purpose-image {
+    margin: 1rem 0;
+}
+
+.onboarding_flow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
