@@ -100,8 +100,8 @@ const WorkSection = () => {
                         exit={{ opacity: 0, y: 0 }}
                         transition={{ duration: 0.15 }}
                         className="floating-button_wrapper">
-                        <FloatingButton label="Next Project" onClick={handleNextClick} />
-                        <FloatingButton label="Close Project" onClick={handleCloseClick} />
+                        <FloatingButton label="Next" onClick={handleNextClick} />
+                        <FloatingButton label="Close" onClick={handleCloseClick} />
                     </motion.div >
                 
                 )
