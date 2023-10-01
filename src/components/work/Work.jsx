@@ -7,6 +7,7 @@ import ProjectCard from '../project/ProjectCard';
 import ArticleRedesign from '../articleredesign/ArticleRedesign';
 import Onboarding from '../onboarding/Onboarding';
 import CidHub from '../cidhub/CidHub';
+import SectionDivider from '../divider/Divider';
 
 const WorkSection = () => {
     const [openCardIndex, setOpenCardIndex] = useState(-1);
@@ -63,52 +64,56 @@ const WorkSection = () => {
     };
 
     return (
-        <section
-            className="work-section"
-            ref={workSectionRef} >
-            {
-                data.project.map((project, index) => (
-                    <div
-                        key={index}
-                        ref={(el) => (cardRefs.current[index] = el)}>
-                        <ProjectCard
-                            name={project.name}
-                            role={project.role}
-                            image={project.image}
-                            title={project.title}
-                            duration={project.duration}
-                            color={project.color}
-                            isOpen={index === openCardIndex}
-                            onClick={() => {
-                                setOpenCardIndex((prevIndex) =>
-                                    prevIndex === index ? -1 : index
-                                );
-                            }}
-                        />
-                        {index === 0 && openCardIndex === 0 && <ArticleRedesign />}
-                        {index === 1 && openCardIndex === 1 && <Onboarding />}
-                        {index === 2 && openCardIndex === 2 && <CidHub />}
-                    </div>
-                ))
-            }
-            <AnimatePresence>
-            {   
-                isWorkSectionVisible && openCardIndex >= 0 && (
-                    <motion.div
-                        initial={{ opacity: 0, y: 0 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 0 }}
-                        transition={{ duration: 0.15 }}
-                        className="floating-button_wrapper">
-                        <FloatingButton label="Next" onClick={handleNextClick} />
-                        <FloatingButton label="Close" onClick={handleCloseClick} />
-                    </motion.div >
-                
-                )
-                
-            }
-            </AnimatePresence>
-        </section>
+        <div className="content-container" id="work">
+            <SectionDivider text={data.divider[1].text} number={data.divider[1].number} color={data.divider[1].color} slug={data.divider[1].slug} />
+            <section
+                className="work-section"
+
+                ref={workSectionRef} >
+                {
+                    data.project.map((project, index) => (
+                        <div
+                            key={index}
+                            ref={(el) => (cardRefs.current[index] = el)}>
+                            <ProjectCard
+                                name={project.name}
+                                role={project.role}
+                                image={project.image}
+                                title={project.title}
+                                duration={project.duration}
+                                color={project.color}
+                                isOpen={index === openCardIndex}
+                                onClick={() => {
+                                    setOpenCardIndex((prevIndex) =>
+                                        prevIndex === index ? -1 : index
+                                    );
+                                }}
+                            />
+                            {index === 0 && openCardIndex === 0 && <ArticleRedesign />}
+                            {index === 1 && openCardIndex === 1 && <Onboarding />}
+                            {index === 2 && openCardIndex === 2 && <CidHub />}
+                        </div>
+                    ))
+                }
+                <AnimatePresence>
+                    {
+                        isWorkSectionVisible && openCardIndex >= 0 && (
+                            <motion.div
+                                initial={{ opacity: 0, y: 0 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: 0 }}
+                                transition={{ duration: 0.15 }}
+                                className="floating-button_wrapper">
+                                <FloatingButton label="Next" onClick={handleNextClick} />
+                                <FloatingButton label="Close" onClick={handleCloseClick} />
+                            </motion.div >
+
+                        )
+
+                    }
+                </AnimatePresence>
+            </section>
+        </div>
     );
 
 };

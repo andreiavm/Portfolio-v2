@@ -19,9 +19,16 @@
     max-width: 35ch;
 }
 
+.about-section_fact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
 .about-section_title-2 {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 2rem;
 }
 
 .about-section_me-text-wrapper {

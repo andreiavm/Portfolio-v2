@@ -1,9 +1,9 @@
 import './about.css';
 import { useEffect } from 'react';
-
 import { data } from '../../data/data.js';
 import Testimonial from '../testimonial/Testimonial.jsx';
 import AboutList from '../aboutlist/AboutList.jsx';
+import SectionDivider from '../divider/Divider';
 
 const AboutSection = () => {
     useEffect(() => {
@@ -19,7 +19,8 @@ const AboutSection = () => {
     }, []);
 
     return (
-        <>
+        <div className="content-container" id="about">
+            <SectionDivider text={data.divider[0].text} number={data.divider[0].number} color={data.divider[0].color} slug={data.divider[0].slug} />
             <section className="about-section">
                 <div className="about-section_me-wrapper">
                     <div className="about-section_me-text-wrapper">
@@ -33,9 +34,9 @@ const AboutSection = () => {
                     </div>
                     <img className="about-section_image" src={data.about.mePic} alt={data.about.meAlt} />
                 </div>
-                <section className="about-section">
+                <section className="about-section_fact-wrapper">
+                    <h1 className="about-section_title-2 text-header-large">{data.about.body}</h1>
                     <div className="about-graph_wrapper">
-                        <h2 className="about-section_title-2 text-header-large">{data.about.body}</h2>
                         <div className="graph">
                             <div className="bar"></div>
                             <div className="bar"></div>
@@ -51,9 +52,9 @@ const AboutSection = () => {
                     <Testimonial name={data.testimonial[1].name} text={data.testimonial[1].text} company={data.testimonial[1].company} position={data.testimonial[1].position} />
                     <Testimonial name={data.testimonial[2].name} text={data.testimonial[2].text} company={data.testimonial[2].company} position={data.testimonial[2].position} />
                 </div>
-                <section className="about-section">
+                <section className="about-section_fact-wrapper">
+                    <h1 className="about-section_title-2 text-header-large">{data.about.body5}</h1>
                     <div className="about-cube_wrapper">
-                        <h1 className="about-section_title-2 text-header-large">{data.about.body5}</h1>
                         <div className="cube-container">
                             <div className="cube">
                                 <div className="face front"></div>
@@ -107,7 +108,7 @@ const AboutSection = () => {
                         skill9={data.aboutList[2].skill9} />
                 </div>
             </section >
-        </>
+        </div >
     );
 }
 

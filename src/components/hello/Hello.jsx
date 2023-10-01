@@ -19,22 +19,24 @@ const HelloSection = () => {
         }
     };
     return (
-        <section className="hello-section">
-            <div className="hello-logo-wrapper">
-                <div className="logo">
-                    <img width="333" height="325" src={data.helloSection.logo.src} alt={data.helloSection.logo.alt} className="logo-render" />
-                    <p className="logo-text">{data.helloSection.logo.text}</p>
+        <div className="content-container">
+            <section id="hello" className="hello-section">
+                <div className="hello-logo-wrapper">
+                    <div className="logo">
+                        <img width="333" height="325" src={data.helloSection.logo.src} alt={data.helloSection.logo.alt} className="logo-render" />
+                        <p className="logo-text">{data.helloSection.logo.text}</p>
+                    </div>
+                    <p className="logo-tags">{data.helloSection.logo.tags}</p>
                 </div>
-                <p className="logo-tags">{data.helloSection.logo.tags}</p>
-            </div>
-            <h1 className="hello-section_title text-display">
-                {data.helloSection.hello.title}
-            </h1>
-            <div className="hello-button-wrapper">
-                <ButtonPrimary label={data.helloSection.buttons.buttonPrimary} onClick={scrollToWork} />
-                <ButtonSecondary label={data.helloSection.buttons.buttonSecondary} onClick={scrollToContact} />
-            </div>
-        </section >
+                <h1 className="hello-section_title text-display">
+                    {data.helloSection.hello.title}
+                </h1>
+                <div className="hello-button-wrapper">
+                    <ButtonPrimary label={data.helloSection.buttons.buttonPrimary} onClick={scrollToWork} />
+                    <ButtonSecondary label={data.helloSection.buttons.buttonSecondary} onClick={scrollToContact} />
+                </div>
+            </section >
+        </div>
     );
 }
 
