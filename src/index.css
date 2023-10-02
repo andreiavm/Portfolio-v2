@@ -453,7 +453,7 @@ section {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .navigation {
     display: none;
   }
@@ -474,15 +474,28 @@ section {
   }
 
   .about-section_image-wrapper {
-    width: 50%;
+    width: 100%;
     align-self: center;
   }
-.testimonial-card {
-  width: 100%;;
+
+  .testimonial-card {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    justify-content: card;
+  }
+
+.testimonial-card_name-wrapper {
+ justify-content: center; 
 }
+
   .content-container {
     margin: 0 auto;
     width: 100%;
+  }
+
+  .about-section_fact-wrapper {
+    padding: 1rem 0;
   }
 
   .hello-button-wrapper {
