@@ -41,7 +41,7 @@ const AboutSection = () => {
                     <img className="about-section_image" src={data.about.mePic} alt={data.about.meAlt} />
                 </div>
                 <section className="about-section_fact-wrapper">
-                    <h1 className="about-section_title-2 text-header-large">{data.about.body}</h1>
+                    <h1 className="about-section_title-2 text-header">{data.about.body}</h1>
                     <div className="about-graph_wrapper">
                         <div className="graph">
                             <div className="bar"></div>
@@ -59,7 +59,7 @@ const AboutSection = () => {
                     <Testimonial name={data.testimonial[2].name} text={data.testimonial[2].text} company={data.testimonial[2].company} position={data.testimonial[2].position} />
                 </div>
                 <section className="about-section_fact-wrapper">
-                    <h1 className="about-section_title-2 text-header-large">{data.about.body5}</h1>
+                    <h1 className="about-section_title-2 text-header">{data.about.body5}</h1>
                     <div className="about-cube_wrapper">
                         <div className="cube-container">
                             <div className="cube">

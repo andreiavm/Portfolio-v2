@@ -7,11 +7,11 @@ import Vote from '../vote/Vote';
 function ArticleRedesign() {
     return (
         <motion.div
-            initial={{ opacity: 0, y: -20, rotate: 0 }}
+            initial={{ opacity: 0, y: 0, rotate: 0 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             exit={{ opacity: 0, y: 0, rotate: 0 }}
             transition={{ duration: 0.25 }}>
-            <section className="casestudy-section article-section">
+            <section className="casestudy-section article-sectionx">
                 <div className="article-section_mock-wrapper">
                     <img className="article-section_mock-illustration"
                         src={data.article.illustration1}
@@ -80,7 +80,6 @@ function ArticleRedesign() {
                             <li className="article-section_list">{data.article.insight4}</li>
                             <li className="article-section_list">{data.article.insight5}</li>
                             <li className="article-section_list">{data.article.insight6}</li>
-                            <li className="article-section_list">{data.article.insight7}</li>
                         </ul>
                     </div>
                 </div>
@@ -173,7 +172,6 @@ function ArticleRedesign() {
                     </div>
                     <img src={data.article.mapImage} alt={data.article.mapAlt} className="article-section_map-image" />
                 </div>
-
             </section>
             <section className="casestudy-section article-section">
                 <div className="casestudy-section_wrapper">
@@ -183,7 +181,7 @@ function ArticleRedesign() {
                             color={data.article.conceptColor}>
                         </CaseTitle>
                         <span className="text-body-large article-section_span">{data.article.conceptBody1}</span>
-                        <img src={data.article.conceptImage} alt="" className="article-section_search-explore" />
+                        <img src={data.article.conceptImage} alt={data.article.conceptAlt} className="article-section_search-explore" />
                         <ul className="text-body-large article-section_list">
                             <li className="article-section_span">{data.article.conceptBody2}</li>
                             <li className="article-section_span">{data.article.conceptBody3}</li>
@@ -209,7 +207,6 @@ function ArticleRedesign() {
                         <div className="article-section_title-wrapper">
                             <p className="text-body-large">
                                 <span className="article-section_span">{data.article.firstIterationBody4}</span>
-                                <span className="article-section_span">{data.article.firstIterationBody5}</span>
                                 <span className="article-section_span">{data.article.firstIterationBody6}</span>
                             </p>
                         </div>
@@ -376,7 +373,7 @@ function ArticleRedesign() {
                         </CaseTitle>
                         <p className="text-body-large">
                             <span className="article-section_span">{data.article.conclusionBody}</span>
-                            <span className="article-section_span">{data.article.conclusionBody2}</span>
+                            <span className="article-section_span">{data.article.conclusionBody4}</span>
                         </p>
                         <h2 className="text-note-bold article-section_title">{data.article.conclusionHeader}</h2>
                     </div>
@@ -387,6 +384,10 @@ function ArticleRedesign() {
                     </div>
                     <img src={data.article.conclusionNewImage} alt={data.article.conclusionNewAlt} className="article-section_desktop-mock" />
                     <img src={data.article.conclusionNewImage2} alt={data.article.conclusionNewAlt} className="article-section_desktop-mock" />
+                    <p className="text-body-large">
+                        <span className="article-section_span">{data.article.conclusionBody2}</span>
+                        <span className="article-section_span">{data.article.conclusionBody3}</span>
+                    </p>
                     <h2 className="text-note-bold article-section_title">{data.article.conclusionDisclaimerHeader}</h2>
                     <p className="article-section_body text-body-large">
                         <span className="article-section_span">{data.article.conclusionDisclaimer}</span>

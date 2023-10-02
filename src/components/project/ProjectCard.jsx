@@ -47,9 +47,9 @@ function ProjectCard({ name, role, image, title, color, isOpen, onClick, onNextC
                 isOpen &&
                 <motion.div
                     layout
-                    initial={{ opacity: 0, y: -20 }}
+                    initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
+                    exit={{ opacity: 0, y: 0 }}
                     transition={{ duration: 0.35 }}
                     className="project-card_title-wrapper">
                     <TitleHeader className="text-header-small" color={color}>{title}</TitleHeader>

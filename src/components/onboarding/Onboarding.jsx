@@ -6,7 +6,7 @@ import CaseTitle from '../casetitle/CaseTitle';
 const Onboarding = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: -20, rotate: 0 }}
+            initial={{ opacity: 0, y: 0, rotate: 0 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             exit={{ opacity: 0, y: 0, rotate: 0 }}
             transition={{ duration: 0.25 }}>
@@ -81,7 +81,7 @@ const Onboarding = () => {
                         </CaseTitle>
                     </div>
                 </div>
-                <img src={data.onboarding.ideationFlow} alt={data.onboarding.ideationFlowAlt} className="onboarding_flowchart-image" />
+                    <img src={data.onboarding.ideationFlow} alt={data.onboarding.ideationFlowAlt} className="onboarding_flowchart-image" />
             </section>
             <section className="casestudy-section">
                 <div className="casestudy-section_wrapper">
@@ -91,10 +91,11 @@ const Onboarding = () => {
                             color={data.onboarding.notificationsColor}>
                         </CaseTitle>
                         <p className="article-section_body text-body-large">
-                            <span className="article-section_span">{data.onboarding.notificationsBody}</span>
+                            <span className="article-section_span">{data.onboarding.notificationsBody1}</span>
+                            <span className="article-section_span">{data.onboarding.notificationsBody11}</span>
                         </p>
                     </div>
-                    <h2 className="text-note-bold article-section_title">{data.onboarding.notificationsHeader}</h2>
+                    <h2 className="text-note-bold article-section_title notification-title">{data.onboarding.notificationsHeader}</h2>
                     <div className="onboarding_notification-wrapper">
                         <div className="notification">
                             <div className="notification_svg-wrapper">
@@ -168,6 +169,8 @@ const Onboarding = () => {
                         </CaseTitle>
                         <p className="article-section_body text-body-large">
                             <span className="article-section_span">{data.onboarding.testingBody}</span>
+                            <span className="article-section_span">{data.onboarding.testingBody2}</span>
+
                         </p>
                         <h2 className="text-note-bold article-section_title">{data.article.prototypeHeader}</h2>
                     </div>
@@ -177,11 +180,6 @@ const Onboarding = () => {
                             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FldG8JgwjdUTVHHnS7YQkWu%2FOnboarding-Prototype%3Fpage-id%3D0%253A3494%26type%3Ddesign%26node-id%3D0-4968%26viewport%3D1359%252C3892%252C0.28%26t%3DCKaPDjxyV6Cf0hPF-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D0%253A4968%26mode%3Ddesign">
 
                         </iframe>
-                    </div>
-                    <div className="article-section_title-wrapper">
-                        <p className="article-section_body text-body-large">
-                            <span className="article-section_span">{data.onboarding.testingBody2}</span>
-                        </p>
                     </div>
                 </div>
             </section>
@@ -238,7 +236,6 @@ const Onboarding = () => {
                     <img src={data.onboarding.onboardingMockDesktop10} alt={data.onboarding.onboardingMockAlt} className="article-section_desktop-mock" />
                     <img src={data.onboarding.onboardingMockDesktop11} alt={data.onboarding.onboardingMockAlt} className="article-section_desktop-mock" />
                     <img src={data.onboarding.onboardingMockDesktop12} alt={data.onboarding.onboardingMockAlt} className="article-section_desktop-mock" />
-                    
                 </div>
             </section>
             <section className="casestudy-section">
@@ -268,7 +265,7 @@ const Onboarding = () => {
                     </p>
                 </div>
             </section>
-        </motion.div >
+        </motion.div>
     );
 }
 
