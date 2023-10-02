@@ -32,9 +32,29 @@
 }
 
 .about-section_me-text-wrapper {
+    /* background-color: red; */
+    width: 70%;
     display: flex;
-    ;
     flex-direction: column;
+}
+
+.about-section_shape-container {
+    display: flex;
+    align-self: flex-end;
+}
+
+.about-section_shape {
+    align-self: flex-end;
+    stroke: var(--primary-black);
+    stroke-width: 2px;
+}
+
+.about-section_triangle-1 {
+    fill: var(--secondary-orange)
+}
+
+.about-section_triangle-2 {
+    fill: var(--secondary-blue)
 }
 
 .hello-section_span-orange {
@@ -83,6 +103,16 @@
     align-items: center;
     width: 100%;
     margin-bottom: 2rem;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
 }
 
 /* Cube */

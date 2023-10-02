@@ -179,7 +179,7 @@ const data = {
             skill6: "Jira",
             skill7: "Hotjar / Maze",
             skill8: "Webflow",
-            skill9: "Javascript",
+            skill9: "Javascript / React",
         },
         {
             title: "Skills",
@@ -296,6 +296,7 @@ const data = {
         upvotePrototypeHeader: "Click to try it out:",
         firstIterationMobileMock1: "/mock-mobile-1.webp",
         firstIterationMobileMock2: "/mock-mobile-2.webp",
+        firstIterationMobileMock3: "/mock-mobile-3.webp",
         firstIterationMobileMock4: "/mock-mobile-4.webp",
         firstIterationMobileMock5: "/mock-mobile-5.webp",
         firstIterationMobileMock6: "/mock-mobile-6.webp",
@@ -476,7 +477,7 @@ const data = {
 
     contactForm: {
         title: "Get in touch 👋",
-        body: "I am currently available for collaborations. Feel free to reach out for any inquiries. ",
+        body: "I am currently available for collaborations. Feel free to reach out for any inquiries.",
     },
     footer: {
         body: "Designed and developed by Andrei Avram",
