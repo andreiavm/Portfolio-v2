@@ -90,7 +90,7 @@ const data = {
             company: "@Studyportals",
             image: "var(--secondary-blue)"
         }, {
-            text: "We were blown away by the level of research you conducted and how well you incorporated our input into the process.",
+            text: "We were truly blown away by the level of research you conducted and how well you incorporated our input into the process.",
             name: "~ Jodi Hirschfeld /",
             position: "Participation Advisor",
             company: "@The Hague Municipality",
