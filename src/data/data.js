@@ -84,15 +84,15 @@ const data = {
     ],
     testimonial: [
         {
-            text: "He can lead a project perfectly from A to Z, and his technical knowledge also helps him find a mutual language with developers.",
+            text: "He can lead a project perfectly from A to Z, and his technical knowledge helps him find a mutual language with developers.",
             name: "~Sanaz Amouzadeh /",
             position: "Senior Visual Designer",
             company: "@Studyportals",
             image: "var(--secondary-blue)"
         }, {
-            text: "We were truly blown away by the level of research you conducted and how well you always incorporated our input into the process.",
+            text: "We were blown away by the level of research you conducted and how well you incorporated our input into the process.",
             name: "~ Jodi Hirschfeld /",
-            position: "Participation Advisor CID",
+            position: "Participation Advisor",
             company: "@The Hague Municipality",
             image: "var(--secondary-orange)"
         }, {

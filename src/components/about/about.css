@@ -20,7 +20,9 @@
 }
 
 .about-section_fact-wrapper {
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 2rem;
     margin: 0 auto;
@@ -28,7 +30,23 @@
 
 .about-section_title-2 {
     text-align: center;
+    width: 70%;
+    margin: 0 auto;
     padding: 2rem;
+}
+
+.about-section_image-wrapper {
+    width: 35%;
+    height: 100%;
+    background-color: red;
+}
+
+.about-section_image {
+    width: 100%;
+    border-radius: 9px;
+    border: 2px solid var(--primary-black);
+    box-shadow: var(--shadow-small);
+
 }
 
 .about-section_me-text-wrapper {
@@ -65,13 +83,6 @@
     color: var(--secondary-blue);
 }
 
-.about-section_image {
-    width: 35%;
-    border-radius: 9px;
-    border: 2px solid var(--primary-black);
-    box-shadow: var(--shadow-small);
-
-}
 
 .about-section_list-wrapper {
     display: flex;
@@ -88,11 +99,11 @@
 .about-cube_wrapper {
     display: flex;
     gap: 2rem;
+    margin: 2rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 .about-graph_wrapper {
@@ -102,7 +113,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 @keyframes rotate {

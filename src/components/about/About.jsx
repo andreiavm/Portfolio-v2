@@ -38,7 +38,9 @@ const AboutSection = () => {
                         </div>
 
                     </div>
-                    <img className="about-section_image" src={data.about.mePic} alt={data.about.meAlt} />
+                    <div className="about-section_image-wrapper">
+                        <img className="about-section_image" src={data.about.mePic} alt={data.about.meAlt} />
+                        </div>
                 </div>
                 <section className="about-section_fact-wrapper">
                     <h1 className="about-section_title-2 text-header">{data.about.body}</h1>

@@ -7,8 +7,8 @@ function Testimonial({ name, text, company, position }) {
                 {text}
             </h3>
             <div className="testimonial-card_name-wrapper">
-                <div className="testimonial-image">
-                </div>
+                {/* <div className="testimonial-image">
+                </div> */}
                 <p className="testimonial-card_name text-body">
                     <span>{name}</span><span>{position}</span><span>{company}</span>
                 </p>

@@ -6,7 +6,7 @@
     padding: 1rem 1rem;
     border-radius: 9px;
     border: 2px solid var(--primary-black);
-    min-height: 350px;
+    height: 400px;
     width: 32%;
 }
 
