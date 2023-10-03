@@ -7,7 +7,7 @@ const TitleHeader = styled.h1`
     color: ${(props) => props.color};
 `;
 
-function ProjectCard({ name, role, image, title, color, isOpen, onClick, onNextClick }) {
+function ProjectCard({ name, role, image, title, color, isOpen, onClick }) {
     const handleKeyPress = (event) => {
         if (event.key === 'Enter') {
             onClick();

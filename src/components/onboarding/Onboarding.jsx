@@ -169,8 +169,6 @@ const Onboarding = () => {
                         </CaseTitle>
                         <p className="article-section_body text-body-large">
                             <span className="article-section_span">{data.onboarding.testingBody}</span>
-                            <span className="article-section_span">{data.onboarding.testingBody2}</span>
-
                         </p>
                         <h2 className="text-note-bold article-section_title">{data.article.prototypeHeader}</h2>
                     </div>

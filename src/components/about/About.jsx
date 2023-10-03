@@ -24,23 +24,16 @@ const AboutSection = () => {
             <section className="about-section">
                 <div className="about-section_me-wrapper">
                     <div className="about-section_me-text-wrapper">
-                        {/* <h2 className="text-header-large">{data.about.title2}</h2> */}
                         <h1 className="hello-section_title text-display">
                             <span className="hello-section_span-orange">{data.about.span}</span>
                             {data.about.body2}
                             <span className="hello-section_span-blue">{data.about.span2}</span>
                             {data.about.body3}
                         </h1>
-                        <div className="about-section_shape-container">
-                            {/* <svg className="about-section_shape" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M100 40L100.012 99.941L122.961 44.5672L100.033 99.9502L142.426 57.5736L100.05 99.9666L155.433 77.0389L100.059 99.9884L160 100L100.059 100.012L155.433 122.961L100.05 100.033L142.426 142.426L100.033 100.05L122.961 155.433L100.012 100.059L100 160L99.9884 100.059L77.0389 155.433L99.9666 100.05L57.5736 142.426L99.9502 100.033L44.5672 122.961L99.941 100.012L40 100L99.941 99.9884L44.5672 77.0389L99.9502 99.9666L57.5736 57.5736L99.9666 99.9502L77.0389 44.5672L99.9884 99.941L100 40Z" />
-                            </svg> */}
-                        </div>
-
                     </div>
                     <div className="about-section_image-wrapper">
                         <img className="about-section_image" src={data.about.mePic} alt={data.about.meAlt} />
-                        </div>
+                    </div>
                 </div>
                 <section className="about-section_fact-wrapper">
                     <h1 className="about-section_title-2 text-header">{data.about.body}</h1>
@@ -115,7 +108,23 @@ const AboutSection = () => {
                         skill8={data.aboutList[2].skill8}
                         skill9={data.aboutList[2].skill9} />
                 </div>
+                {/* <h1 className="about-section_title-2 text-header">{data.about.body}</h1> */}
+                <section className='about-section_fact-wrapper'>
+                    <h1 className="about-section_title-2 text-header">{data.about.body6}</h1>
+
+                    <div className="about-wave_wrapper">
+                        <div className="wave">
+                            <div className="element" style={{ "--i": "0" }}></div>
+                            <div className="element" style={{ "--i": "1" }}></div>
+                            <div className="element" style={{ "--i": "2" }}></div>
+                            <div className="element" style={{ "--i": "3" }}></div>
+                            <div className="element" style={{ "--i": "4" }}></div>
+                            <div className="element" style={{ "--i": "5" }}></div>
+                        </div>
+                    </div>
+                </section>
             </section >
+
         </div >
     );
 }
