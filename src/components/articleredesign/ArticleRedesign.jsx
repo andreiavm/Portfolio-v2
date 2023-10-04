@@ -4,6 +4,7 @@ import { data } from '../../data/data.js';
 import CaseTitle from '../casetitle/CaseTitle';
 import Vote from '../vote/Vote';
 
+
 function ArticleRedesign() {
     return (
         <motion.div
