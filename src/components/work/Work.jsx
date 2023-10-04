@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import './work.css';
-import ReactGA from 'react-ga';
 import { motion, AnimatePresence } from 'framer-motion';
 import { data } from '../../data/data.js';
 import FloatingButton from '../button/FloatingButton';
@@ -85,11 +84,6 @@ const WorkSection = () => {
                                 color={project.color}
                                 isOpen={index === openCardIndex}
                                 onClick={() => {
-                                    ReactGA.event({
-                                        category: 'Project Card',
-                                        action: 'Click',
-                                        label: project.name,
-                                    });
                                     setOpenCardIndex((prevIndex) =>
                                         prevIndex === index ? -1 : index
                                     );
