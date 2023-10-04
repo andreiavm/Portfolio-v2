@@ -2,6 +2,7 @@ import './onboarding.css';
 import { data } from '../../data/data.js';
 import { motion } from 'framer-motion';
 import CaseTitle from '../casetitle/CaseTitle';
+import Overview from '../overview/Overview';
 
 const Onboarding = () => {
     return (
@@ -14,6 +15,14 @@ const Onboarding = () => {
                 <div className="article-section_mock-wrapper">
                     <img className="article-section_mock-image"
                         src={data.onboarding.mockup}
+                        alt={data.onboarding.alt} />
+                </div>
+            </section >
+            <Overview paragraph1={data.overview.overviewOnboarding1} paragraph2={data.overview.overviewOnboarding2} duration={data.overview.durationOnboarding} />
+            <section className="casestudy-section">
+                <div className="article-section_mock-wrapper">
+                    <img className="article-section_mock-image"
+                        src={data.onboarding.mockup2}
                         alt={data.onboarding.alt} />
                 </div>
             </section >
@@ -33,13 +42,6 @@ const Onboarding = () => {
                     </div>
                 </div>
             </section>
-            <section className="casestudy-section">
-                <div className="article-section_mock-wrapper">
-                    <img className="article-section_mock-image"
-                        src={data.onboarding.mockup2}
-                        alt={data.onboarding.alt} />
-                </div>
-            </section >
             <section className="casestudy-section">
                 <div className="casestudy-section_wrapper">
                     <div className="article-section_title-wrapper">
@@ -81,7 +83,7 @@ const Onboarding = () => {
                         </CaseTitle>
                     </div>
                 </div>
-                    <img src={data.onboarding.ideationFlow} alt={data.onboarding.ideationFlowAlt} className="onboarding_flowchart-image" />
+                <img src={data.onboarding.ideationFlow} alt={data.onboarding.ideationFlowAlt} className="onboarding_flowchart-image" />
             </section>
             <section className="casestudy-section">
                 <div className="casestudy-section_wrapper">

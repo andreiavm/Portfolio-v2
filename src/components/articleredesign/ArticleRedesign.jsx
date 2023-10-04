@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { data } from '../../data/data.js';
 import CaseTitle from '../casetitle/CaseTitle';
 import Vote from '../vote/Vote';
+import Overview from '../overview/Overview';
 
 
 function ArticleRedesign() {
@@ -12,7 +13,7 @@ function ArticleRedesign() {
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             exit={{ opacity: 0, y: 0, rotate: 0 }}
             transition={{ duration: 0.25 }}>
-            <section className="casestudy-section article-sectionx">
+            <section className="casestudy-section article-section">
                 <div className="article-section_mock-wrapper">
                     <img className="article-section_mock-illustration"
                         src={data.article.illustration1}
@@ -21,6 +22,7 @@ function ArticleRedesign() {
                         src={data.article.mockup} alt={data.article.alt} />
                 </div>
             </section>
+            <Overview paragraph1={data.overview.overviewArticles1} paragraph2={data.overview.overviewArticles2} duration={data.overview.durationArticles} />
             <section className="casestudy-section article-section">
                 <div className="casestudy-section_wrapper">
                     <div className="article-section_title-wrapper">
