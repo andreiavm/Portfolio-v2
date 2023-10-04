@@ -24,8 +24,9 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
-      gtag("config", "G-26NMTG86QZ");
+      gtag("config", "G-26NMTG86QZ", {
+        cookie_flags: "max-age=7200;secure;samesite=none",
+      });
     </script>
   </body>
 </html>
