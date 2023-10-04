@@ -32,7 +32,7 @@ const AboutSection = () => {
                         </h1>
                     </div>
                     <div className="about-section_image-wrapper">
-                        <img className="about-section_image" src={data.about.mePic} alt={data.about.meAlt} />
+                        <img className="about-section_image" width="1339" height="1607" src={data.about.mePic} alt={data.about.meAlt} />
                     </div>
                 </div>
                 <section className="about-section_fact-wrapper">
