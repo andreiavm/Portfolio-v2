@@ -246,16 +246,15 @@ section {
 }
 
 /* Layout */
-@media screen and (min-width: 1500px) and (max-width: 1800px) {
+@media screen and (min-width: 1700px) and (max-width:2400px) {
   body {
-    width: 75%;
+    width: 65%;
   }
-
 }
 
-@media screen and (min-width: 1800px) and (max-width:3300px) {
+@media screen and (min-width: 2300px) and (max-width:3300px) {
   body {
-    width: 70%;
+    width: 50%;
   }
 
   .article-section_challenge-illustration {
@@ -266,7 +265,7 @@ section {
 
 @media screen and (min-width: 3300px) {
   body {
-    width: 60%;
+    width: 40%;
   }
 }
 
@@ -288,7 +287,7 @@ section {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   .hello-section {
     gap: 0.75rem;
   }
@@ -485,9 +484,9 @@ section {
     justify-content: card;
   }
 
-.testimonial-card_name-wrapper {
- justify-content: center; 
-}
+  .testimonial-card_name-wrapper {
+    justify-content: center;
+  }
 
   .content-container {
     margin: 0 auto;
