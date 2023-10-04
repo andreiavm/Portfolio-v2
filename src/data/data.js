@@ -178,7 +178,7 @@ const data = {
             skill5: "Miro",
             skill6: "Jira",
             skill7: "Hotjar / Maze",
-            skill8: "Webflow",
+            skill8: "HTML / CSS",
             skill9: "Javascript / React",
         },
         {
@@ -207,7 +207,7 @@ const data = {
         overviewArticles1: "Last year I had the fantastic opportunity of working at Studyportals as a UX Design Intern, and during this time, I tackled some great challenges.",
         overviewArticles2: "One was redesigning the article section of their website. Here, I performed research, created a new flow, and ideated features that optimized the site for better conversion.",
         overviewOnboarding1: "Another project I worked on during my internship at Studyportals that is important for me and that I find worth mentioning is the onboarding questionnaire.",
-        overviewOnboarding2: "This project was difficult, as it required balancing out many factors, such as usabilit issues, business goals, and technical constraints, but it was a valuable learning experience.",
+        overviewOnboarding2: "This project was difficult, as it required balancing out many factors, such as usability issues, business goals, and technical constraints, but it was a valuable learning experience.",
 
     },
     article: {
