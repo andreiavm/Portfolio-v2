@@ -254,7 +254,7 @@ section {
 
 @media screen and (min-width: 2300px) and (max-width:3300px) {
   body {
-    width: 50%;
+    width: 55%;
   }
 
   .article-section_challenge-illustration {
@@ -265,14 +265,11 @@ section {
 
 @media screen and (min-width: 3300px) {
   body {
-    width: 40%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .nav-span-mobile {
-    display: none;
-  }
 
   .nav-item-mobile {
     min-width: 5rem;
