@@ -270,7 +270,6 @@ section {
 }
 
 @media screen and (max-width: 450px) {
-
   .nav-item-mobile {
     min-width: 5rem;
     justify-content: center;
