@@ -175,7 +175,7 @@ const data = {
             skill2: "Sketch",
             skill3: "Adobe CC",
             skill4: "Generative AI",
-            skill5: "Miro",
+            skill5: "Miro / Figjam",
             skill6: "Jira",
             skill7: "Hotjar / Maze",
             skill8: "HTML / CSS",
