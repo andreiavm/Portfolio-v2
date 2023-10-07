@@ -7,6 +7,7 @@ import ProjectCard from '../project/ProjectCard';
 import ArticleRedesign from '../articleredesign/ArticleRedesign';
 import Onboarding from '../onboarding/Onboarding';
 import CidHub from '../cidhub/CidHub';
+import Beach from '../beach/Beach';
 import SectionDivider from '../divider/Divider';
 
 const WorkSection = () => {
@@ -42,7 +43,7 @@ const WorkSection = () => {
 
     const handleNextClick = () => {
         let nextIndex = openCardIndex + 1;
-        if (nextIndex > 2) {
+        if (nextIndex > 3) {
             nextIndex = 0;
         }
 
@@ -92,6 +93,7 @@ const WorkSection = () => {
                             {index === 0 && openCardIndex === 0 && <ArticleRedesign />}
                             {index === 1 && openCardIndex === 1 && <Onboarding />}
                             {index === 2 && openCardIndex === 2 && <CidHub />}
+                            {index === 3 && openCardIndex === 3 && <Beach />}
                         </div>
                     ))
                 }

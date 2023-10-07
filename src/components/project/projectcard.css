@@ -43,10 +43,6 @@
     box-shadow: var(--shadow-mid);
 }
 
-/* .project-card:hover>.project-card_text-container {
-    text-decoration: underline;
-} */
-
 .project-card_text-container {
     width: 65%;
     display: flex;

@@ -129,14 +129,14 @@ const data = {
             title: "Designing a Public Space for The Hague's Innovation District and it's Residents",
             color: "var(--tertiary-green)",
         },
-        // {
-        //     name: "AI Beach Clean-up",
-        //     role: "AI research",
-        //     image: "/rijkswaterstaat-logo.svg",
-        //     alt: "Studyportals Logo",
-        //     title: "Leveraging the power of AI and persuasion to keep Scheveningen's beaches clean",
-        //     color: "var(--secondary-orange)",
-        // },
+        {
+            name: "AI Beach Clean-up",
+            role: "AI research",
+            image: "/rijkswaterstaat-logo.svg",
+            alt: "Studyportals Logo",
+            title: "Leveraging the Power of AI to Keep Scheveningen Beach Clean",
+            color: "var(--secondary-blue)",
+        },
     ],
     about: {
         title: "In a nutshell 🧠",

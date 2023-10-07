@@ -188,7 +188,7 @@ body {
 
 /* Layout */
 body {
-  width: 90%;
+  width: 92%;
   margin: 0 auto;
   margin-top: 2rem;
 }
@@ -372,6 +372,7 @@ section {
     display: none
   }
 
+
   .hello-logo-wrapper {
     margin-bottom: 0.75rem;
     flex-direction: column;
@@ -481,6 +482,10 @@ section {
 
   .testimonial-card_name-wrapper {
     justify-content: center;
+  }
+
+  .project-card_image-container {
+    width: 50%;
   }
 
   .content-container {
