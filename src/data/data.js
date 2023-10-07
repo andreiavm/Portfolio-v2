@@ -130,7 +130,7 @@ const data = {
             color: "var(--tertiary-green)",
         },
         {
-            name: "AI Beach Clean-up",
+            name: "AI Beach Clean-Up",
             role: "AI research",
             image: "/rijkswaterstaat-logo.svg",
             alt: "Studyportals Logo",
