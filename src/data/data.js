@@ -149,7 +149,7 @@ const data = {
         body3: "with a touch of wisdom.",
         body4: "Experimentation as a means of innovation.",
         body5: "Embracing a multi-disciplinary approach to challenge design dogmas.",
-        body6: "Understanding the purpose and designing placeholder blah blah.",
+        body6: "Understanding the purpose and designing with the mind in mind.",
         mePic: "/me.webp",
         meAlt: "Picture of me",
     },
