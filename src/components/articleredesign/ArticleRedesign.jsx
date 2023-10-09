@@ -15,9 +15,9 @@ function ArticleRedesign() {
             transition={{ duration: 0.25 }}>
             <section className="casestudy-section article-section">
                 <div className="article-section_mock-wrapper">
-                    <img className="article-section_mock-illustration"
+                    {/* <img className="article-section_mock-illustration"
                         src={data.article.illustration1}
-                        alt={data.article.illustration1Alt} />
+                        alt={data.article.illustration1Alt} /> */}
                     <img className="article-section_mock-image"
                         src={data.article.mockup} alt={data.article.alt} />
                 </div>
@@ -34,9 +34,9 @@ function ArticleRedesign() {
                             <span className="article-section_span">{data.article.challengeBody}</span>
                             {/* <span className="article-section_span">{data.article.challengeBody2}</span> */}
                         </p>
-                        <img className="article-section_challenge-illustration"
+                        {/* <img className="article-section_challenge-illustration"
                             src={data.article.illustration2}
-                            alt={data.article.illustration2Alt} />
+                            alt={data.article.illustration2Alt} /> */}
                         <CaseTitle
                             title={data.article.discoveryTitle}
                             color={data.article.discoveryTitleColor}>
