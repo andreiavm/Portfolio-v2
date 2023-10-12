@@ -218,7 +218,7 @@ section {
 /* Media queries */
 
 /* Fonts */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .text-display-large {
     font-size: 4.5rem;
   }
