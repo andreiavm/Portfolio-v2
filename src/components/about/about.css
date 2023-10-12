@@ -19,6 +19,10 @@
     max-width: 35ch;
 }
 
+.hello-section_title {
+    margin-bottom: 1rem;
+}
+
 .about-section_fact-wrapper {
     width: 100%;
     display: flex;
