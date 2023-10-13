@@ -218,13 +218,13 @@ section {
 /* Media queries */
 
 /* Fonts */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
   .text-display-large {
     font-size: 4.5rem;
   }
 
   .text-display {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .text-header-large {
@@ -283,6 +283,12 @@ section {
   }
 }
 
+@media screen and (max-width:1350px) {
+  .hello-section_title {
+    max-width: 90%;
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .hello-section {
     gap: 0.75rem;
@@ -298,6 +304,7 @@ section {
     margin-top: 1rem;
     margin-left: 0;
   }
+
 
   .about-section_me-text-wrapper {
     width: 80%;

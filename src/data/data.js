@@ -194,7 +194,7 @@ const data = {
             skill6: "Technical Proficiency",
             skill7: "Agile Methodology",
             skill8: "Data Analysis",
-            skill9: "Product Innovation",
+            skill9: "A/B Testing",
         },
     ],
     overview: {
