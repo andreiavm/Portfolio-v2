@@ -122,6 +122,24 @@ const data = {
 
         },
         {
+            name: "Mobile Search Redesign",
+            role: "design",
+            image: "/sp-logo.svg",
+            alt: "Studyportals Logo",
+            title: "Improving the Usability of the Mobile Search Page with a New Design",
+            color: "var(--secondary-orange)",
+
+        },
+        {
+            name: "Microsites Template",
+            role: "design",
+            image: "/sp-logo.svg",
+            alt: "Studyportals Logo",
+            title: "Creating a Reusable WordPress Template for Universities Around the World",
+            color: "var(--secondary-blue)",
+
+        },
+        {
             name: "CID Hub Public Space",
             role: "service design",
             image: "/dh-logo.svg",
@@ -129,14 +147,14 @@ const data = {
             title: "Designing a Public Space for The Hague's Innovation District and it's Residents",
             color: "var(--tertiary-green)",
         },
-        // {
-        //     name: "AI Beach Clean-Up",
-        //     role: "AI research",
-        //     image: "/rijkswaterstaat-logo.svg",
-        //     alt: "Studyportals Logo",
-        //     title: "Leveraging the Power of AI to Keep Scheveningen Beach Clean",
-        //     color: "var(--secondary-blue)",
-        // },
+        {
+            name: "AI Beach Clean-Up",
+            role: "AI research",
+            image: "/rijkswaterstaat-logo.svg",
+            alt: "Studyportals Logo",
+            title: "Leveraging the Power of AI to Keep Scheveningen Beach Clean",
+            color: "var(--secondary-blue)",
+        },
     ],
     about: {
         title: "In a nutshell 🧠",
@@ -210,6 +228,9 @@ const data = {
         overviewArticles2: "One of these was redesigning the article section of their website. Here, I performed research, created a new flow, and ideated features that optimized the site for better conversion.",
         overviewOnboarding1: "Another project I worked on during my internship at Studyportals that is important for me and that I find worth mentioning is the onboarding questionnaire.",
         overviewOnboarding2: "This project was difficult, as it required balancing out many factors, such as usability issues, business goals, and technical constraints, but it was a valuable learning experience.",
+        overviewSearch1: "Through usability testing, we found users struggling with the mobile search page because of the oversized header consuming significant screen space. ",
+        overviewSearch2: "To address this, I created a user-friendly solution: a collapsible search bar that shrinks upon scrolling, enabling uninterrupted interaction with the search results.",
+        durationSearch: "1 week",
 
     },
     article: {
@@ -478,6 +499,28 @@ const data = {
         mockNotification: "/mock-notification-1.webp",
         mockNotification2: "/mock-notification-2.webp",
         mockNotification3: "/mock-notification-3.webp",
+    },
+
+    search: {
+        mockSearch: "/mock-search.webp",
+        mockAlt: "Mock-up of the Search Page",
+        challengeTitle: "Challenge",
+        challengeColor: "var(--secondary-blue)",
+        challengeBody: "The existing search bar and navigation occupy a substantial portion of the screen, limiting the display of search results to a maximum of two-thirds of the available space.",
+        challengeBody2: "Moreover, there's an issue with insufficient contrast for the filter button, making it invisible to some users.",
+        beforeMockTitle: "Before:",
+        beforeMockImage: "/mock-search-before.webp",
+        beforeMockAlt: "Search page before the redesign",
+        afterMockTitle: "After:",
+        afterMockImage: "/search-mock-after.webp",
+        afterMockImage2: "/search-mock-after-2.webp",
+        afterMockAnimation: "/search-mock-after-animation.mp4",
+        afterMockAlt: "Search page after the redesign",
+        designTitle: "Design",
+        designColor: "var(--secondary-orange)",
+        designBody: "After multiple iterations, I arrived at the final design. The search bar is now collapsible, and the filter button is more visible.",
+        conclusionBody: "This change was live on the website for a year, and made significant improvements to the usability metrics of the page.",
+        conclusionBody2: "However, due to new feature releases, the search page had to be completely reworked which led to the removal of this design after my internship ended.",
     },
 
     contactForm: {

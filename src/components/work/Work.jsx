@@ -9,6 +9,7 @@ import Onboarding from '../onboarding/Onboarding';
 import CidHub from '../cidhub/CidHub';
 import Beach from '../beach/Beach';
 import SectionDivider from '../divider/Divider';
+import Search from '../search/Search';
 
 const WorkSection = () => {
     const [openCardIndex, setOpenCardIndex] = useState(-1);
@@ -43,7 +44,7 @@ const WorkSection = () => {
 
     const handleNextClick = () => {
         let nextIndex = openCardIndex + 1;
-        if (nextIndex > 3) {
+        if (nextIndex > 5) {
             nextIndex = 0;
         }
 
@@ -92,8 +93,10 @@ const WorkSection = () => {
                             />
                             {index === 0 && openCardIndex === 0 && <ArticleRedesign />}
                             {index === 1 && openCardIndex === 1 && <Onboarding />}
-                            {index === 2 && openCardIndex === 2 && <CidHub />}
+                            {index === 2 && openCardIndex === 2 && <Search />}
                             {index === 3 && openCardIndex === 3 && <Beach />}
+                            {index === 4 && openCardIndex === 4 && <Beach />}
+                            {index === 5 && openCardIndex === 5 && <Beach />}
                         </div>
                     ))
                 }

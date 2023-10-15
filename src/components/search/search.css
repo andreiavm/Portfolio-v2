@@ -1,0 +1,10 @@
+.search-mock-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-mock-before {
+    width: 50%;
+    margin: 0 auto;
+}
