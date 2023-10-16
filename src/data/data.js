@@ -519,7 +519,7 @@ const data = {
         designTitle: "Design",
         designColor: "var(--secondary-orange)",
         designBody: "After multiple iterations, I arrived at the final design. The search bar is now collapsible, and the filter button is more visible.",
-        conclusionBody: "This change was live on the website for a year, and made significant improvements to the usability metrics of the page.",
+        conclusionBody: "This change was live on the website for a year, and made significant improvements to the usability of the page.",
         conclusionBody2: "However, due to new feature releases, the search page had to be completely reworked which led to the removal of this design after my internship ended.",
     },
 
