@@ -130,15 +130,15 @@ const data = {
             color: "var(--secondary-orange)",
 
         },
-        {
-            name: "Microsites Template",
-            role: "design",
-            image: "/sp-logo.svg",
-            alt: "Studyportals Logo",
-            title: "Creating a Reusable WordPress Template for Universities Around the World",
-            color: "var(--secondary-blue)",
+        // {
+        //     name: "Microsites Template",
+        //     role: "design",
+        //     image: "/sp-logo.svg",
+        //     alt: "Studyportals Logo",
+        //     title: "Creating a Reusable WordPress Template for Universities Around the World",
+        //     color: "var(--secondary-blue)",
 
-        },
+        // },
         {
             name: "CID Hub Public Space",
             role: "service design",

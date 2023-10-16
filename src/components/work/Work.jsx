@@ -44,7 +44,7 @@ const WorkSection = () => {
 
     const handleNextClick = () => {
         let nextIndex = openCardIndex + 1;
-        if (nextIndex > 5) {
+        if (nextIndex > 4) {
             nextIndex = 0;
         }
 
@@ -96,7 +96,7 @@ const WorkSection = () => {
                             {index === 2 && openCardIndex === 2 && <Search />}
                             {index === 3 && openCardIndex === 3 && <Beach />}
                             {index === 4 && openCardIndex === 4 && <Beach />}
-                            {index === 5 && openCardIndex === 5 && <Beach />}
+                            {/* {index === 5 && openCardIndex === 5 && <Beach />} */}
                         </div>
                     ))
                 }
