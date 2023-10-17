@@ -82,3 +82,8 @@
     margin-top: 1rem;
     color: var(--tertiary-red);
 }
+
+.error-email-span {
+    display: block;
+    color: var(--primary-black);
+}

@@ -81,8 +81,8 @@ export const ContactForm = () => {
                     className="contact-form_email-input button-primary"
                     type="submit"
                     value="Send Email" />
-                {isEmailSent && <p className="success-message text-header-small">Email sent successfully!</p>}
-                {error && <p className="error-message text-header-small">Error sending email. Please try again later.</p>}
+                {isEmailSent && <p className="success-message text-header-small"> Email sent successfully ! ✅  </p>}
+                {error && <p className="error-message text-header-small">Error sending email. <span className="error-email-span">Please contact me directly:</span> <span className="error-email-span"> hello@andreiavram.design.</span></p>}
             </form>
 
 
