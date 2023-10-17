@@ -60,19 +60,20 @@ button {
     color: var(--primary-black);
     align-items: center;
     border-radius: 9px;
-    box-shadow: none;
+    box-shadow: var(--shadow-small);
     font-size: 1.25rem;
     z-index: 1000;
     width: 6rem;
 }
 
 .floating-button:hover {
+    transform: translateY(-3px);
     text-decoration: underline;
+    box-shadow: var(--shadow-mid);
 }
 
 .floating-button:focus {
     outline: 1px solid var(--primary-orange);
-    box-shadow: none;
 }
 
 .floating-butoon:focus:not(:focus-visible) {
