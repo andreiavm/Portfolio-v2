@@ -32,7 +32,6 @@
                             <p className="article-section_body text-body-large">
                                 <span className="article-section_span">{data.about.body3}</span>
                                 <span className="article-section_span">{data.about.body7}</span>
-                                <span className="article-section_span">{data.about.body8}</span>
                                 </p>
                         </div>
                         <div className="about-section_image-wrapper">

@@ -220,11 +220,11 @@ section {
 /* Fonts */
 @media screen and (max-width: 1350px) {
   .text-display-large {
-    font-size: 4.5rem;
+    font-size: 4.5rem
   }
 
   .text-display {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .text-title {
@@ -469,6 +469,7 @@ section {
     gap: 1rem;
   }
 
+
   .about-section_image-wrapper {
     width: 100%;
     align-self: center;
@@ -588,7 +589,7 @@ section {
 }
 
 /* Navigation */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .navigation-mobile {
     display: none;
   }
