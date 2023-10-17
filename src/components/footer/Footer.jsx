@@ -14,7 +14,6 @@ function Footer() {
                     <a className="text-note" href="mailto:hello@andreiavram.design" target="_blank">Email</a>
                     <a className="text-note" href="https://github.com/andreiavm" target="_blank">GitHub</a>
                 </div>
-
             </footer>
         </div>
     )

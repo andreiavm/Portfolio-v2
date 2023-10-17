@@ -72,11 +72,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 1rem;
 }
 
 .about-section_testimonial-wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
     align-items: center;
 }
 
