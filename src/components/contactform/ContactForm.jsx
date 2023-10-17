@@ -2,47 +2,17 @@ import './contactform.css';
 import { useRef, useState, useEffect } from 'react';
 import { data } from '../../data/data.js';
 import emailjs from '@emailjs/browser';
-// import ReCAPTCHA from "react-google-recaptcha";
 
 export const ContactForm = () => {
-    // const [captchaSize, setCaptchaSize] = useState('normal');
-
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         if (window.innerWidth <= 400) {
-    //             setCaptchaSize('compact');
-    //         } else {
-    //             setCaptchaSize('normal');
-    //         }
-    //     };
-
-    //     handleResize();
-    //     window.addEventListener('resize', handleResize);
-
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-    // }, []);
+    const [isEmailSent, setIsEmailSent] = useState(false);
+    const [error, setError] = useState(null);
 
     const form = useRef();
     const [fromName, setFromName] = useState('');
     const [fromEmail, setFromEmail] = useState('');
     const [message, setMessage] = useState('');
-
-    // const [captchaValue, setCaptchaValue] = useState(null);
-
-    // const handleCaptchaChange = (value) => {
-    //     setCaptchaValue(value);
-    // }
-
     const sendEmail = (e) => {
         e.preventDefault();
-
-        // if (!captchaValue) {
-        //     const errorMessageElement = document.getElementById('captcha-error-message');
-        //     errorMessageElement.textContent = 'Please complete the CAPTCHA.';
-        //     return;
-        // }
 
         const templateParams = {
             from_name: fromName,
@@ -54,8 +24,16 @@ export const ContactForm = () => {
         emailjs.send('service_s4iuj9e', 'template_ejc37i4', templateParams, 'nUWnKKZS-K9klr_8r')
             .then((result) => {
                 console.log(result.text);
+                console.log(result.text);
+                setIsEmailSent(true);
+                setFromName('');
+                setFromEmail('');
+                setMessage('');
+
             }, (error) => {
                 console.log(error.text);
+                console.error(error.text);
+                setError(error);
             });
     };
 
@@ -99,18 +77,12 @@ export const ContactForm = () => {
                         onChange={(e) => setMessage(e.target.value)}
                     />
                 </label>
-                {/* <ReCAPTCHA
-                        badge="bottomleft"
-                        size={captchaSize}
-                        className="contact-form_captcha"
-                        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                        onChange={handleCaptchaChange}
-                    /> */}
-                <p id="captcha-error-message" className="contact-form_error-message"></p>
                 <input
                     className="contact-form_email-input button-primary"
                     type="submit"
                     value="Send Email" />
+                {isEmailSent && <p className="success-message text-header-small">Email sent successfully!</p>}
+                {error && <p className="error-message text-header-small">Error sending email. Please try again later.</p>}
             </form>
 
 

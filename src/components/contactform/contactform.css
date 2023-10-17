@@ -72,3 +72,13 @@
     border: none;
     box-shadow: none;
 }
+
+.success-message {
+    margin-top: 1rem;
+    color: var(--tertiary-green);
+}
+
+.error-message {
+    margin-top: 1rem;
+    color: var(--tertiary-red);
+}
