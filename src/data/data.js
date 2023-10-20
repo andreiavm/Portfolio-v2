@@ -130,15 +130,24 @@ const data = {
             color: "var(--secondary-orange)",
 
         },
-        // {
-        //     name: "Microsites Template",
-        //     role: "design",
-        //     image: "/sp-logo.svg",
-        //     alt: "Studyportals Logo",
-        //     title: "Creating a Reusable WordPress Template for Universities Around the World",
-        //     color: "var(--secondary-blue)",
+        {
+            name: "Microsites Template",
+            role: "design",
+            image: "/sp-logo.svg",
+            alt: "Studyportals Logo",
+            title: "Creating a Reusable WordPress Template for Universities Around the World",
+            color: "var(--secondary-blue)",
 
-        // },
+        },
+        {
+            name: "Dendi Studio",
+            role: "design & development",
+            image: "/logo-project.svg",
+            alt: "Personal branding",
+            title: "Building an E-commerce Website using NextJS, Sanity CMS, and Stripe",
+            color: "var(--secondary-orange)",
+
+        },
         {
             name: "CID Hub Public Space",
             role: "service design",

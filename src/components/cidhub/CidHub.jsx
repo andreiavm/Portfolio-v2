@@ -10,7 +10,7 @@ const CidHub = () => {
             exit={{ opacity: 0, y: 0, rotate: 0 }}
             transition={{ duration: 0.35 }}>
             <section className="casestudy-section">
-                <h2 className="text-header-large" style={{textAlign: "Center"}}>Coming Soon 🦺 </h2>
+                <h2 className="text-header-large" style={{ textAlign: "Center" }}>Coming Soon 🦺 </h2>
             </section>
         </motion.div>
     );
