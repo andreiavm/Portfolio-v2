@@ -581,7 +581,7 @@ const data = {
         mockAlt: "",
         challengeBody: "Scheveningen is the largest and most visited Dutch beach. Unfortunately, it is also the most polluted, with cigarette butts being the most common type of litter.",
         challengeBody2: "The challenge is to concentrate on visitors and how to motivate, persuade, and facilitate them to behave more cleanly, using AI as the main tool for research and ideation.",
-        discoveryTitleBody: "To start the research, I performed desk research on the topic of beach littering, which helped me understand the context better and see what solutions have already been applied in other parts of the world",
+        discoveryTitleBody: "To start the research, I performed desk research on the topic of beach littering, which helped me understand the context better and see what solutions have already been applied in other countries.",
         discoveryTitleBody2: "Next, I performed user interviews both with real beach visitors, but also with generative AI personas that were prompted to act as beach visitors.",
         discoveryTitleBody3: "This was done in order to check the reliability of generative AI in the context of user research. To analyze the data, we performed a comparative analysis and affinity mapping.",
         discoveryTitleBody4: "Interestingly enough, there was a lot of overlap between the AI responses and the real beach visitors. Additionally, we created a few more AI personas and ran a focus group with them.",
