@@ -28,7 +28,7 @@
   --tertiary-yellow: #FBDF00;
   --tertiary-red: #C51919;
   --tertiary-purple: #9610FE;
-  --tertiary-green: #189d1a;
+  --tertiary-green: `#16a119;
   --shadow-small: 2px 3px 0px 0px var(--primary-black);
   --shadow-mid: 2px 5px 0px 0px var(--primary-black);
   --shadow-large: 2px 7px 0px 0px var(--primary-black);

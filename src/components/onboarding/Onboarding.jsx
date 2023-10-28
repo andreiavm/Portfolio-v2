@@ -38,7 +38,6 @@ const Onboarding = () => {
                             <span className="article-section_span">{data.onboarding.challengeBody2}</span>
                             <span className="article-section_span">{data.onboarding.challengeBody3}</span>
                         </p>
-
                     </div>
                 </div>
             </section>
@@ -190,15 +189,10 @@ const Onboarding = () => {
                             title={data.onboarding.insightsTitle}
                             color={data.onboarding.insightsColor}>
                         </CaseTitle>
-                        <div className="article-section_insight-wrapper">
-                            <ul className="text-body-large article-section_insight">
-                                <li className="article-section_list">{data.onboarding.insight1}</li>
-                                <li className="article-section_list">{data.onboarding.insight2}</li>
-                                <li className="article-section_list">{data.onboarding.insight3}</li>
-                                <li className="article-section_list">{data.onboarding.insight4}</li>
-                            </ul>
-                        </div>
                     </div>
+                </div>
+                <div className="onboarding_insights-wrapper">
+                    <img src={data.onboarding.insightsImage} alt={data.onboarding.insightsAlt} className="onboarding_insights-image" />
                 </div>
             </section>
             <section className="casestudy-section">

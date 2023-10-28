@@ -97,6 +97,10 @@
 
 }
 
+.article-section_persona-image {
+    border: 1px solid var(--primary-black);
+}
+
 .article-section_search-explore {
     width: 100%;
 }
@@ -129,10 +133,6 @@
 
 }
 
-.article-section_usertesting-image {
-    width: 800px;
-}
-
 .article-section_image-wrapper {
     display: flex;
     flex-direction: column;
@@ -141,8 +141,8 @@
     margin: 1rem 0;
 }
 
-.article-section_tree-image {
-    margin: 1rem 0;
+.article-section_tree-image+.article-section_tree-image {
+    margin-top: 0.75rem;
 }
 
 .casestudy-section_prototype-wrapper {

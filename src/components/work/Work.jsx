@@ -1,15 +1,17 @@
-import { useState, useEffect, useRef } from 'react';
-import './work.css';
-import { motion, AnimatePresence } from 'framer-motion';
-import { data } from '../../data/data.js';
-import FloatingButton from '../button/FloatingButton';
-import ProjectCard from '../project/ProjectCard';
-import ArticleRedesign from '../articleredesign/ArticleRedesign';
-import Onboarding from '../onboarding/Onboarding';
-import CidHub from '../cidhub/CidHub';
-import Beach from '../beach/Beach';
-import SectionDivider from '../divider/Divider';
-import Search from '../search/Search';
+import { useState, useEffect, useRef } from 'react'
+import './work.css'
+import { motion, AnimatePresence } from 'framer-motion'
+import { data } from '../../data/data.js'
+import FloatingButton from '../button/FloatingButton'
+import ProjectCard from '../project/ProjectCard'
+import ArticleRedesign from '../articleredesign/ArticleRedesign'
+import Onboarding from '../onboarding/Onboarding'
+import CidHub from '../cidhub/CidHub'
+import Beach from '../beach/Beach'
+import SectionDivider from '../divider/Divider'
+import Search from '../search/Search'
+import Microsites from '../microsites/Microsites'
+import Dendi from '../dendi/Dendi'
 
 const WorkSection = () => {
     const [openCardIndex, setOpenCardIndex] = useState(-1);
@@ -82,7 +84,6 @@ const WorkSection = () => {
                                 role={project.role}
                                 image={project.image}
                                 title={project.title}
-                                duration={project.duration}
                                 color={project.color}
                                 isOpen={index === openCardIndex}
                                 onClick={() => {
@@ -94,9 +95,9 @@ const WorkSection = () => {
                             {index === 0 && openCardIndex === 0 && <ArticleRedesign />}
                             {index === 1 && openCardIndex === 1 && <Onboarding />}
                             {index === 2 && openCardIndex === 2 && <Search />}
-                            {index === 3 && openCardIndex === 3 && <Beach />}
-                            {index === 4 && openCardIndex === 4 && <Beach />}
-                            {index === 5 && openCardIndex === 5 && <Beach />}
+                            {index === 3 && openCardIndex === 3 && <Microsites />}
+                            {index === 4 && openCardIndex === 4 && <Dendi />}
+                            {index === 5 && openCardIndex === 5 && <CidHub />}
                             {index === 6 && openCardIndex === 6 && <Beach />}
                         </div>
                     ))

@@ -15,9 +15,6 @@ function ArticleRedesign() {
             transition={{ duration: 0.25 }}>
             <section className="casestudy-section article-section">
                 <div className="article-section_mock-wrapper">
-                    {/* <img className="article-section_mock-illustration"
-                        src={data.article.illustration1}
-                        alt={data.article.illustration1Alt} /> */}
                     <img className="article-section_mock-image"
                         src={data.article.mockup} alt={data.article.alt} />
                 </div>
@@ -32,11 +29,7 @@ function ArticleRedesign() {
                         </CaseTitle>
                         <p className="article-section_body text-body-large">
                             <span className="article-section_span">{data.article.challengeBody}</span>
-                            {/* <span className="article-section_span">{data.article.challengeBody2}</span> */}
                         </p>
-                        {/* <img className="article-section_challenge-illustration"
-                            src={data.article.illustration2}
-                            alt={data.article.illustration2Alt} /> */}
                         <CaseTitle
                             title={data.article.discoveryTitle}
                             color={data.article.discoveryTitleColor}>
@@ -73,17 +66,8 @@ function ArticleRedesign() {
                         title={data.article.insightTitle}
                         color={data.article.insightColor}>
                     </CaseTitle>
-                    <div className="article-section_insight-wrapper">
-                        <ul className="text-body-large article-section_insight">
-                            <li className="article-section_list">{data.article.insight1}</li>
-                            <li className="article-section_list">{data.article.insight2}</li>
-                            <li className="article-section_list">{data.article.insight3}</li>
-                            <li className="article-section_list">{data.article.insight4}</li>
-                            <li className="article-section_list">{data.article.insight5}</li>
-                            <li className="article-section_list">{data.article.insight6}</li>
-                        </ul>
-                    </div>
                 </div>
+                <img src={data.article.InsightsImage} alt={data.article.InsightsAlt} className="article-section_affinity-image" />
             </section>
             <section className="casestudy-section">
                 <div className="casestudy-section_wrapper">
@@ -119,26 +103,6 @@ function ArticleRedesign() {
                 </div>
                 <img className="article-section_ideation-image" src={data.article.ideationImage} alt={data.article.ideationAlt} />
             </section>
-            {/* <section className="casestudy-section">
-                <div className="casestudy-section_wrapper">
-                    <div className="article-section_title-wrapper">
-                        <CaseTitle
-                            title={data.article.requiermentsTitle}
-                            color={data.article.requiermentsColor}>
-                        </CaseTitle>
-                    </div>
-                    <div className="article-section_insight-wrapper">
-                        <ul className="text-body-large article-section_insight">
-                            <li className="article-section_list">{data.article.requierments1}</li>
-                            <li className="article-section_list">{data.article.requierments2}</li>
-                            <li className="article-section_list">{data.article.requierments3}</li>
-                            <li className="article-section_list">{data.article.requierments4}</li>
-                            <li className="article-section_list">{data.article.requierments5}</li>
-                            <li className="article-section_list">{data.article.requierments6}</li>
-                        </ul>
-                    </div>
-                </div>
-            </section > */}
             <section className="casestudy-section">
                 <div className="casestudy-section_wrapper">
                     <div className="article-section_title-wrapper">
@@ -178,7 +142,6 @@ function ArticleRedesign() {
                         <p className="text-body-large">
                             <span className="article-section_span">{data.article.firstIterationBody1}</span>
                             <span className="article-section_span">{data.article.firstIterationBody2}</span>
-                            <span className="article-section_span">{data.article.firstIterationBody3}</span>
                         </p>
                         <img src={data.article.firstIterationDesktopMock1} alt={data.article.firstIterationDesktopAlt} className="article-section_desktop-mock" />
                         <div className="article-section_title-wrapper">
