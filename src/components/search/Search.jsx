@@ -53,7 +53,7 @@ const Beach = () => {
                     </div>
                     <div className="search-mock-wrapper">
                         <h2 className="text-note-bold article-section_title">{data.search.afterMockTitle}</h2>
-                        <video className="search-mock-before" autoPlay loop muted controls={false}>
+                        <video className="search-mock-before" autoPlay loop muted playsInline controls={false}>
                             <source src={data.search.afterMockAnimation} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>

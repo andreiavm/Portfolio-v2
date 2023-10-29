@@ -13,12 +13,12 @@ function App() {
     <>
       <Nav />
       <NavMobile />
-        <HelloSection />
-        <AboutSection />
-        <WorkSection />
-        <ContactSection />
-        {/* <PlaySection /> */}
-        <Footer />
+      <HelloSection />
+      <AboutSection />
+      <WorkSection />
+      <ContactSection />
+      {/* <PlaySection /> */}
+      <Footer />
     </>
   )
 }
