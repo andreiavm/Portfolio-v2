@@ -7,11 +7,10 @@ import ProjectCard from '../project/ProjectCard'
 import ArticleRedesign from '../articleredesign/ArticleRedesign'
 import Onboarding from '../onboarding/Onboarding'
 import CidHub from '../cidhub/CidHub'
-import Beach from '../beach/Beach'
 import SectionDivider from '../divider/Divider'
 import Search from '../search/Search'
 import Microsites from '../microsites/Microsites'
-import Dendi from '../dendi/Dendi'
+
 
 const WorkSection = () => {
     const [openCardIndex, setOpenCardIndex] = useState(-1);
@@ -46,7 +45,7 @@ const WorkSection = () => {
 
     const handleNextClick = () => {
         let nextIndex = openCardIndex + 1;
-        if (nextIndex > 6) {
+        if (nextIndex > 4) {
             nextIndex = 0;
         }
 
@@ -96,9 +95,7 @@ const WorkSection = () => {
                             {index === 1 && openCardIndex === 1 && <Onboarding />}
                             {index === 2 && openCardIndex === 2 && <Search />}
                             {index === 3 && openCardIndex === 3 && <Microsites />}
-                            {index === 4 && openCardIndex === 4 && <Dendi />}
-                            {index === 5 && openCardIndex === 5 && <CidHub />}
-                            {index === 6 && openCardIndex === 6 && <Beach />}
+                            {index === 4 && openCardIndex === 4 && <CidHub />}
                         </div>
                     ))
                 }

@@ -9,6 +9,7 @@ import PlaySection from './components/play/Play';
 import Footer from './components/footer/Footer';
 
 function App() {
+
   return (
     <>
       <Nav />
@@ -16,8 +17,8 @@ function App() {
       <HelloSection />
       <AboutSection />
       <WorkSection />
+      <PlaySection />
       <ContactSection />
-      {/* <PlaySection /> */}
       <Footer />
     </>
   )

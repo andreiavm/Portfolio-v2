@@ -6,7 +6,7 @@ import SectionDivider from '../divider/Divider';
 const ContactSection = () => {
     return (
         <div className="content-container" id="contact">
-            <SectionDivider text={data.divider[2].text} number={data.divider[2].number} color={data.divider[2].color} slug={data.divider[2].slug} />
+            <SectionDivider text={data.divider[3].text} number={data.divider[3].number} color={data.divider[3].color} slug={data.divider[3].slug} />
             <section className="contact-section">
                 <ContactForm />
             </section >

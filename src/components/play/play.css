@@ -7,3 +7,20 @@
     align-items: center;
     justify-content: center;
 }
+
+.torus {
+    /* background-color: var(--secondary-blue); */
+    position: relative;
+    border: 2px solid var(--primary-black);
+    border-radius: 9px;
+    height: 40rem;
+    margin: 1rem 0;
+}
+
+.torus-text {
+    color: var(--primary-black);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

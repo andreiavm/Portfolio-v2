@@ -1,13 +1,5 @@
 const data = {
     navigation: [
-        // {
-        //     src: "3d-illustration.webp",
-        //     title: "hello",
-        //     slug: "hello",
-        //     color: "var(--primary-black)",
-        //     background: "var(--primary-white)",
-        //     number: 0,
-        // },
         {
             title: "About",
             slug: "about",
@@ -23,19 +15,20 @@ const data = {
             number: 2,
         },
         {
-            title: "Contact",
-            slug: "contact",
-            color: "var(--primary-black)",
+            title: "Play",
+            slug: "play",
+            color: "var(--primary-red)",
             background: "var(--tertiary-yellow)",
             number: 3,
         },
-        // {
-        //     title: "Play",
-        //     slug: "play",
-        //     color: "var(--primary-white)",
-        //     background: "var(--tertiary-purple)",
-        //     number: 4,
-        // }
+        {
+            title: "Contact",
+            slug: "contact",
+            color: "var(--primary-white)",
+            background: "var(--tertiary-red)",
+            number: 4,
+        },
+
     ],
     helloSection: {
         hello: {
@@ -70,17 +63,17 @@ const data = {
             color: "var(--secondary-blue)",
         },
         {
-            text: "Contact",
-            slug: "contact",
+            text: "Play",
+            slug: "play",
             number: "03",
             color: "var(--tertiary-yellow)",
         },
         {
-            text: "Play",
-            slug: "play",
+            text: "Contact",
+            slug: "contact",
             number: "04",
             color: "var(--tertiary-red)",
-        }
+        },
     ],
     testimonial: [
         {
@@ -140,15 +133,6 @@ const data = {
 
         },
         {
-            name: "Dendi Studio",
-            role: "design & development",
-            image: "/logo-project.svg",
-            alt: "Personal branding",
-            title: "Building an E-commerce Website using NextJS, Sanity CMS, and Stripe",
-            color: "var(--secondary-orange)",
-
-        },
-        {
             name: "CID Hub Public Space",
             role: "service design",
             image: "/dh-logo.svg",
@@ -156,15 +140,34 @@ const data = {
             title: "Designing a Public Space for The Hague's Innovation District and it's Residents",
             color: "var(--tertiary-green)",
         },
+    ],
+
+    play: [
+        {
+            name: "Dendi Studio Webstore",
+            role: "design & development",
+            image: "/logo-project.svg",
+            alt: "Personal project",
+            title: "Building an E-commerce Website using NextJS, Sanity CMS, and Stripe",
+            color: "var(--secondary-orange)",
+        }, {
+            name: "Dream Market Landing Page",
+            role: "design & development",
+            image: "/logo-project.svg",
+            alt: "Personal project",
+            title: "Exploring the Commodification of Self Through a Speculative Design Project",
+            color: "var(--secondary-blue)",
+        },
         {
             name: "AI Beach Clean-Up",
             role: "AI research",
             image: "/rijkswaterstaat-logo.svg",
             alt: "Studyportals Logo",
             title: "Leveraging the Power of AI to Keep Scheveningen Beach Clean",
-            color: "var(--secondary-blue)",
+            color: "var(--secondary-orange)",
         },
     ],
+
     about: {
         title: "In a nutshell 🧠",
         title2: "Approach 🚀",
@@ -175,7 +178,6 @@ const data = {
         span2: "pragmatism.",
         body3: "From concept to execution, nothing is lost in translation. I am a designer who can code, and a developer who can design.",
         body7: "My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
-        // body8: "I love to learn from both the users and the team, and use that as a catalyst for product innovation and personal growth.",
         body4: "Experimentation as a means of innovation.",
         body5: "Embracing a multi-disciplinary approach to challenge design dogmas.",
         body6: "Applying a methodical approach to problem-solving.",

@@ -26,7 +26,7 @@
   --secondary-orange: #DA5116;
   --secondary-blue: #112FA7;
   --tertiary-yellow: #FBDF00;
-  --tertiary-red: #C51919;
+  --tertiary-red: #B82B2A;
   --tertiary-purple: #9610FE;
   --tertiary-green: #16a119;
   --shadow-small: 2px 3px 0px 0px var(--primary-black);
@@ -346,9 +346,10 @@ section {
 }
 
 @media screen and (max-width: 1100px) {
-    .text-header-large {
-        font-size: 2rem;
-      }
+  .text-header-large {
+    font-size: 2rem;
+  }
+
   .logo-tags {
     font-size: 1.25rem;
   }
@@ -467,6 +468,10 @@ section {
     width: 100%;
   }
 
+  .torus {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -487,6 +492,10 @@ section {
   }
 
   .navigation {
+    display: none;
+  }
+
+  .hello-button-wrapper {
     display: none;
   }
 
