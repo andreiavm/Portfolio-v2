@@ -1,37 +1,43 @@
 import React, { Suspense, useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Preload, TorusKnot, OrbitControls } from '@react-three/drei';
+import { Preload, Tetrahedron, OrbitControls, TorusKnot } from '@react-three/drei';
 import * as THREE from 'three';
 import displacementMapImage from './displacement-map.webp';
+import Statue from './Statue.jsx';
 
 const ThreeCanvas = () => {
-
-
     const torusRef = useRef();
+    const statueRef = useRef();
+
     const [displacementMap, setDisplacementMap] = useState(null);
     const [displacementOffset, setDisplacementOffset] = useState({ x: 0, y: 0 });
+    const [displacementBias, setDisplacementBias] = useState(10);
+    // const [displacementScale, setDisplacementScale] = useState(10);
 
     useFrame((state) => {
         const time = state.clock.getElapsedTime();
 
         if (torusRef.current) {
-            torusRef.current.rotation.y += 0.005;
-            // torusRef.current.rotation.x += 0.0025;
-            // torusRef.current.rotation.z += 0.0025;
+            torusRef.current.rotation.y += 0.001;
+            // torusRef.current.rotation.x += 0.001;
+            // torusRef.current.rotation.z += 0.001;
 
-            const smoothOffsetX = Math.sin(time * 0.001);
+            const smoothOffsetX = Math.sin(time * 0.002);
             const smoothOffsetY = Math.sin(time * 0.001);
+
+            const newDisplacementBias = 1 + Math.sin(time * 0.25) * 0.5;
+            const newDisplacementScale = -5 + Math.sin(time * 0.25) * 5;
+
+            setDisplacementBias(newDisplacementBias);
+            // setDisplacementScale(newDisplacementScale);
 
             setDisplacementOffset({
                 x: smoothOffsetX,
                 y: smoothOffsetY,
             });
-
-            const scale = 1 + Math.sin(time *0.25) * 0.1;
-            torusRef.current.scale.set(scale, scale, scale);
         }
-    });
 
+    });
     useEffect(() => {
         const loadDisplacementMap = async () => {
             const texture = await new THREE.TextureLoader().loadAsync(displacementMapImage);
@@ -39,34 +45,51 @@ const ThreeCanvas = () => {
             texture.wrapT = THREE.RepeatWrapping;
             setDisplacementMap(texture);
         };
-
-
-
         loadDisplacementMap();
     }, []);
 
 
     return (
         <>
-            <ambientLight intensity={2.3} color={0xffffff} />
+            <ambientLight intensity={2} color={0xffffff} />
+            <directionalLight castShadow position={[50, 100, 300]} intensity={0.9} />
             {displacementMap && (
                 <>
+                    {/* <Tetrahedron
+                        ref={torusRef}
+                        args={[40, 500, 100, 50]}
+                        position={[0, 0, 0]}
+                    >
+                        <meshStandardMaterial
+                            wireframe={false}
+                            color={0x112FA7}
+                            displacementMap={displacementMap}
+                            displacementScale={100}
+                            displacementBias={displacementBias}
+                            transparent
+                            opacity={1}
+                            displacementMap-offset={new THREE.Vector2(displacementOffset.x, displacementOffset.y)}
+                        />
+                    </Tetrahedron> */}
                     <TorusKnot
                         ref={torusRef}
-                        args={[25,2, 500, 20]}
+                        args={[20, 0.1, 500, 50]}
                         position={[0, 0, 0]}
+                        scale={[0.7, 0.7, 0.7]}
                     >
                         <meshStandardMaterial
                             wireframe={true}
                             color={0xDA5116}
                             displacementMap={displacementMap}
                             displacementScale={5}
-                            displacementBias={0}
+                            displacementBias={displacementBias}
                             transparent
-                            opacity={0.6}
+                            opacity={1}
                             displacementMap-offset={new THREE.Vector2(displacementOffset.x, displacementOffset.y)}
                         />
                     </TorusKnot>
+                    {/* <Statue scale={4} useRef={statueRef} position={[5, -21, 5.5]} rotation={[0, 0, 0]} /> */}
+
                 </>
             )}
         </>
@@ -78,14 +101,16 @@ const TorusCanvas = () => {
         <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [0, 0, 110], fov: 60 }}
-            gl={{ preserveDrawingBuffer: true }}
+            camera={{ position: [10, 5, 70], fov: 30 }}
+            gl={{
+                preserveDrawingBuffer: true,
+                pointerEvents: "none"
+            }}
         >
             <Suspense fallback={null}>
                 <ThreeCanvas />
             </Suspense>
             <Preload all />
-            <OrbitControls enableZoom={true} />
         </Canvas>
     );
 };

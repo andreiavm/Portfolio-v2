@@ -62,7 +62,7 @@ button {
     border-radius: 9px;
     box-shadow: var(--shadow-small);
     font-size: 1.25rem;
-    z-index: 1000;
+    z-index: 1000000000;
     width: 6rem;
 }
 

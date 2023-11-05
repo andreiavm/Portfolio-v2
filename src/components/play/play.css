@@ -1,26 +1,38 @@
-.play-section {
-    display: flex;
-    flex-direction: column;
-    padding: 4rem 10rem;
-    gap: 5rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
 .torus {
-    /* background-color: var(--secondary-blue); */
     position: relative;
     border: 2px solid var(--primary-black);
     border-radius: 9px;
     height: 40rem;
     margin: 1rem 0;
+    z-index: -100;
 }
 
-.torus-text {
+.torus canvas {
+    z-index: -100;
+}
+
+.torus-text-2 {
+    color: var(--primary-black);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-25%, -75%);
+    z-index:-10000;
+}
+
+.torus-text-3 {
     color: var(--primary-black);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+}
+
+.torus-text-1 {
+    color: var(--primary-black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 55%);
 }
