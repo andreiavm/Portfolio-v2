@@ -17,11 +17,11 @@ const ThreeCanvas = () => {
         const time = state.clock.getElapsedTime();
 
         if (torusRef.current) {
-            torusRef.current.rotation.y += 0.0015;
+            torusRef.current.rotation.y += 0.001;
             // torusRef.current.rotation.x += 0.001;
             // torusRef.current.rotation.z += 0.001;
 
-            const smoothOffsetX = Math.sin(time * 0.002);
+            const smoothOffsetX = Math.sin(time * 0.001);
             const smoothOffsetY = Math.sin(time * 0.001);
 
             const newDisplacementBias = 1 + Math.sin(time * 0.25) * 0.5;
@@ -98,7 +98,7 @@ const TorusCanvas = () => {
         <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [10, 5, 95], fov: 30 }}
+            camera={{ position: [10, 5, 100], fov: 30 }}
             gl={{
                 preserveDrawingBuffer: true,
                 pointerEvents: "none"

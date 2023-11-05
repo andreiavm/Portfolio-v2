@@ -7,10 +7,6 @@
     z-index: -100;
 }
 
-.torus canvas {
-    z-index: -100;
-}
-
 .torus-text-2 {
     color: var(--primary-black);
     position: absolute;
