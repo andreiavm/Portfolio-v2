@@ -15,7 +15,9 @@ const ThreeCanvas = () => {
         const time = state.clock.getElapsedTime();
 
         if (torusRef.current) {
-            torusRef.current.rotation.y += 0.001;
+            torusRef.current.rotation.y += 0.005;
+            // torusRef.current.rotation.x += 0.0025;
+            // torusRef.current.rotation.z += 0.0025;
 
             const smoothOffsetX = Math.sin(time * 0.001);
             const smoothOffsetY = Math.sin(time * 0.001);
@@ -25,7 +27,7 @@ const ThreeCanvas = () => {
                 y: smoothOffsetY,
             });
 
-            const scale = 1 + Math.sin(time * 0.2) * 0.5;
+            const scale = 1 + Math.sin(time *0.25) * 0.1;
             torusRef.current.scale.set(scale, scale, scale);
         }
     });
@@ -51,7 +53,7 @@ const ThreeCanvas = () => {
                 <>
                     <TorusKnot
                         ref={torusRef}
-                        args={[25,2, 500, 50]}
+                        args={[25,2, 500, 20]}
                         position={[0, 0, 0]}
                     >
                         <meshStandardMaterial
@@ -76,14 +78,14 @@ const TorusCanvas = () => {
         <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [0, 0, 40], fov: 50 }}
+            camera={{ position: [0, 0, 110], fov: 60 }}
             gl={{ preserveDrawingBuffer: true }}
         >
             <Suspense fallback={null}>
                 <ThreeCanvas />
             </Suspense>
             <Preload all />
-            <OrbitControls enableZoom={false} />
+            <OrbitControls enableZoom={true} />
         </Canvas>
     );
 };
