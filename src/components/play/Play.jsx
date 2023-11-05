@@ -64,8 +64,8 @@ const PlaySection = () => {
         <div className="content-container" id="play">
             <SectionDivider text={data.divider[2].text} number={data.divider[2].number} color={data.divider[2].color} slug={data.divider[2].slug} />
             <div className="torus">
-                <h2 className="text-header torus-text"></h2>
                 <TorusCanvas />
+                <h2 className="torus-text">text</h2>
             </div>
             <section
                 className="work-section"
