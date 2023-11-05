@@ -24,6 +24,9 @@ const ThreeCanvas = () => {
                 x: smoothOffsetX,
                 y: smoothOffsetY,
             });
+
+            const scale = 1 + Math.sin(time * 0.2) * 0.5;
+            torusRef.current.scale.set(scale, scale, scale);
         }
     });
 
@@ -34,6 +37,8 @@ const ThreeCanvas = () => {
             texture.wrapT = THREE.RepeatWrapping;
             setDisplacementMap(texture);
         };
+
+
 
         loadDisplacementMap();
     }, []);
@@ -46,14 +51,14 @@ const ThreeCanvas = () => {
                 <>
                     <TorusKnot
                         ref={torusRef}
-                        args={[10, 1.5, 100, 50]}
+                        args={[25,2, 500, 50]}
                         position={[0, 0, 0]}
                     >
                         <meshStandardMaterial
                             wireframe={true}
                             color={0xDA5116}
                             displacementMap={displacementMap}
-                            displacementScale={2.5}
+                            displacementScale={5}
                             displacementBias={0}
                             transparent
                             opacity={0.6}
@@ -71,14 +76,14 @@ const TorusCanvas = () => {
         <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [0, 0, 30], fov: 30 }}
+            camera={{ position: [0, 0, 40], fov: 50 }}
             gl={{ preserveDrawingBuffer: true }}
         >
             <Suspense fallback={null}>
                 <ThreeCanvas />
             </Suspense>
             <Preload all />
-            <OrbitControls enableZoom={true} />
+            <OrbitControls enableZoom={false} />
         </Canvas>
     );
 };

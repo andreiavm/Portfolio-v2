@@ -71,7 +71,6 @@ const WorkSection = () => {
             <SectionDivider text={data.divider[1].text} number={data.divider[1].number} color={data.divider[1].color} slug={data.divider[1].slug} />
             <section
                 className="work-section"
-
                 ref={workSectionRef} >
                 {
                     data.project.map((project, index) => (
