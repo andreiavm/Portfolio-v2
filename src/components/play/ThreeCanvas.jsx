@@ -1,9 +1,8 @@
 import React, { Suspense, useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Preload, Tetrahedron, OrbitControls, TorusKnot } from '@react-three/drei';
+import { Preload, TorusKnot } from '@react-three/drei';
 import * as THREE from 'three';
 import displacementMapImage from './displacement-map.webp';
-import Statue from './Statue.jsx';
 
 const ThreeCanvas = () => {
     const torusRef = useRef();
@@ -18,7 +17,7 @@ const ThreeCanvas = () => {
         const time = state.clock.getElapsedTime();
 
         if (torusRef.current) {
-            torusRef.current.rotation.y += 0.001;
+            torusRef.current.rotation.y += 0.0015;
             // torusRef.current.rotation.x += 0.001;
             // torusRef.current.rotation.z += 0.001;
 
@@ -26,7 +25,7 @@ const ThreeCanvas = () => {
             const smoothOffsetY = Math.sin(time * 0.001);
 
             const newDisplacementBias = 1 + Math.sin(time * 0.25) * 0.5;
-            const newDisplacementScale = -5 + Math.sin(time * 0.25) * 5;
+            // const newDisplacementScale = -5 + Math.sin(time * 0.25) * 5;
 
             setDisplacementBias(newDisplacementBias);
             // setDisplacementScale(newDisplacementScale);
@@ -73,7 +72,7 @@ const ThreeCanvas = () => {
                     </Tetrahedron> */}
                     <TorusKnot
                         ref={torusRef}
-                        args={[20, 0.1, 500, 50]}
+                        args={[20, 0.01, 500, 50]}
                         position={[0, 0, 0]}
                         scale={[0.7, 0.7, 0.7]}
                     >
@@ -88,8 +87,6 @@ const ThreeCanvas = () => {
                             displacementMap-offset={new THREE.Vector2(displacementOffset.x, displacementOffset.y)}
                         />
                     </TorusKnot>
-                    {/* <Statue scale={4} useRef={statueRef} position={[5, -21, 5.5]} rotation={[0, 0, 0]} /> */}
-
                 </>
             )}
         </>
@@ -101,7 +98,7 @@ const TorusCanvas = () => {
         <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [10, 5, 70], fov: 30 }}
+            camera={{ position: [10, 5, 95], fov: 30 }}
             gl={{
                 preserveDrawingBuffer: true,
                 pointerEvents: "none"
