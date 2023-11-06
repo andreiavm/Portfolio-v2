@@ -98,7 +98,7 @@ const TorusCanvas = () => {
         <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [10, 5``, 50], fov: 30 }}
+            camera={{ position: [10, 5, 50], fov: 30 }}
             gl={{
                 preserveDrawingBuffer: true,
                 pointerEvents: "none"
