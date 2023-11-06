@@ -4,6 +4,16 @@ import { data } from '../../data/data.js';
 
 
 const NavMobile = () => {
+
+    const scrollToComponent = (id) => {
+        // console.log(id)
+        const element = document.getElementById(id);
+        // console.log(element);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <nav className="navigation-mobile">
             {data.navigation.map((item, index) => (
