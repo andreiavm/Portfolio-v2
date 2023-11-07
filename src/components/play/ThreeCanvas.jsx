@@ -17,7 +17,7 @@ const ThreeCanvas = () => {
         const time = state.clock.getElapsedTime();
 
         if (torusRef.current) {
-            torusRef.current.rotation.y += 0.001;
+            torusRef.current.rotation.y += 0.0005;
             // torusRef.current.rotation.x += 0.001;
             // torusRef.current.rotation.z += 0.001;
 
@@ -72,7 +72,7 @@ const ThreeCanvas = () => {
                     </Tetrahedron> */}
                     <TorusKnot
                         ref={torusRef}
-                        args={[20, 0.01, 500, 50]}
+                        args={[20, 0.01, 300, 50]}
                         position={[0, 0, 0]}
                         scale={[0.7, 0.7, 0.7]}
                     >
