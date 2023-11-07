@@ -251,25 +251,31 @@ section {
 
 /* Layout */
 
-@media screen and (min-width: 1700px) and (max-width:1800px) {
+@media screen and (min-width:1650px) and (max-width:1700px) {
   body {
-    width: 75%;
+    width: 80%;
   }
 }
 
-@media screen and (min-width: 1800px) and (max-width:2300px) {
+/* @media screen and (min-width: 1700px) and (max-width:1800px) {
+  body {
+    width: 75%;
+  }
+} */
+
+@media screen and (min-width: 1700px) and (max-width:2300px) {
   body {
     width: 70%;
   }
 }
 
-@media screen and (min-width: 1950px) and (max-width:2300px) {
+@media screen and (min-width: 1950px) and (max-width:2400px) {
   body {
     width: 65%;
   }
 }
 
-@media screen and (min-width: 2300px) and (max-width:3300px) {
+@media screen and (min-width: 2400px) and (max-width:3300px) {
   body {
     width: 55%;
   }
@@ -482,7 +488,7 @@ section {
   }
 
   .torus {
-    display: none;
+    height: 20rem;
   }
 
 }
