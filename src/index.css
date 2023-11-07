@@ -252,7 +252,13 @@ section {
 /* Layout */
 @media screen and (min-width: 1800px) and (max-width:2400px) {
   body {
-    width: 65%;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1700px) and (max-width:1800px) {
+  body {
+    width: 80%;
   }
 }
 
