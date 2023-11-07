@@ -250,7 +250,7 @@ section {
 }
 
 /* Layout */
-@media screen and (min-width: 1700px) and (max-width:2400px) {
+@media screen and (min-width: 1800px) and (max-width:2400px) {
   body {
     width: 65%;
   }
@@ -258,7 +258,7 @@ section {
 
 @media screen and (min-width: 2300px) and (max-width:3300px) {
   body {
-    width: 60%;
+    width: 55%;
   }
 }
 
