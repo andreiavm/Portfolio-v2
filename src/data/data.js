@@ -141,7 +141,7 @@ const data = {
             color: "var(--tertiary-green)",
         },
         {
-            name: "Sparky: Smart Meter and App",
+            name: "Smart Energy Meter App",
             role: "ideation & design",
             image: "/delft-logo.svg",
             alt: "Delft Municipality Logo",
@@ -163,7 +163,7 @@ const data = {
             role: "design & development",
             image: "/logo-project.svg",
             alt: "Personal project",
-            title: "Exploring the Commodification of Self Through a Speculative Design Project",
+            title: "Exploring the Commodification of Self using Speculative Design",
             color: "var(--secondary-blue)",
         },
         {
