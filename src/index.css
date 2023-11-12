@@ -257,12 +257,6 @@ section {
   }
 }
 
-/* @media screen and (min-width: 1700px) and (max-width:1800px) {
-  body {
-    width: 75%;
-  }
-} */
-
 @media screen and (min-width: 1700px) and (max-width:2300px) {
   body {
     width: 70%;
@@ -593,7 +587,6 @@ section {
   }
 
   .upvote {
-    /* flex-direction: column; */
     margin: 0 auto;
     gap: 0;
   }

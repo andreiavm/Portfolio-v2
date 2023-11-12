@@ -9,7 +9,7 @@ import Onboarding from '../onboarding/Onboarding'
 import CidHub from '../cidhub/CidHub'
 import SectionDivider from '../divider/Divider'
 import Search from '../search/Search'
-import Microsites from '../microsites/Microsites'
+import Sparky from '../sparky/Sparky.jsx'
 
 
 const WorkSection = () => {
@@ -93,8 +93,8 @@ const WorkSection = () => {
                             {index === 0 && openCardIndex === 0 && <ArticleRedesign />}
                             {index === 1 && openCardIndex === 1 && <Onboarding />}
                             {index === 2 && openCardIndex === 2 && <Search />}
-                            {index === 3 && openCardIndex === 3 && <Microsites />}
-                            {index === 4 && openCardIndex === 4 && <CidHub />}
+                            {index === 3 && openCardIndex === 3 && <CidHub />}
+                            {index === 4 && openCardIndex === 4 && <Sparky />}
                         </div>
                     ))
                 }

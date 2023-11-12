@@ -72,7 +72,7 @@ const ThreeCanvas = () => {
                     </Tetrahedron> */}
                     <TorusKnot
                         ref={torusRef}
-                        args={[20, 0.01, 300, 50]}
+                        args={[20, 0.01, 500, 50]}
                         position={[0, 0, 0]}
                         scale={[0.7, 0.7, 0.7]}
                     >
@@ -98,7 +98,7 @@ const TorusCanvas = () => {
         <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [10, 5, 50], fov: 30 }}
+            camera={{ position: [10, 5, 40], fov: 30 }}
             gl={{
                 preserveDrawingBuffer: true,
                 pointerEvents: "none"

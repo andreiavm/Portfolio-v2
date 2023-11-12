@@ -57,7 +57,6 @@ const Beach = () => {
                             <source src={data.search.afterMockAnimation} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-
                     </div>
                 </div>
             </section >
@@ -65,8 +64,8 @@ const Beach = () => {
                 <div className="casestudy-section_wrapper">
                     <div className="article-section_title-wrapper">
                         <CaseTitle
-                            title={data.article.conclusionTitle}
-                            color={data.article.conclusionColor}>
+                            title={data.search.conclusionTitle}
+                            color={data.search.conclusionColor}>
                         </CaseTitle>
                         <p className="text-body-large">
                             <span className="article-section_span">{data.search.conclusionBody}</span>
