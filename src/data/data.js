@@ -188,7 +188,7 @@ const data = {
         body7: "My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
         body4: "Experimentation as a means of innovation.",
         body5: "Embracing a multi-disciplinary approach to challenge design dogmas.",
-        body6: "Applying a methodical approach to solve abstract problems and reach concrete solutions.",
+        body6: "Applying a methodical approach to problem-solving.",
         mePic: "/me.webp",
         meAlt: "Picture of me",
     },
