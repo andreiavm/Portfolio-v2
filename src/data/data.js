@@ -145,7 +145,7 @@ const data = {
             role: "ideation & design",
             image: "/delft-logo.svg",
             alt: "Delft Municipality Logo",
-            title: "Helping Delft's Residents Reduce their Carbon Emissions Using a Smart Home Meter and App",
+            title: "Helping Delft's Residents Reduce Carbon Emissions Using a Smart Meter and App",
             color: "var(--secondary-blue)",
         },
     ],
