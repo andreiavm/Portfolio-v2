@@ -247,7 +247,7 @@ const CidHub = () => {
                         <p className="text-body-large">
                             <span className="text-body-large article-section_span">{data.cid.conclusionBody}</span>
                             <span className="text-body-large article-section_span">{data.cid.conclusionBody2}</span>
-                            <span className="text-body-large article-section_span">{data.cid.conclusionBody}</span>
+                            {/* <span className="text-body-large article-section_span">{data.cid.conclusionBody5}</span> */}
                             <span className="text-body-large article-section_span">{data.cid.conclusionBody3}</span>
                             <span className="text-body-large article-section_span">{data.cid.conclusionBody4}</span>
                         </p>
