@@ -90,8 +90,8 @@ const WorkSection = () => {
                                     );
                                 }}
                             />
-                            {index === 0 && openCardIndex === 0 && <ArticleRedesign />}
-                            {index === 1 && openCardIndex === 1 && <Onboarding />}
+                            {index === 0 && openCardIndex === 0 && <Onboarding />}
+                            {index === 1 && openCardIndex === 1 && < ArticleRedesign />}
                             {index === 2 && openCardIndex === 2 && <Search />}
                             {index === 3 && openCardIndex === 3 && <CidHub />}
                             {index === 4 && openCardIndex === 4 && <Sparky />}

@@ -98,14 +98,6 @@ const data = {
     ],
     project: [
         {
-            name: "Articles Redesign",
-            role: "research & design",
-            image: "/sp-logo.svg",
-            alt: "Studyportals Logo",
-            title: "Optimising  Mastersportal's Article Section for Better Engagement and Conversion",
-            color: "var(--secondary-orange)",
-        },
-        {
             name: "Onboarding Questionnaire",
             role: "ideation & design",
             image: "/sp-logo.svg",
@@ -113,6 +105,14 @@ const data = {
             title: "Helping Students Find Their Dream Study through a Personalised Onboarding",
             color: "var(--secondary-blue)",
 
+        },
+        {
+            name: "Articles Redesign",
+            role: "research & design",
+            image: "/sp-logo.svg",
+            alt: "Studyportals Logo",
+            title: "Optimising  Mastersportal's Article Section for Better Engagement and Conversion",
+            color: "var(--secondary-orange)",
         },
         {
             name: "Mobile Search Redesign",
