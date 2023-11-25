@@ -13,10 +13,10 @@ const Dendi = () => {
             transition={{ duration: 0.35 }}>
             <Overview paragraph1={data.overview.overviewDendi1} paragraph2={data.overview.overviewDendi2} duration={data.overview.durationDendi} />
             <section className="casestudy-section">
-                <iframe
-                    className="dendi-section_frame"
-                    style={{ pointerEvents: "none" }}
-                    src="https://dendi-dev.netlify.app/"></iframe>
+                <div className="article-section_mock-wrapper">
+                    <img className="article-section_mock-image"
+                        src={data.dendi.dendiMock} alt={data.dendi.dendiAlt} />
+                </div>
             </section>
             <section className="casestudy-section">
                 <div className="casestudy-section_wrapper">

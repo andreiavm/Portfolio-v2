@@ -708,6 +708,8 @@ const data = {
     },
 
     dendi: {
+        dendiMock: "/dendi-landing.webp",
+        dendiAlt: "Image of the website",
         dendiImage: "/dendi-mock.webp",
         dendiImage2: "/dendi-mock-2.webp",
         dendiImage3: "/dendi-mock-3.webp",
