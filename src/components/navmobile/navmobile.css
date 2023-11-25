@@ -2,6 +2,7 @@
     position: fixed;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     bottom: 0;
     left: 0;
     padding: 1rem 0.5rem;
@@ -26,7 +27,7 @@
     box-shadow: none;
     border: none;
     border-radius: 9px;
-    width: auto;
+    width: 100%;
 }
 
 button:focus:not(:focus-visible) {

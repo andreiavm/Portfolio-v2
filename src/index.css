@@ -224,7 +224,7 @@ section {
   }
 
   .text-display {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   .text-title {
@@ -289,7 +289,7 @@ section {
 }
 
 /* General  */
-@media screen and (max-width:1350px) {
+@media screen and (max-width:900px) {
   .hello-section_title {
     max-width: 90%;
   }
@@ -481,10 +481,6 @@ section {
     width: 100%;
   }
 
-  .torus {
-    height: 20rem;
-  }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -505,6 +501,10 @@ section {
   }
 
   .navigation {
+    display: none;
+  }
+
+  .torus {
     display: none;
   }
 

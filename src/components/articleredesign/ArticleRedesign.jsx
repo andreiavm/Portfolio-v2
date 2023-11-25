@@ -213,7 +213,6 @@ function ArticleRedesign() {
                     </div>
                     <div className="article-section_title-wrapper">
                         <p className="text-body-large">
-                            <span className="article-section_span">{data.article.usertestingBody4}</span>
                             <span className="article-section_span">{data.article.usertestingBody5}</span>
                         </p>
                     </div>
@@ -236,7 +235,8 @@ function ArticleRedesign() {
                     <div className="casestudy-section_prototype-wrapper">
                         <iframe
                             className="article-section_prototype"
-                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFa697QzwkA9YfpRGMSQ9oG%2FArticle-Prototype%3Fpage-id%3D2%253A2%26type%3Ddesign%26node-id%3D2-439%26viewport%3D188%252C521%252C0.09%26t%3DxQOMLDfAMYwexMPn-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D2%253A439%26mode%3Ddesign">
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFa697QzwkA9YfpRGMSQ9oG%2FArticle-Prototype%3Fpage-id%3D2%253A2%26type%3Ddesign%26node-id%3D2-439%26viewport%3D188%252C521%252C0.09%26t%3DxQOMLDfAMYwexMPn-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D2%253A439%26mode%3Ddesign"
+                            scroll="no">
                         </iframe>
                     </div>
                     <div className="article-section_title-wrapper">

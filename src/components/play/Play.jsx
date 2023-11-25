@@ -90,9 +90,9 @@ const PlaySection = () => {
                                     );
                                 }}
                             />
-                            {index === 0 && openCardIndex === 0 && <Dendi />}
-                            {index === 1 && openCardIndex === 1 && <Dream />}
-                            {index === 2 && openCardIndex === 2 && <Beach />}
+                            {index === 0 && openCardIndex === 0 && <Beach />}
+                            {index === 1 && openCardIndex === 1 && <Dendi />}
+                            {index === 2 && openCardIndex === 2 && <Dream />}
                         </div>
                     ))
                 }
@@ -113,7 +113,7 @@ const PlaySection = () => {
                 </AnimatePresence>
             </section>
         </div>
-    );
+    );             
 }
 
 
