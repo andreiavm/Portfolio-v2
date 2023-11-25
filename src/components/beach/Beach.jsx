@@ -102,7 +102,6 @@ const Beach = () => {
                         </p>
                         <h2 className="text-note-bold article-section_title">{data.ai.machineHeader}</h2>
                         <img src={data.ai.designImage3} alt={data.ai.designAlt2} className="article-section_affinity-image" />
-
                     </div>
                 </div>
                 <div className="article-section_wrapper">
@@ -137,10 +136,16 @@ const Beach = () => {
                             title={data.ai.conclusionTitle}
                             color={data.ai.conclusionColor}>
                         </CaseTitle>
+                        <p className="article-section_body text-body-large">
+                            <span className="article-section_span">{data.ai.conclusionBody2}</span>
+                            <span className="article-section_span">{data.ai.conclusionBody3}</span>
+                            <span className="article-section_span">{data.ai.conclusionBody4}</span>
+                        </p>
+                        <h2 className="text-note-bold article-section_title">{data.ai.concusionHeader}</h2>
                     </div>
-                </div>
-                <h2 className="text-header-large" style={{ marginTop: "1rem",textAlign: "Center" }}>Coming Soon 🦺 </h2>
+                    <img src={data.ai.conclusionImage} alt={data.ai.conclusionBody} className="article-section_affinity-image" />
 
+                </div>
                 </section>
         </motion.div >
     );

@@ -114,15 +114,15 @@ const data = {
             title: "Optimising  Mastersportal's Article Section for Better Engagement and Conversion",
             color: "var(--secondary-orange)",
         },
-        {
-            name: "Mobile Search Redesign",
-            role: "design",
-            image: "/sp-logo.svg",
-            alt: "Studyportals Logo",
-            title: "Improving the Usability of the Mobile Search Page with a New Design",
-            color: "var(--secondary-orange)",
+        // {
+        //     name: "Mobile Search Redesign",
+        //     role: "design",
+        //     image: "/sp-logo.svg",
+        //     alt: "Studyportals Logo",
+        //     title: "Improving the Usability of the Mobile Search Page with a New Design",
+        //     color: "var(--secondary-orange)",
 
-        },
+        // },
         // {
         //     name: "Microsites Template",
         //     role: "design",
@@ -152,26 +152,27 @@ const data = {
 
     play: [
         {
-            name: "AI Beach Clean-Up",
-            role: "AI research",
-            image: "/rijkswaterstaat-logo.svg",
-            alt: "Studyportals Logo",
-            title: "Leveraging the Power of generative AI to Keep Scheveningen Beach Clean",
-            color: "var(--secondary-blue)",
-        },
-        {
             name: "Dendi Studio Webstore",
             role: "design & development",
             image: "/logo-project.svg",
             alt: "Personal project",
             title: "Building an E-commerce Website using NextJS, Sanity CMS, and Stripe",
             color: "var(--secondary-orange)",
-        }, {
+        },
+        {
             name: "Dream Market Landing Page",
             role: "design & development",
             image: "/logo-project.svg",
             alt: "Personal project",
             title: "Exploring the Commodification of Self using Speculative Design",
+            color: "var(--secondary-blue)",
+        },
+        {
+            name: "AI Beach Clean-Up",
+            role: "research & design",
+            image: "/rijkswaterstaat-logo.svg",
+            alt: "Studyportals Logo",
+            title: "Leveraging the Power of generative AI to Keep Scheveningen Beach Clean",
             color: "var(--secondary-blue)",
         },
     ],
@@ -237,9 +238,6 @@ const data = {
     overview: {
         title: "Overview",
         titleColor: "var(--secondary-orange)",
-        summary: "Summary:",
-        roleTitle: "Role:",
-        role: "UX Design Intern",
         durationTitle: "Duration:",
         overviewArticles1: "Last year I had the fantastic opportunity of working at Studyportals as a UX Design Intern, and during this time, I tackled some great challenges.",
         overviewArticles2: "One of these was redesigning the article section of their website. Here, I performed research, created a new flow, and ideated features that optimized the site for better conversion.",
@@ -259,7 +257,12 @@ const data = {
         durationSearch: "1 week",
         durationSparky: "Ongoing Project",
         durationAi: "1 month",
-
+        overviewDream1: "During one of my courses, I learned how speculative design can be used to explore hypothetical scenarios and the impact of emerging technologies on society.",
+        overviewDream2: "Because I wanted to practice my rapid web prototyping skills, I explored the scenario of a future where people could buy and sell their dreams and built a landing page for this service.",
+        durationDream: "1 day",
+        overviewDendi1: "I am currently working on a personal project, where I am building an e-commerce website selling stationery products. The website is built using NextJS, Sanity, and Stripe.",
+        overviewDendi2: "The purpose of this project is to learn more about the technologies mentioned above and to practice my web development skills, while experimenting with a new design style.",
+        durationDendi: "Ongoing Project",
     },
     article: {
         mockup: "/mock-up-article.webp",
@@ -302,7 +305,7 @@ const data = {
         insightColor: "var(--secondary-orange)",
         InsightsImage: "/article-insights.webp",
         InsightsAlt: "Insights from the research",
-        ideationTitle: "Ideation",
+        ideationTitle: "Design",
         ideationHeader: "Ideation Process Preview:",
         ideationColor: "var(--tertiary-yellow)",
         ideationImage: "/article-redesign-ideation.webp",
@@ -641,8 +644,6 @@ const data = {
     },
 
     ai: {
-        mockAi: "",
-        mockAlt: "",
         challengeBody: "Scheveningen is the largest and most visited Dutch beach. Unfortunately, it is also the most polluted, with cigarette butts being the most common type of litter.",
         challengeBody2: "The challenge is to concentrate on visitors and how to motivate, persuade, and facilitate them to behave more cleanly, using AI as the main tool for research and ideation.",
         discoveryTitleBody: "To start the research, I performed desk research on the topic of beach littering, which helped me understand the context better and see what solutions have already been applied elsewhere.",
@@ -685,6 +686,37 @@ const data = {
         storyboardImage2: "/beach-storyboard-2.webp",
         conclusionTitle: "Conclusion",
         conclusionColor: "var(--secondary-blue)",
+        conclusionBody2: "The main learning is that AI tools provide great opportunities to augment the research and ideation process, but they have the potential to introduce bias and hinder the design process.",
+        conclusionBody3: "Additionally, they should be used with a critical mindset and not as a replacement for human-centered design, but rather as a tool to augment it.",
+        conclusionBody4: "Finally, when practicing problem solving, generative AI might not give innovative solutions, and it could be more time-consuming to reach concrete solutions than with traditional methods.",
+        conclusionImage: "/beach-poster.webp",
+        conclusionAlt: "poster with findings",
+        concusionHeader: "Poster with Findings:",
+    },
+    dream: {
+        dreamHeader: "Click Here to View the Full Website:",
+        dreamBody: "In a society where self-worth is intertwined with consumer choices, dreams, as deeply personal experiences, become commodities.",
+        dreamBody2: "Individuals might seek specific dream experiences to align with their perceived identity, desires, or social status.",
+        dreamBody3: "Commodifying personal and intimate experiences like dreams exemplifies how market forces influence even the most private aspects of our lives.",
+        dreamBody4: "Dream Market capitalises on the notion that dreams can be curated, bought, and sold like products, shaping the dreamer's identity through consumption.",
+        dreamImage: "/dream-mock.webp",
+        dreamImage2: "/dream-mock-1.webp",
+        dreamImage3: "/dream-mock-2.webp",
+        dreamAlt: "Image of the website",
+        dreamBody5: "To prototype the landing page, I used React, and I managed to build everything in under one day.",
+        dreamLink: "Website Link: https://dream-market-2050.netlify.app/"
+    },
+
+    dendi: {
+        dendiImage: "/dendi-mock.webp",
+        dendiImage2: "/dendi-mock-2.webp",
+        dendiImage3: "/dendi-mock-3.webp",
+        dendiLink: "Website Link: https://dendi-dev.netlify.app/",
+        dendiBody: "The website is built using Next.js, and uses a design system that is shared between the Figma file and the code, making it easy to maintain and update everything, while maintaining consistency.",
+        dendiBody2: "To upload content in the products section and in all banners, I am using Sanity. It is a headless CMS with a visual editor, enabling multiple users to add content without having to code.",
+        dendiBody3: "Aditionally, for the cart, I am using Context API, which makes it easy to share data between components, and for the checkout, I am using the Stripe API.",
+        dendiBody4: "Finally the website is built using a neobrutalist design, which is a style that is becoming more and more popular in the web design industry.",
+        dendiBody5: "The website is still in development, and I am working on adding more features and improving the design based on user testing.",
     },
 
     contactForm: {

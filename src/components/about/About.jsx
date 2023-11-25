@@ -111,7 +111,6 @@
                         <Testimonial name={data.testimonial[1].name} text={`"${data.testimonial[1].text}"`} company={data.testimonial[1].company} position={data.testimonial[1].position} />
                         <Testimonial name={data.testimonial[2].name} text={`"${data.testimonial[2].text}"`} company={data.testimonial[2].company} position={data.testimonial[2].position} />
                     </div>
-                    {/* <h1 className="about-section_title-2 text-header">{data.about.body}</h1> */}
                     <section className='about-section_fact-wrapper'>
                         <h1 className="about-section_title-2 text-header">{data.about.body6}</h1>
                         <div className="about-wave_wrapper">

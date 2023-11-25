@@ -65,9 +65,9 @@ const PlaySection = () => {
             <SectionDivider text={data.divider[2].text} number={data.divider[2].number} color={data.divider[2].color} slug={data.divider[2].slug} />
             <div className="torus">
                 <TorusCanvas />
-                <h2 className="torus-text-1 text-header">experiments</h2>
+                <h2 className="torus-text-1 text-header-large">experiments</h2>
                 <h2 className="torus-text-3 text-header">&</h2>
-                <h2 className="torus-text-2 text-header">explorations</h2>
+                <h2 className="torus-text-2 text-header-large">explorations</h2>
             </div>
             <section
                 className="work-section"
@@ -90,9 +90,9 @@ const PlaySection = () => {
                                     );
                                 }}
                             />
-                            {index === 0 && openCardIndex === 0 && <Beach />}
-                            {index === 1 && openCardIndex === 1 && <Dendi />}
-                            {index === 2 && openCardIndex === 2 && <Dream />}
+                            {index === 0 && openCardIndex === 0 && <Dendi />}
+                            {index === 1 && openCardIndex === 1 && <Dream />}
+                            {index === 2 && openCardIndex === 2 && <Beach />}
                         </div>
                     ))
                 }
@@ -113,7 +113,7 @@ const PlaySection = () => {
                 </AnimatePresence>
             </section>
         </div>
-    );             
+    );
 }
 
 

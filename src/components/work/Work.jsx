@@ -45,7 +45,7 @@ const WorkSection = () => {
 
     const handleNextClick = () => {
         let nextIndex = openCardIndex + 1;
-        if (nextIndex > 4) {
+        if (nextIndex > 3) {
             nextIndex = 0;
         }
 
@@ -92,9 +92,9 @@ const WorkSection = () => {
                             />
                             {index === 0 && openCardIndex === 0 && <Onboarding />}
                             {index === 1 && openCardIndex === 1 && < ArticleRedesign />}
-                            {index === 2 && openCardIndex === 2 && <Search />}
-                            {index === 3 && openCardIndex === 3 && <CidHub />}
-                            {index === 4 && openCardIndex === 4 && <Sparky />}
+                            {/* {index === 2 && openCardIndex === 2 && <Search />} */}
+                            {index === 2 && openCardIndex === 2 && <CidHub />}
+                            {index === 3 && openCardIndex === 3 && <Sparky />}
                         </div>
                     ))
                 }
@@ -110,9 +110,7 @@ const WorkSection = () => {
                                 <FloatingButton label="Next" onClick={handleNextClick} />
                                 <FloatingButton label="Close" onClick={handleCloseClick} />
                             </motion.div >
-
                         )
-
                     }
                 </AnimatePresence>
             </section>
