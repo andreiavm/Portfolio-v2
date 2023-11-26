@@ -18,6 +18,12 @@ const Sparky = () => {
                 </div>
             </section>
             <Overview paragraph1={data.overview.overviewSparky1} paragraph2={data.overview.overviewSparky2} duration={data.overview.durationSparky} />
+            <section className="casestudy-section article-section">
+                <div className="article-section_mock-wrapper">
+                    <img className="article-section_mock-image"
+                        src={data.sparky.mockSparky2} alt={data.sparky.mockAlt} />
+                </div>
+            </section>
             <section className="casestudy-section">
                 <h2 className="text-header-large" style={{ textAlign: "Center" }}>Coming Soon 🦺 </h2>
             </section>

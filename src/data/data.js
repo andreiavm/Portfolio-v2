@@ -640,6 +640,7 @@ const data = {
 
     sparky: {
         mockSparky: "/mock-up-sparky.webp",
+        mockSparky2: "/mock-up-sparky-2.webp",
         mockAlt: "Mock-up of the Sparky Application Design",
     },
 
