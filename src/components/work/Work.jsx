@@ -45,7 +45,7 @@ const WorkSection = () => {
 
     const handleNextClick = () => {
         let nextIndex = openCardIndex + 1;
-        if (nextIndex > 3) {
+        if (nextIndex > 1) {
             nextIndex = 0;
         }
 
@@ -90,11 +90,11 @@ const WorkSection = () => {
                                     );
                                 }}
                             />
-                            {index === 0 && openCardIndex === 0 && <Onboarding />}
-                            {index === 1 && openCardIndex === 1 && < ArticleRedesign />}
+                            {/* {index === 0 && openCardIndex === 0 && <Onboarding />} */}
+                            {/* {index === 1 && openCardIndex === 1 && < ArticleRedesign />} */}
                             {/* {index === 2 && openCardIndex === 2 && <Search />} */}
-                            {index === 2 && openCardIndex === 2 && <CidHub />}
-                            {index === 3 && openCardIndex === 3 && <Sparky />}
+                            {index === 0 && openCardIndex === 0 && <CidHub />}
+                            {index === 1 && openCardIndex === 1 && <Sparky />}
                         </div>
                     ))
                 }

@@ -43,7 +43,7 @@ const PlaySection = () => {
 
     const handleNextClick = () => {
         let nextIndex = openCardIndex + 1;
-        if (nextIndex > 2) {
+        if (nextIndex > 1) {
             nextIndex = 0;
         }
 
@@ -90,9 +90,9 @@ const PlaySection = () => {
                                     );
                                 }}
                             />
-                            {index === 0 && openCardIndex === 0 && <Dendi />}
-                            {index === 1 && openCardIndex === 1 && <Dream />}
-                            {index === 2 && openCardIndex === 2 && <Beach />}
+                            {/* {index === 0 && openCardIndex === 0 && <Dendi />} */}
+                            {index === 0 && openCardIndex === 0 && <Dream />}
+                            {index === 1 && openCardIndex === 1 && <Beach />}
                         </div>
                     ))
                 }

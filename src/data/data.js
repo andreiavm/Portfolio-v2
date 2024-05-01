@@ -32,7 +32,7 @@ const data = {
     ],
     helloSection: {
         hello: {
-            title: "I am a designer based in the Netherlands, crafting intuitive and delightful experiences.",
+            title: "I am a designer based in the Netherlands, currently designing experiences at Studyportals.",
         },
         buttons: {
             buttonPrimary: "see my work",
@@ -79,7 +79,7 @@ const data = {
         {
             text: "He can lead a project perfectly from A to Z, and his technical knowledge helps him find a mutual language with developers.",
             name: "~Sanaz Amouzadeh /",
-            position: "Senior Visual Designer",
+            position: "Senior UX Designer",
             company: "@Studyportals",
             image: "var(--secondary-blue)"
         }, {
@@ -97,23 +97,23 @@ const data = {
         }
     ],
     project: [
-        {
-            name: "Onboarding Questionnaire",
-            role: "ideation & design",
-            image: "/sp-logo.svg",
-            alt: "Studyportals Logo",
-            title: "Helping Students Find Their Dream Study through a Personalised Onboarding",
-            color: "var(--secondary-blue)",
+        // {
+        //     name: "Onboarding Questionnaire",
+        //     role: "ideation & design",
+        //     image: "/sp-logo.svg",
+        //     alt: "Studyportals Logo",
+        //     title: "Helping Students Find Their Dream Study through a Personalised Onboarding",
+        //     color: "var(--secondary-blue)",
 
-        },
-        {
-            name: "Articles Redesign",
-            role: "research & design",
-            image: "/sp-logo.svg",
-            alt: "Studyportals Logo",
-            title: "Optimising  Mastersportal's Article Section for Better Engagement and Conversion",
-            color: "var(--secondary-orange)",
-        },
+        // },
+        // {
+        //     name: "Articles Redesign",
+        //     role: "research & design",
+        //     image: "/sp-logo.svg",
+        //     alt: "Studyportals Logo",
+        //     title: "Optimising  Mastersportal's Article Section for Better Engagement and Conversion",
+        //     color: "var(--secondary-orange)",
+        // },
         // {
         //     name: "Mobile Search Redesign",
         //     role: "design",
@@ -151,14 +151,14 @@ const data = {
     ],
 
     play: [
-        {
-            name: "Dendi Studio Webstore",
-            role: "design & development",
-            image: "/logo-project.svg",
-            alt: "Personal project",
-            title: "Building an E-commerce Website using NextJS, Sanity CMS, and Stripe",
-            color: "var(--secondary-orange)",
-        },
+        // {
+        //     name: "Dendi Studio Webstore",
+        //     role: "design & development",
+        //     image: "/logo-project.svg",
+        //     alt: "Personal project",
+        //     title: "Building an E-commerce Website using NextJS, Sanity CMS, and Stripe",
+        //     color: "var(--secondary-orange)",
+        // },
         {
             name: "Dream Market Landing Page",
             role: "design & development",
