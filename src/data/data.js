@@ -32,7 +32,7 @@ const data = {
     ],
     helloSection: {
         hello: {
-            title: "I am a designer based in the Netherlands, currently designing experiences at Studyportals.",
+            title: "I am a designer based in the Netherlands. Currently designing experiences at Studyportals.",
         },
         buttons: {
             buttonPrimary: "see my work",
