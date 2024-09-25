@@ -724,7 +724,7 @@ const data = {
 
     contactForm: {
         title: "Get in touch 👋",
-        body: "I am currently available for freelance projects. Feel free to reach out for any inquiries, request my full portfolio, or just to say hi!",
+        body: "I am available for freelance projects. Feel free to reach out for any inquiries, request my full portfolio, or just to say hi!",
     },
     footer: {
         body: "Designed and developed by Andrei Avram",
