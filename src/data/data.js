@@ -180,16 +180,16 @@ const data = {
     about: {
         title: "In a nutshell 🧠",
         title2: "Approach 🚀",
-        body: "Building data-driven solutions that bridge the gap between business goals and user needs.",
+        body: "Creating data-driven solutions that bridge the gap between business goals and user needs.",
         testimonialTitle: "Testimonials 🤞",
         span: "Creativity ",
         body2: "and ",
         span2: "pragmatism.",
         body3: "From concept to execution, nothing is lost in translation. I am a designer who can code, and a developer who can design.",
         body7: "My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
-        body4: "Experimentation as a means of innovation.",
-        body5: "Embracing a multi-disciplinary approach to challenge design dogmas.",
-        body6: "Applying a methodical approach to problem-solving.",
+        // body4: "Experimentation as a means of innovation.",
+        body5: "Building functional experiences optimized for conversion and engagement.",
+        body6: "Embracing a multi-disciplinary approach to challenge design dogmas.",
         mePic: "/me.webp",
         meAlt: "Picture of me",
     },
@@ -203,9 +203,9 @@ const data = {
             skill3: "Interaction Design",
             skill4: "Visual Design",
             skill5: "Web Development",
-            skill6: "Research",
+            skill6: "User Research",
             skill7: "Conversion Optimization",
-            skill8: "User Testing",
+            skill8: "Conversation Design",
             skill9: "Service Design",
         },
         {
@@ -724,7 +724,7 @@ const data = {
 
     contactForm: {
         title: "Get in touch 👋",
-        body: "I am currently available for collaborations. Feel free to reach out for any inquiries.",
+        body: "I am currently available for freelance projects. Feel free to reach out for any inquiries, request my complete portfolio, or just to say hi!",
     },
     footer: {
         body: "Designed and developed by Andrei Avram",
