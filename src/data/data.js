@@ -229,7 +229,7 @@ const data = {
             skill3: "Problem Solving",
             skill4: "Creativity",
             skill5: "Design Systems",
-            skill6: "Technical Proficiency",
+            skill6: "UX-Focused Copywriting",
             skill7: "Agile Methodology",
             skill8: "Data Analysis",
             skill9: "A/B Testing",
@@ -724,7 +724,7 @@ const data = {
 
     contactForm: {
         title: "Get in touch 👋",
-        body: "I am currently available for freelance projects. Feel free to reach out for any inquiries, request my complete portfolio, or just to say hi!",
+        body: "I am currently available for freelance projects. Feel free to reach out for any inquiries, request my full portfolio, or just to say hi!",
     },
     footer: {
         body: "Designed and developed by Andrei Avram",
