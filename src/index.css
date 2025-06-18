@@ -281,7 +281,7 @@ section {
   }
 }
 
-@media screen and (max-width: 1650px) {
+@media screen and (min-width: 768px) and (max-width: 1650px) {
   .hello-section {
     /* gap: 0.75rem; */
     max-width: 90%;
@@ -527,7 +527,7 @@ section {
   .content-container {
     margin: 0 auto;
     /* overflow: visible; */
-    /* width: 100%; */
+    width: 100%;
   }
 
   .about-section_fact-wrapper {
