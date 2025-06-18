@@ -1,6 +1,6 @@
 .about-section {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     gap: 1rem;
     justify-content: center;
 }
@@ -24,7 +24,7 @@
 }
 
 .about-section_fact-wrapper {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -40,8 +40,7 @@
 }
 
 .about-section_image-wrapper {
-    width: 35%;
-    height: 100%;
+    width: auto;
 }
 
 .about-section_image {
@@ -53,7 +52,6 @@
 }
 
 .about-section_me-text-wrapper {
-    /* background-color: red; */
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -85,12 +83,14 @@
 .about-cube_wrapper {
     display: flex;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 10rem 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
+
 
 .about-graph_wrapper {
     display: flex;
@@ -114,43 +114,44 @@
 
 /* Cube */
 .cube {
-    width: 100px;
-    height: 100px;
-    position: relative;
+    width: 200px;
+    height: 200px;
     transform-style: preserve-3d;
     animation: spin 15s infinite linear;
-
+    z-index: 0;
 }
 
 .face {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: 2px solid var(--primary-black);
+    /* background-color: var(--secondary-orange); */
+
 }
 
 .front {
-    transform: rotateX(0deg) rotateY(0deg) translateZ(50px);
+    transform: rotateX(0deg) rotateY(0deg) translateZ(100px);
 }
 
 .back {
-    transform: rotateX(0deg) rotateY(180deg) translateZ(50px);
+    transform: rotateX(0deg) rotateY(180deg) translateZ(100px);
 }
 
 .left {
-    transform: rotateX(0deg) rotateY(-90deg) translateZ(50px);
+    transform: rotateX(0deg) rotateY(-90deg) translateZ(100px);
 }
 
 .right {
-    transform: rotateX(0deg) rotateY(90deg) translateZ(50px);
+    transform: rotateX(0deg) rotateY(90deg) translateZ(100px);
 }
 
 .top {
-    transform: rotateX(-90deg) rotateY(0deg) translateZ(50px);
+    transform: rotateX(-90deg) rotateY(0deg) translateZ(100px);
 }
 
 .bottom {
-    transform: rotateX(90deg) rotateY(0deg) translateZ(50px);
+    transform: rotateX(90deg) rotateY(0deg) translateZ(100px);
 }
 
 @keyframes spin {
@@ -200,8 +201,8 @@
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     align-self: center;
 
 }
@@ -213,13 +214,13 @@
 }
 
 .element {
-    position: absolute;
-    width: calc(var(--i) * 20px);
+    /* position: absolute; */
+    width: calc(var(--i) *100px);
     aspect-ratio: 1;
     border-radius: 100vh;
     border: 3px solid var(--primary-black);
     transform-style: preserve-3d;
-    animation: my-move 3.5s ease-in-out calc(var(--i) * 0.20s) infinite;
+    animation: my-move 5s ease-in-out calc(var(--i) * 0.20s) infinite;
 }
 
 @keyframes my-move {
@@ -230,6 +231,6 @@
     }
 
     50% {
-        transform: rotateX(70deg) translateZ(50px) translateY(150px);
+        transform: rotateX(70deg) translateZ(50px) translateY(1000px);
     }
 }

@@ -2,13 +2,13 @@ button {
     font-family: var(--font), sans-serif;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: var(--shadow-small);
+    /* box-shadow: var(--shadow-small); */
 }
 
 .button-primary:hover,
 .button-secondary:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow-mid);
+    /* box-shadow: var(--shadow-mid); */
     text-decoration: underline;
 }
 

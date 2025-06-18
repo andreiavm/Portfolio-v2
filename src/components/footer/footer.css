@@ -10,13 +10,11 @@ footer {
     align-items: center;
 }
 
-.footer_logo-body {
-    margin-left: 0.75rem;
-}
 
 .footer_links-container {
     display: flex;
     align-items: center;
+    /* margin-left: auto; */
 }
 
 .footer_links-container a+a {

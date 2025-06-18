@@ -3,28 +3,28 @@ const data = {
         {
             title: "About",
             slug: "about",
-            color: "var(--primary-white)",
+            color: "var(--primary-black)",
             background: "var(--secondary-orange)",
             number: 1
         },
         {
             title: "Work",
             slug: "work",
-            color: "var(--primary-white)",
+            color: "var(--primary-black)",
             background: "var(--secondary-blue)",
             number: 2,
         },
         {
             title: "Play",
             slug: "play",
-            color: "var(--primary-red)",
+            color: "var(--primary-white)",
             background: "var(--tertiary-yellow)",
             number: 3,
         },
         {
             title: "Contact",
             slug: "contact",
-            color: "var(--primary-white)",
+            color: "var(--primary-black)",
             background: "var(--tertiary-red)",
             number: 4,
         },
@@ -32,7 +32,7 @@ const data = {
     ],
     helloSection: {
         hello: {
-            title: "I am a designer based in the Netherlands. Currently designing experiences at Studyportals.",
+            title: "Designer based in the Netherlands.",
         },
         buttons: {
             buttonPrimary: "see my work",

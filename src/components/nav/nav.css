@@ -1,7 +1,11 @@
 .navigation {
-    position: fixed;
-    height: 100%;
-    width: 9rem;
+    width: 61.8%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
 }
 
 

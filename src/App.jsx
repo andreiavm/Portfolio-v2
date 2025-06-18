@@ -7,19 +7,18 @@ import ContactSection from './components/contact/Contact';
 import NavMobile from './components/navmobile/NavMobile';
 import PlaySection from './components/play/Play';
 import Footer from './components/footer/Footer';
-
 function App() {
 
   return (
     <>
-      <Nav />
-      <NavMobile />
+      {/* <Nav /> */}
+      {/* <NavMobile /> */}
       <HelloSection />
-      <AboutSection />
-      <WorkSection />
-      <PlaySection />
-      <ContactSection />
-      <Footer />
+      {/* <AboutSection /> */}
+      {/* <WorkSection /> */}
+      {/* <PlaySection /> */}
+      {/* <ContactSection /> */}
+      {/* <Footer /> */}
     </>
   )
 }

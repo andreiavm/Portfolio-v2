@@ -2,9 +2,9 @@
     position: relative;
     border: 2px solid var(--primary-black);
     border-radius: 9px;
-    height: 40rem;
+    height: 400rem;
     max-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 1rem 0;
     z-index: -100;
 }

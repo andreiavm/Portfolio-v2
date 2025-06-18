@@ -34,11 +34,11 @@
                                 <span className="article-section_span">{data.about.body7}</span>
                                 </p>
                         </div>
-                        <div className="about-section_image-wrapper">
+                        {/* <div className="about-section_image-wrapper">
                             <img className="about-section_image" width="1339" height="1607" src={data.about.mePic} alt={data.about.meAlt} />
-                        </div>
+                        </div> */}
                     </div>
-                    <section className="about-section_fact-wrapper">
+                    {/* <section className="about-section_fact-wrapper">
                         <h1 className="about-section_title-2 text-header">{data.about.body}</h1>
                         <div className="about-graph_wrapper">
                             <div className="graph">
@@ -49,9 +49,9 @@
                                 <div className="bar"></div>
                             </div>
                         </div>
-                    </section>
-                    <h1 className="contact-form_header text-header-large">{data.about.title}</h1>
-                    <div className="about-section_list-wrapper">
+                    </section> */}
+                    {/* <h1 className="contact-form_header text-header-large">{data.about.title}</h1> */}
+                    {/* <div className="about-section_list-wrapper">
                         <AboutList
                             title={data.aboutList[0].title}
                             number={data.aboutList[0].number}
@@ -88,8 +88,8 @@
                             skill7={data.aboutList[2].skill7}
                             skill8={data.aboutList[2].skill8}
                             skill9={data.aboutList[2].skill9} />
-                    </div>
-                    <section className="about-section_fact-wrapper">
+                    </div> */}
+                    {/* <section className="about-section_fact-wrapper">
                         <h1 className="about-section_title-2 text-header">{data.about.body5}</h1>
                         <div className="about-cube_wrapper">
                             <div className="cube-container">
@@ -104,14 +104,14 @@
                             </div>
                             <div className="line"></div>
                         </div>
-                    </section>
-                    <h2 className=" text-header-large">{data.about.testimonialTitle}</h2>
-                    <div className="about-section_testimonial-wrapper">
+                    </section> */}
+                    {/* <h2 className=" text-header-large">{data.about.testimonialTitle}</h2> */}
+                    {/* <div className="about-section_testimonial-wrapper">
                         <Testimonial name={data.testimonial[0].name} text={`"${data.testimonial[0].text}"`} company={data.testimonial[0].company} position={data.testimonial[0].position} />
                         <Testimonial name={data.testimonial[1].name} text={`"${data.testimonial[1].text}"`} company={data.testimonial[1].company} position={data.testimonial[1].position} />
                         <Testimonial name={data.testimonial[2].name} text={`"${data.testimonial[2].text}"`} company={data.testimonial[2].company} position={data.testimonial[2].position} />
-                    </div>
-                    <section className='about-section_fact-wrapper'>
+                    </div> */}
+                    {/* <section className='about-section_fact-wrapper'>
                         <h1 className="about-section_title-2 text-header">{data.about.body6}</h1>
                         <div className="about-wave_wrapper">
                             <div className="wave">
@@ -123,7 +123,7 @@
                                 <div className="element" style={{ "--i": "5" }}></div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </section >
 
             </div >
