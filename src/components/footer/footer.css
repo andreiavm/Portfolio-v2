@@ -14,7 +14,7 @@ footer {
 .footer_links-container {
     display: flex;
     align-items: center;
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 
 .footer_links-container a+a {

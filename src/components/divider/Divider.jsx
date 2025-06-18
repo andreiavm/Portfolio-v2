@@ -22,7 +22,7 @@ function SectionDivider({ text, number, color, slug }) {
                         {/* <p className="section-divider_description text-title">
                             You are now entering the <span style={{ color: color }}>{slug}</span> section
                         </p> */}
-                        <p className="section-divider_number text-title" style={{ color: color }}>{number}</p>
+                        {/* <p className="section-divider_number text-title" style={{ color: color }}>{number}</p> */}
                     </div>
                 </div>
             </div>
