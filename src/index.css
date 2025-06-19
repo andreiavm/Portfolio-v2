@@ -28,9 +28,6 @@
   --tertiary-red: #B82B2A;
   --tertiary-purple: #9610FE;
   --tertiary-green: #16a119;
-  --shadow-small: 2px 3px 0px 0px var(--primary-black);
-  --shadow-mid: 2px 5x 0px 0px var(--primary-black);
-  --shadow-large: 2px 7px 0px 0px var(--primary-black);
 }
 
 /* Reset */
@@ -215,9 +212,6 @@ section {
     font-size: 4rem;
   }
 
-  .text-title {
-    /* font-size: 1.25rem; */
-  }
 
   .text-header-large {
     font-size: 2.5rem;
@@ -313,6 +307,10 @@ section {
     font-size: 2rem;
   }
 
+  .logo-tags {
+    display: none;
+  }
+
   .footer_links-container {
     margin: 0 auto;
   }
@@ -320,6 +318,10 @@ section {
   .logo-tags {
     /* font-size: 1.5rem; */
     margin: 1rem auto;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
   }
 
   section {
@@ -339,10 +341,6 @@ section {
     margin-bottom: 0.75rem;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .logo-text {
-    /* font-size: 1.5rem; */
   }
 
   .about-section_me-wrapper {
