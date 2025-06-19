@@ -69,7 +69,7 @@ const WorkSection = () => {
     return (
         <div className="content-container" id="work">
             <SectionDivider text={data.divider[1].text} number={data.divider[1].number} color={data.divider[1].color} slug={data.divider[1].slug} />
-            <section
+            {/* <section
                 className="work-section"
                 ref={workSectionRef} >
                 {
@@ -90,9 +90,9 @@ const WorkSection = () => {
                                     );
                                 }}
                             />
-                            {/* {index === 0 && openCardIndex === 0 && <Onboarding />} */}
-                            {/* {index === 1 && openCardIndex === 1 && < ArticleRedesign />} */}
-                            {/* {index === 2 && openCardIndex === 2 && <Search />} */}
+                            {index === 0 && openCardIndex === 0 && <Onboarding />}
+                            {index === 1 && openCardIndex === 1 && < ArticleRedesign />}
+                            {index === 2 && openCardIndex === 2 && <Search />}
                             {index === 0 && openCardIndex === 0 && <CidHub />}
                             {index === 1 && openCardIndex === 1 && <Sparky />}
                         </div>
@@ -113,7 +113,7 @@ const WorkSection = () => {
                         )
                     }
                 </AnimatePresence>
-            </section>
+            </section> */}
         </div>
     );
 

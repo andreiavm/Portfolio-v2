@@ -65,6 +65,22 @@ const HelloSection = () => {
                     <ButtonPrimary label={data.helloSection.buttons.buttonPrimary} onClick={scrollToWork} />
                     <ButtonSecondary label={data.helloSection.buttons.buttonSecondary} onClick={scrollToContact} />
                 </div> */}
+                                    <section className="about-section_fact-wrapper">
+                        {/* <h1 className="about-section_title-2 text-header">{data.about.body5}</h1> */}
+                        <div className="about-cube_wrapper">
+                            <div className="cube-container">
+                                <div className="cube">
+                                    <div className="face front"></div>
+                                    <div className="face back"></div>
+                                    <div className="face left"></div>
+                                    <div className="face right"></div>
+                                    <div className="face top"></div>
+                                    <div className="face bottom"></div>
+                                </div>
+                            </div>
+                            <div className="line"></div>
+                        </div>
+                    </section>
                     <Footer />
 
             </section >

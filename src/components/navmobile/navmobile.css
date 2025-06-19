@@ -39,7 +39,3 @@ button:focus:not(:focus-visible) {
     justify-content: space-between;
     align-items: center;
 }
-
-.cube-container {
-    background-color: red;
-}

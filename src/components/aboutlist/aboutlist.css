@@ -2,8 +2,8 @@
     padding: 2rem;
     border: solid 2px var(--primary-black);
     border-radius: 9px;
-    width: 32%;
-    height: auto;
+    width: 100%;
+    background-color: var(--primary-white);
 }
 
 .about-list_title-wrapper {
@@ -14,7 +14,7 @@
 
 .about-List_skills-wrapper {
     display: flex;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     flex-direction: column;
     justify-content: space-between;
     /* padding: 0 1.5rem; */
