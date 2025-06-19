@@ -32,7 +32,7 @@ const data = {
     ],
     helloSection: {
         hello: {
-            title: "UI/ UX / Product Designer.",
+            title: "UI/ UX / Product Designer",
             body: "Research-led and hypothesis-driven.",
         },
         buttons: {

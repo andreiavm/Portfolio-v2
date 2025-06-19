@@ -27,7 +27,7 @@ const HelloSection = () => {
             <section id="hello" className="hello-section">
                 <div className="hello-logo-wrapper">
                     <div className="logo">
-                        <img width="333" height="325" src={data.helloSection.logo.src} alt={data.helloSection.logo.alt} className="logo-render" />
+                        {/* <img width="333" height="325" src={data.helloSection.logo.src} alt={data.helloSection.logo.alt} className="logo-render" /> */}
                         <p className="logo-text">{data.helloSection.logo.text}</p>
                     </div>
                     <p className="logo-tags">{data.helloSection.logo.tags}</p>
