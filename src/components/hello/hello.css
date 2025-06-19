@@ -5,8 +5,6 @@
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
-    min-width: 80vw;
-    max-width: 100%;
 }
 
 .hello-button-wrapper {
@@ -40,6 +38,10 @@
     display: flex;
     flex-shrink: 0;
     margin-left: auto;
+}
+
+.hello-section_title {
+    margin-top:1rem;
 }
 
 .torus {

@@ -22,7 +22,7 @@
   --primary-white: #171717;
   --pure-white: #000000;
   --primary-grey: #000000;
-  --secondary-orange: #f94d03;
+  --secondary-orange: #d24e15;
   --secondary-blue: #0f31b8;
   --tertiary-yellow: #FBDF00;
   --tertiary-red: #d71212;
@@ -223,6 +223,13 @@ section {
   .text-header-small {
     font-size: 1.25rem;
   }
+
+.torus-wrapper {
+  display:none;
+}
+.hello-section_title {
+  margin-top:0.5rem;
+}
 
 .cube {
   margin: 2rem 0;

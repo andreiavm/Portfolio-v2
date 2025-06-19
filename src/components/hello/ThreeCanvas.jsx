@@ -69,18 +69,18 @@ const ThreeCanvas = () => {
                     </Tetrahedron> */}
                     <TorusKnot
                         ref={torusRef}
-                        args={[20, 0.01, 500, 50]}
+                        args={[30,10, 50, 5]}
                         position={[0, 0, 0]}
                         scale={[0.7, 0.7, 0.7]}
                     >
                         <meshStandardMaterial
-                            // wireframe={true}
+                            wireframe={true}
                             color={0x888888}
                             displacementMap={displacementMap}
                             displacementScale={4}
                             displacementBias={displacementBias}
                             transparent
-                            opacity={0.3}
+                            opacity={0.4}
                             displacementMap-offset={new THREE.Vector2(displacementOffset.x, displacementOffset.y)}
                         />
                     </TorusKnot>
