@@ -423,6 +423,51 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+.cube {
+    margin: 2rem 0;
+    width: 80px;
+    height: 80px;
+    transform-style: preserve-3d;
+    animation: spin 15s infinite linear;
+    z-index: 0;
+}
+.front {
+    transform: rotateX(0deg) rotateY(0deg) translateZ(40px);
+}
+
+.back {
+    transform: rotateX(0deg) rotateY(180deg) translateZ(40px);
+}
+
+.left {
+    transform: rotateX(0deg) rotateY(-90deg) translateZ(40px);
+}
+
+.right {
+    transform: rotateX(0deg) rotateY(90deg) translateZ(40px);
+}
+
+.top {
+    transform: rotateX(-90deg) rotateY(0deg) translateZ(40px);
+}
+
+.bottom {
+    transform: rotateX(90deg) rotateY(0deg) translateZ(40px);
+}
+
+.face {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--primary-black);
+
+}
+
   .hello-section{
     text-align: center;
   }

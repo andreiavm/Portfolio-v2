@@ -728,7 +728,7 @@ const data = {
         body: "I am available for freelance projects. Feel free to reach out for any inquiries, request my full portfolio, or just to say hi!",
     },
     footer: {
-        body: "Website under construction",
+        body: "Designed and developed by Andrei Avram",
     }
 }
 
