@@ -15,6 +15,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'NeueBit';
+  src: url(./fonts/PPNeueBit-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Variables  */
 :root {
   --font: "NeueMontreal", sans-serif;
@@ -23,9 +31,9 @@
   --pure-white: #000000;
   --primary-grey: #000000;
   --secondary-orange: #d24e15;
-  --secondary-blue: #0f31b8;
+  --secondary-blue: #0b25cd;
   --tertiary-yellow: #FBDF00;
-  --tertiary-red: #d71212;
+  --tertiary-red: #ca1111;
   --tertiary-purple: #9610FE;
   --tertiary-green: #1bd61e;
 }
@@ -99,6 +107,13 @@ body {
 }
 
 /* Typography */
+.text-huge {
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 100%;
+}
+
 .text-display {
   font-size: 4rem;
   font-style: normal;
@@ -112,6 +127,14 @@ body {
   font-weight: normal;
   line-height: 150%;
 }
+.text-header-large-variant {
+  font-family: NeueBit;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 150%;
+}
+
 
 .text-title-bold {
   font-size: 1.5rem;
@@ -126,6 +149,15 @@ body {
   font-weight: normal;
   line-height: 130%;
 }
+
+.text-header-variant {
+  font-family: NeueBit;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 130%;
+}
+
 
 .text-header-small {
   font-size: 1.5rem;
@@ -210,13 +242,19 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
+
+  .text-huge {
+    font-size: 4rem;
+  }
   .text-display {
     font-size: 2rem;
   }
     .text-header-large {
     font-size: 2rem;
   }
-
+  .text-header-large-variant {
+    font-size: 2rem;
+  }
   .text-header {
     font-size: 1.5rem;
   }

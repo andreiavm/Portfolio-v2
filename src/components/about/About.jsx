@@ -33,7 +33,7 @@ const AboutSection = () => {
       <div className="bento-grid-bespoke">
         {bentoCards.map(card => (
           <div className={`bento-item-bespoke bento-${card.key}`} key={card.key}>
-            <h2 className="bento-title text-header-large">{card.title}</h2>
+            <h2 className="bento-title text-header-large-variant">{card.title}</h2>
             <ul className="bento-list">
               {card.items.map((item, idx) => (
                 <li key={idx} className="bento-list-item text-header-small">{item}</li>

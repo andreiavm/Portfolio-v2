@@ -32,8 +32,10 @@ const data = {
     ],
     helloSection: {
         hello: {
-            title: "UI/ UX / Product Designer",
-            body: "Research-led and hypothesis-driven",
+            title: "UX / Product Designer",
+            body: "research-led ",
+            body2: "&& ",
+            body3: "hypothesis-driven",
         },
         buttons: {
             buttonPrimary: "see my work",
@@ -45,20 +47,20 @@ const data = {
         logo: {
             src: "/3d-illustration.webp",
             text: "andreiavram.design",
-            tags: "designer/ developer/ digital artisan",
+            tags: "designer / developer / digital artisan",
             alt: "3D render of my initials"
         },
 
     },
     divider: [
         {
-            text: "About",
+            text: "about",
             slug: "about",
             number: "01",
             color: "var(--tertiary-red)",
         },
         {
-            text: "Work",
+            text: "work",
             slug: "work",
             number: "02",
             color: "var(--secondary-blue)",

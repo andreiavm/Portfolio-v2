@@ -32,11 +32,13 @@ const HelloSection = () => {
                     </div>
                     <p className="logo-tags text-body-large">{data.helloSection.logo.tags}</p>
                 </div>
-                <h1 className="hello-section_title text-display">
+                <h1 className="hello-section_title text-huge">
                     {data.helloSection.hello.title}
                 </h1>
-                <h2 className="hello-section_title text-header">
-                    {data.helloSection.hello.body}
+                <h2 className="hello-section_body">
+                    <span className="hello-section_body-1 text-header">{data.helloSection.hello.body}</span>
+                    <span className="hello-section_body-2 text-header-variant">{data.helloSection.hello.body2}</span>
+                    <span className="hello-section_body-3 text-header">{data.helloSection.hello.body3}</span>
                 </h2>
 
                     {/* <div className="about-wave_wrapper">

@@ -25,10 +25,6 @@
     align-items: center;
 
 }
-.logo-render {
-    width: 48px;
-}
-
 .logo-text {
     display: flex;
     flex-shrink: 0;
@@ -39,10 +35,30 @@
     flex-shrink: 0;
     margin-left: auto;
 }
-
 .hello-section_title {
-    margin-top:1rem;
+    font-family: NeueBit;
+    /* color: var(--secondary-blue) */
 }
+.hello-section_body {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hello-section_body-1 {
+    color: var(--tertiary-yellow);
+}
+
+.hello-section_body-2 {
+    /* color: var(--secondary-blue); */
+    font-family: NeueBit;
+}
+
+.hello-section_body-3 {
+    color: var(--tertiary-red);
+}
+
 
 .torus {
     border-radius: 9px;
