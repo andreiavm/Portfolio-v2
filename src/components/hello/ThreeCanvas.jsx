@@ -16,7 +16,7 @@ const ThreeCanvas = () => {
         const time = state.clock.getElapsedTime();
 
         if (torusRef.current) {
-            torusRef.current.rotation.y += 0.0005;
+            // torusRef.current.rotation.y += 0.0005;
             // torusRef.current.rotation.x += 0.001;
             // torusRef.current.rotation.z += 0.001;
 
@@ -24,10 +24,8 @@ const ThreeCanvas = () => {
             const smoothOffsetY = Math.sin(time * 0.001);
 
             const newDisplacementBias = 1 + Math.sin(time * 0.25) * 0.5;
-            // const newDisplacementScale = -5 + Math.sin(time * 0.25) * 5;
 
             setDisplacementBias(newDisplacementBias);
-            // setDisplacementScale(newDisplacementScale);
 
             setDisplacementOffset({
                 x: smoothOffsetX,
@@ -50,7 +48,7 @@ const ThreeCanvas = () => {
     return (
         <>
             <ambientLight intensity={2} color={0xffffff} />
-            <directionalLight castShadow position={[50, 100, 300]} intensity={0.9} />
+            <directionalLight castShadow position={[50, 100, 300]} intensity={1} />
             {displacementMap && (
                 <>
                     {/* <Tetrahedron
@@ -76,13 +74,13 @@ const ThreeCanvas = () => {
                         scale={[0.7, 0.7, 0.7]}
                     >
                         <meshStandardMaterial
-                            wireframe={true}
-                            color={0xDA5116}
+                            // wireframe={true}
+                            color={0x888888}
                             displacementMap={displacementMap}
-                            displacementScale={5}
+                            displacementScale={4}
                             displacementBias={displacementBias}
                             transparent
-                            opacity={1}
+                            opacity={0.3}
                             displacementMap-offset={new THREE.Vector2(displacementOffset.x, displacementOffset.y)}
                         />
                     </TorusKnot>

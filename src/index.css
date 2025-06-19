@@ -6,21 +6,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: 'NeueMontreal';
-  src: url(./fonts/PPNeueMontreal-SemiBolditalic.otf);
-  font-weight: semibold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Monument';
-  src: url(./fonts/PPMonumentCondensed-Black.otf);
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: 'NeueMontreal';
@@ -29,7 +14,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 
 /* Variables  */
 :root {
@@ -120,16 +104,9 @@ body {
 }
 
 /* Typography */
-.text-display-large {
-  font-size: 6rem;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-}
-
 .text-display {
   /* text-transform: uppercase; */
-  font-size: 6rem;
+  font-size: 4rem;
   font-style: normal;
   font-weight: bold;
   line-height: 130%;
@@ -234,10 +211,6 @@ section {
 
 /* Fonts */
 @media screen and (max-width: 1400px) {
-  .text-display-large {
-    font-size: 4.5rem
-  }
-
   .text-display {
     font-size: 4rem;
   }
@@ -284,9 +257,11 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1650px) {
   .hello-section {
     /* gap: 0.75rem; */
-    max-width: 90%;
-  
+    max-width: 95%;
+    margin: 0 auto;
+    min-width: none;
   }
+  
   .about-section_me-text-wrapper {
     width: 80%;
   }
@@ -338,10 +313,6 @@ section {
   .logo-tags {
     font-size: 1.25rem;
     margin: 1rem auto;
-  }
-
-  body {
-    width: 85%;
   }
 
   section {
@@ -458,15 +429,22 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .hello-section{
+    text-align: center;
+  }
   .logo-tags {
     font-size: 1rem;
     }
+      .torus-wrapper
+ {
+    display: none;
+  }
 
   .footer_links-container{
   margin: 0 auto;
 }
   .text-display {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   body {

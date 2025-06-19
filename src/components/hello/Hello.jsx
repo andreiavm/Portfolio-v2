@@ -35,6 +35,9 @@ const HelloSection = () => {
                 <h1 className="hello-section_title text-display">
                     {data.helloSection.hello.title}
                 </h1>
+                                <h1 className="hello-section_title text-header">
+                    {data.helloSection.hello.body}
+                </h1>
                     {/* <div className="about-wave_wrapper">
                                 <div className="wave">
                                     <div className="element" style={{ "--i": "0" }}></div>

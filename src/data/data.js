@@ -32,7 +32,8 @@ const data = {
     ],
     helloSection: {
         hello: {
-            title: "Designer based in the Netherlands.",
+            title: "UI/ UX / Product Designer.",
+            body: "Research-led and hypothesis-driven.",
         },
         buttons: {
             buttonPrimary: "see my work",
