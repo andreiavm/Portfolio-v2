@@ -2,7 +2,6 @@
     backdrop-filter: blur(5px); 
     -webkit-backdrop-filter: blur(2px);
     border-radius: 12px;
-    /* text-align: center; */
     background-color: rgba(139, 139, 139, 0.1); /* Transparent white */
 
 
@@ -24,10 +23,6 @@
 
 .about-section_title {
     max-width: 35ch;
-}
-
-.hello-section_title {
-    margin-bottom: 1rem;
 }
 
 .about-section_fact-wrapper {
@@ -81,17 +76,11 @@
 
 .about-section_testimonial-wrapper {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-}
-
-.about-cube_wrapper {
-    display: flex;
     gap: 2rem;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    margin: 2rem 0;
+    flex-wrap: wrap;
 }
 
 .about-graph_wrapper {
@@ -114,57 +103,7 @@
     }
 }
 
-/* Cube */
-.cube {
-    margin: 4rem 0;
-    width: 150px;
-    height: 150px;
-    transform-style: preserve-3d;
-    animation: spin 15s infinite linear;
-    z-index: 0;
-}
 
-.face {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 2px solid var(--primary-black);
-
-}
-
-.front {
-    transform: rotateX(0deg) rotateY(0deg) translateZ(75px);
-}
-
-.back {
-    transform: rotateX(0deg) rotateY(180deg) translateZ(75px);
-}
-
-.left {
-    transform: rotateX(0deg) rotateY(-90deg) translateZ(75px);
-}
-
-.right {
-    transform: rotateX(0deg) rotateY(90deg) translateZ(75px);
-}
-
-.top {
-    transform: rotateX(-90deg) rotateY(0deg) translateZ(75px);
-}
-
-.bottom {
-    transform: rotateX(90deg) rotateY(0deg) translateZ(75px);
-}
-
-@keyframes spin {
-    0% {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-
-    100% {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
-}
 
 /* Graph  */
 
@@ -235,4 +174,134 @@
     50% {
         transform: rotateX(70deg) translateZ(50px) translateY(100px);
     }
+}
+
+.testimonial-card {
+    background: rgba(255,255,255,0.85);
+    border: 2px dashed var(--secondary-orange);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.06);
+    padding: 2rem 1.5rem;
+    min-width: 260px;
+    max-width: 340px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.25s, transform 0.25s;
+    font-family: var(--font-family, inherit);
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 0 24px 4px var(--secondary-orange), 0 8px 32px 0 rgba(255,140,0,0.10);
+    transform: translateY(-6px) scale(1.03);
+}
+
+.testimonial-card_name-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card_name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--secondary-orange);
+    font-family: var(--font-family, inherit);
+}
+
+.testimonial-card_title {
+    font-size: 1rem;
+    color: var(--primary-black);
+    opacity: 0.7;
+    font-family: var(--font-family, inherit);
+}
+
+.testimonial-card_text {
+    font-size: 1.05rem;
+    color: var(--primary-black);
+    font-family: var(--font-family, inherit);
+    opacity: 0.92;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .about-section_testimonial-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    .testimonial-card {
+        max-width: 95vw;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.bento-grid-bespoke {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+  grid-template-areas:
+    "services tools skills"
+    "services tools skills";
+}
+
+.bento-item-bespoke {
+background-color: rgba(139, 139, 139, 0.1); /* Transparent white */
+backdrop-filter: blur(5px); 
+-webkit-backdrop-filter: blur(2px);
+border-radius: 12px;  border: 2px dashed var(--secondary-orange);
+  border-radius: 18px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 260px;
+}
+
+.bento-services { grid-area: services; }
+.bento-tools    { grid-area: tools; }
+.bento-skills   { grid-area: skills; }
+
+.bento-title {
+  color: var(--tertiary-green);
+  margin-bottom: 0.5rem;
+}
+
+.bento-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bento-list-item {
+  color: var(--primary-black);
+  background: rgba(255,255,255,0.12);
+  border-radius: 8px;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .bento-grid-bespoke {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "services"
+      "tools"
+      "skills";
+  }
 }

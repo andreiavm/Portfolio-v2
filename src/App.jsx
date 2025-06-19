@@ -14,7 +14,7 @@ function App() {
       {/* <Nav /> */}
       {/* <NavMobile /> */}
       <HelloSection />
-      {/* <AboutSection /> */}
+      <AboutSection />
       {/* <WorkSection /> */}
       {/* <PlaySection /> */}
       {/* <ContactSection /> */}

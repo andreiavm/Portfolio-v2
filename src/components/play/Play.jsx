@@ -5,10 +5,8 @@ import { data } from '../../data/data.js';
 import SectionDivider from '../divider/Divider';
 import FloatingButton from '../button/FloatingButton'
 import ProjectCard from '../project/ProjectCard'
-import Dendi from '../dendi/Dendi'
 import Dream from '../dream/Dream'
 import Beach from '../beach/Beach'
-import TorusCanvas from './ThreeCanvas.jsx';
 
 const PlaySection = () => {
     const [openCardIndex, setOpenCardIndex] = useState(-1);
@@ -63,13 +61,7 @@ const PlaySection = () => {
     return (
         <div className="content-container" id="play">
             <SectionDivider text={data.divider[2].text} number={data.divider[2].number} color={data.divider[2].color} slug={data.divider[2].slug} />
-            <div className="torus">
-                <TorusCanvas />
-                <h2 className="torus-text-1 text-header-large">experiments</h2>
-                <h2 className="torus-text-3 text-header">&</h2>
-                <h2 className="torus-text-2 text-header-large">explorations</h2>
-            </div>
-            <section
+            {/* <section
                 className="work-section"
                 ref={playSectionRef} >
                 {
@@ -90,7 +82,7 @@ const PlaySection = () => {
                                     );
                                 }}
                             />
-                            {/* {index === 0 && openCardIndex === 0 && <Dendi />} */}
+                            {index === 0 && openCardIndex === 0 && <Dendi />}
                             {index === 0 && openCardIndex === 0 && <Dream />}
                             {index === 1 && openCardIndex === 1 && <Beach />}
                         </div>
@@ -111,7 +103,7 @@ const PlaySection = () => {
                         )
                     }
                 </AnimatePresence>
-            </section>
+            </section> */}
         </div>
     );
 }

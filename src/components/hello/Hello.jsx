@@ -28,16 +28,17 @@ const HelloSection = () => {
                 <div className="hello-logo-wrapper">
                     <div className="logo">
                         {/* <img width="333" height="325" src={data.helloSection.logo.src} alt={data.helloSection.logo.alt} className="logo-render" /> */}
-                        <p className="logo-text">{data.helloSection.logo.text}</p>
+                        <p className="logo-text text-body-large">{data.helloSection.logo.text}</p>
                     </div>
-                    <p className="logo-tags">{data.helloSection.logo.tags}</p>
+                    <p className="logo-tags text-body-large">{data.helloSection.logo.tags}</p>
                 </div>
                 <h1 className="hello-section_title text-display">
                     {data.helloSection.hello.title}
                 </h1>
-                                <h1 className="hello-section_title text-header">
+                <h2 className="hello-section_title text-header">
                     {data.helloSection.hello.body}
-                </h1>
+                </h2>
+
                     {/* <div className="about-wave_wrapper">
                                 <div className="wave">
                                     <div className="element" style={{ "--i": "0" }}></div>
@@ -67,7 +68,7 @@ const HelloSection = () => {
                 </div> */}
                                     <section className="about-section_fact-wrapper">
                         {/* <h1 className="about-section_title-2 text-header">{data.about.body5}</h1> */}
-                        <div className="about-cube_wrapper">
+                        <div className="hello-cube_wrapper">
                             <div className="cube-container">
                                 <div className="cube">
                                     <div className="face front"></div>
@@ -78,11 +79,8 @@ const HelloSection = () => {
                                     <div className="face bottom"></div>
                                 </div>
                             </div>
-                            <div className="line"></div>
                         </div>
                     </section>
-                    <Footer />
-
             </section >
             {/* <div className="torus-wrapper"><TorusCanvas/></div> */}
         </div>

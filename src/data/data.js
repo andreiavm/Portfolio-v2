@@ -33,7 +33,7 @@ const data = {
     helloSection: {
         hello: {
             title: "UI/ UX / Product Designer",
-            body: "Research-led and hypothesis-driven.",
+            body: "Research-led and hypothesis-driven",
         },
         buttons: {
             buttonPrimary: "see my work",
@@ -55,7 +55,7 @@ const data = {
             text: "About",
             slug: "about",
             number: "01",
-            color: "var(--secondary-orange)",
+            color: "var(--tertiary-red)",
         },
         {
             text: "Work",
@@ -215,12 +215,13 @@ const data = {
             skill1: "Figma",
             skill2: "Sketch",
             skill3: "Adobe CC",
-            skill4: "Javascript / React",
-            skill5: "Miro / Figjam",
-            skill6: "Jira",
-            skill7: "Google Analytics",
-            skill8: "Hotjar / Maze",
-            skill9: "Generative AI",
+            skill4: "Javascript",
+            skill5: "React",
+            skill7: "Jira",
+            skill8: "Google Analytics",
+            skill9: "Content Square",
+            skill10: "Maze",
+            skill11: "Generative AI",
         },
         {
             title: "Skills",

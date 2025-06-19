@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const SectionDividerWrapper = styled.div`
   .section-divider_description-wrapper::after {
     content: "";
-    height: 12px;
-    background-color: ${(props) => props.color};
+    height: 4px;
+    border-top: 2px dashed ${(props) => props.color};
     border-radius: 9px;
     width: 100%;
     display: block;
