@@ -15,10 +15,15 @@ footer {
     display: flex;
     align-items: center;
     margin-left: auto;
+    text-decoration: none;
 }
 
 .footer_links-container a+a {
     margin-left: 2rem;
+}
+
+.footer_links-container a {
+    text-decoration: none;
 }
 
 .footer_links-container a:hover {

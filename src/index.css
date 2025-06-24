@@ -31,7 +31,7 @@
   --pure-white: #000000;
   --primary-grey: #000000;
   --secondary-orange: #d24e15;
-  --secondary-blue: #0b25cd;
+  --secondary-blue: #001df8;
   --tertiary-yellow: #FBDF00;
   --tertiary-red: #ca1111;
   --tertiary-purple: #9610FE;
@@ -253,7 +253,7 @@ section {
     font-size: 2rem;
   }
   .text-header-large-variant {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .text-header {
     font-size: 1.5rem;
@@ -276,6 +276,15 @@ section {
   transform-style: preserve-3d;
   animation: spin 15s infinite linear;
   z-index: 0;
+}
+.about-wave_wrapper {
+width: 100px;
+height: 100px;
+}
+
+.element {
+  position: absolute;
+  width: calc(var(--i) *25px);
 }
 .front {
   transform: rotateX(0deg) rotateY(0deg) translateZ(40px);
@@ -307,6 +316,9 @@ section {
   height: 80px;
   /* border: 2px dashed var(--secondary-orange); */
 
+}
+.footer_links-container {
+  text-decoration: underline;
 }
 }
 
@@ -438,10 +450,6 @@ section {
     text-align: center;
   }
  
-
-  .footer_links-container {
-    text-decoration: underline;
-  }
 
   .footer_links-container{
   margin: 0 auto;

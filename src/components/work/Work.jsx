@@ -5,7 +5,6 @@ import { data } from '../../data/data.js'
 import FloatingButton from '../button/FloatingButton'
 import ProjectCard from '../project/ProjectCard'
 import SectionDivider from '../divider/Divider'
-import Search from '../search/Search'
 import Sparky from '../sparky/Sparky.jsx'
 
 
@@ -87,11 +86,7 @@ const WorkSection = () => {
                                     );
                                 }}
                             />
-                            {index === 0 && openCardIndex === 0 && <Onboarding />}
-                            {index === 1 && openCardIndex === 1 && < ArticleRedesign />}
-                            {index === 2 && openCardIndex === 2 && <Search />}
-                            {index === 0 && openCardIndex === 0 && <CidHub />}
-                            {index === 1 && openCardIndex === 1 && <Sparky />}
+                            {index === 1 && openCardIndex === 0 && <Sparky />}
                         </div>
                     ))
                 }

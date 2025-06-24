@@ -139,7 +139,7 @@
 
 /* wave */
 .about-wave_wrapper {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     display: flex;
     justify-content: center;
     width: 200px;
@@ -160,7 +160,7 @@
     width: calc(var(--i) *50px);
     aspect-ratio: 1;
     border-radius: 100vh;
-    border: 3px solid var(--primary-black);
+    border: 2px dashed var(--primary-black);
     animation: my-move 5s ease-in-out calc(var(--i) * 0.20s) infinite;
 }
 
@@ -242,7 +242,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
-  margin: 3rem 0;
 }
 
 .bento-grid-bespoke {
@@ -257,10 +256,10 @@
 }
 
 .bento-item-bespoke {
-background-color: rgba(139, 139, 139, 0.1); /* Transparent white */
-backdrop-filter: blur(5px); 
--webkit-backdrop-filter: blur(2px);
-border-radius: 12px;  border: 2px dashed var(--secondary-orange);
+  background-color: rgba(139, 139, 139, 0.1); /* Transparent white */
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 12px;  border: 2px dashed var(--secondary-orange);
   border-radius: 18px;
   padding: 2rem 1rem;
   display: flex;
@@ -303,5 +302,62 @@ border-radius: 12px;  border: 2px dashed var(--secondary-orange);
       "services"
       "tools"
       "skills";
+  }
+}
+
+.about-top-grid {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.about-card {
+    background-color: rgba(139, 139, 139, 0.1); /* Transparent white */
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(2px);  border-radius: 18px;
+  border: 2px dashed var(--secondary-orange);
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-card-me {
+  grid-column: 1/ 2;
+}
+
+.about-card-side {
+  grid-column: 2 / 3;
+}
+
+.about-card-title {
+  color: var(--tertiary-green);
+  /* margin-bottom: 1rem; */
+}
+
+.about-card-body {
+  color: var(--primary-black);
+  /* margin-bottom: 0.5rem; */
+}
+
+.about-card-span {
+  color: var(--secondary-orange);
+  font-weight: bold;
+}
+
+.about-card-span2 {
+  color: var(--secondary-blue);
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .about-top-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .about-card-me, .about-card-side {
+    grid-column: auto;
   }
 }

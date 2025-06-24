@@ -15,10 +15,10 @@ function App() {
       {/* <NavMobile /> */}
       <HelloSection />
       <AboutSection />
-      <WorkSection />
+      {/* <WorkSection /> */}
       {/* <PlaySection /> */}
       {/* <ContactSection /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
