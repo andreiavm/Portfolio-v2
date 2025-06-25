@@ -1,63 +1,42 @@
 import './projectcard.css';
-import styled from 'styled-components';
 import { motion } from 'framer-motion';
-const TitleHeader = styled.h1`
+import styled from 'styled-components';
 
-
-    color: ${(props) => props.color};
+const Title = styled.h2`
+    color: ${props => {
+        if (props.index === 0) return 'var(--secondary-blue)';
+        if (props.index === 1) return 'var(--tertiary-red)';
+        return '#ffffff';
+    }};
 `;
 
-function ProjectCard({ name, role, image, title, color, isOpen, onClick }) {
-    const handleKeyPress = (event) => {
-        if (event.key === 'Enter') {
-            onClick();
-        }
-    };
+function ProjectCard({ name, role, image, title, index }) {
     return (
-        <motion.div
-            layout
-            transition={{ duration: 0.25 }}
-            onClick={onClick}
-            onKeyDown={handleKeyPress}
-            tabIndex={0}
-            className={`project-card ${isOpen ? 'open' : ''}`}
+        <motion.article
+            className="project-card"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
         >
-            <motion.div
-                layout transition={{ duration: 0.35 }}
-                className="project-card_top-wrapper">
-                <motion.div
-                    layout transition={{ duration: 0.35 }}
-                    className="project-card_text-container">
-                    <motion.div
-                        layout transition={{ duration: 0.35 }}
-                        className="project-card_name-container">
-                        <h2
-                            className="project-card_name text-header">{name}</h2>
-                    </motion.div>
-                    <p
-                        className="project-card_role text-body">{role}</p>
-                </motion.div>
-                <motion.div
-                    layout transition={{ duration: 0.35 }}
-                    className="project-card_image-container">
-                    <img width="50" height="50" className="project-card_image" src={image} alt={name} />
-                </motion.div >
-            </motion.div>
-            {
-                isOpen &&
-                <motion.div
-                    layout
-                    initial={{ opacity: 0, y: 0 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 0 }}
-                    transition={{ duration: 0.35 }}
-                    className="project-card_title-wrapper">
-                    <TitleHeader className="text-header-small" color={color}>{title}</TitleHeader>
-                </motion.div>
-            }
-        </motion.div >
-    )
-}
+            <div className="project-card_content">
+                <div className="project-card_top">
+                    <span className="project-card_category">{role}</span>
+                    {/* <span className="project-card_date">{date}</span> */}
+                </div>
 
+                <div className="project-card_title text-header-large-variant">
+                    <Title index={index}>{name}</Title>
+                    <p className="project-card_description text-header-large">{title}</p>
+                </div>
+            </div>
+
+            <div className="project-card_media">
+                <div className="project-card_overlay" />
+            </div>
+
+            <div className="project-card_grain" />
+        </motion.article>
+    );
+}
 
 export default ProjectCard;

@@ -47,7 +47,6 @@ const data = {
         logo: {
             text: "andreiavram.design",
             tags: "designer / vibe-coder / digital artisan",
-            alt: "3D render of my initials"
         },
 
     },
@@ -134,20 +133,20 @@ const data = {
         //     color: "var(--secondary-blue)",
 
         // },
-        // {
-        //     name: "CID Hub Public Space",
-        //     role: "service design",
-        //     image: "/dh-logo.svg",
-        //     alt: "Den Haag Municipality Logo",
-        //     title: "Designing a Public Space for The Hague's Innovation District and it's Residents",
-        //     color: "var(--tertiary-green)",
-        // },
         {
-            name: "Smart Energy Meter App",
-            role: "ideation & design",
-            image: "/delft-logo.svg",
-            alt: "Delft Municipality Logo",
-            title: "Helping Delft's Residents Reduce Carbon Emissions Using a Smart Meter and App",
+            name: "coming soon",
+            role: "CRO",
+            // image: "/dh-logo.svg",
+            // alt: "Den Haag Municipality Logo",
+            title: "under construction",
+            color: "var(--tertiary-green)",
+        },
+        {
+            name: "watch this space",
+            role: "Design System",
+            // image: "/delft-logo.svg",
+            // alt: "Delft Municipality Logo",
+            title: "under construction",
             color: "var(--secondary-blue)",
         },
     ],
@@ -180,13 +179,11 @@ const data = {
     ],
 
     about: {
-
-        body: "Creating data-driven solutions that bridge the gap between business goals and user needs.",
         testimonialTitle: "Testimonials 🤞",
         span: "Creativity ",
         body2: "and ",
         span2: "Pragmatism",
-        body3: "From concept to execution, nothing is lost in translation. My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
+        body3: "From concept to execution, nothing is lost in translation. I am a designer who understands code, and a coder who knows design. My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
         body7: "My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
         body4: "Experimentation as a means of innovation.",
         body5: "Building functional experiences optimized for conversion and engagement.", 

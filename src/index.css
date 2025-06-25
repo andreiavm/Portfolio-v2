@@ -31,11 +31,11 @@
   --pure-white: #000000;
   --primary-grey: #000000;
   --secondary-orange: #d24e15;
-  --secondary-blue: #001df8;
-  --tertiary-yellow: #FBDF00;
+  --secondary-blue: #063ffa;
+  --tertiary-yellow: #ffde22;
   --tertiary-red: #ca1111;
   --tertiary-purple: #9610FE;
-  --tertiary-green: #1bd61e;
+  --tertiary-green: #58da4d;
 }
 
 /* Reset */
@@ -108,7 +108,7 @@ body {
 
 /* Typography */
 .text-huge {
-  font-size: 8rem;
+  font-size: 6rem;
   font-style: normal;
   font-weight: bold;
   line-height: 100%;
@@ -118,7 +118,7 @@ body {
   font-size: 4rem;
   font-style: normal;
   font-weight: bold;
-  line-height: 130%;
+  line-height: 100%;
 }
 
 .text-header-large {
@@ -132,7 +132,7 @@ body {
   font-size: 4rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 150%;
+  line-height: 100%;
 }
 
 
@@ -207,7 +207,6 @@ body {
   line-height: 150%;
 }
 
-
 /* Layout */
 body {
   width: 100%;
@@ -245,6 +244,7 @@ section {
 
   .text-huge {
     font-size: 4rem;
+
   }
   .text-display {
     font-size: 2rem;
@@ -321,7 +321,9 @@ height: 100px;
   text-decoration: underline;
 }
 }
-
+.bento-title {
+  margin-bottom: 1rem;
+}
 
 @media screen and (max-width: 1200px) {
 

@@ -61,7 +61,7 @@ const PlaySection = () => {
     return (
         <div className="content-container" id="play">
             <SectionDivider text={data.divider[2].text} number={data.divider[2].number} color={data.divider[2].color} slug={data.divider[2].slug} />
-            {/* <section
+            <section
                 className="work-section"
                 ref={playSectionRef} >
                 {
@@ -103,7 +103,7 @@ const PlaySection = () => {
                         )
                     }
                 </AnimatePresence>
-            </section> */}
+            </section>
         </div>
     );
 }
