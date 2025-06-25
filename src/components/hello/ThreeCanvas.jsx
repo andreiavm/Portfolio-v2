@@ -20,7 +20,7 @@ const ThreeCanvas = () => {
             // torusRef.current.rotation.x += 0.001;
             // torusRef.current.rotation.z += 0.001;
 
-            const smoothOffsetX = Math.sin(time * 0.001);
+            const smoothOffsetX = Math.sin(time * 0.002);
             const smoothOffsetY = Math.sin(time * 0.001);
 
             const newDisplacementBias = 1 + Math.sin(time * 0.25) * 0.5;

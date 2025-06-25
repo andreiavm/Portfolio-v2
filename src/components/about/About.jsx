@@ -34,11 +34,14 @@ const AboutSection = () => {
         <div className="about-card about-card-me">
           <h2 className="about-card-body text-header-large-variant">
             <span className="about-card-span">{data.about.span}</span>
-            {data.about.body2}
-            <span className="about-card-span2">{data.about.span2}</span>
+            {data.about.span2}
+            <span className="about-card-span2">{data.about.span3}</span>
           </h2>
+          <span className="about-card-body text-header-small">
+            {data.about.body}
+          </span>
           <p className="about-card-body text-header-small">
-            {data.about.body3}
+            {data.about.body2}
           </p>
         </div>
         <div className="about-card about-card-side">                        <div className="about-wave_wrapper">

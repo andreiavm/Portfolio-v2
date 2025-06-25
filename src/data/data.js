@@ -98,41 +98,6 @@ const data = {
         }
     ],
     project: [
-        // {
-        //     name: "Onboarding Questionnaire",
-        //     role: "ideation & design",
-        //     image: "/sp-logo.svg",
-        //     alt: "Studyportals Logo",
-        //     title: "Helping Students Find Their Dream Study through a Personalised Onboarding",
-        //     color: "var(--secondary-blue)",
-
-        // },
-        // {
-        //     name: "Articles Redesign",
-        //     role: "research & design",
-        //     image: "/sp-logo.svg",
-        //     alt: "Studyportals Logo",
-        //     title: "Optimising  Mastersportal's Article Section for Better Engagement and Conversion",
-        //     color: "var(--secondary-orange)",
-        // },
-        // {
-        //     name: "Mobile Search Redesign",
-        //     role: "design",
-        //     image: "/sp-logo.svg",
-        //     alt: "Studyportals Logo",
-        //     title: "Improving the Usability of the Mobile Search Page with a New Design",
-        //     color: "var(--secondary-orange)",
-
-        // },
-        // {
-        //     name: "Microsites Template",
-        //     role: "design",
-        //     image: "/sp-logo.svg",
-        //     alt: "Studyportals Logo",
-        //     title: "Creating a Reusable WordPress Template for Universities Around the World",
-        //     color: "var(--secondary-blue)",
-
-        // },
         {
             name: "coming soon",
             role: "CRO",
@@ -179,15 +144,14 @@ const data = {
     ],
 
     about: {
-        testimonialTitle: "Testimonials 🤞",
         span: "Creativity ",
-        body2: "and ",
-        span2: "Pragmatism",
-        body3: "From concept to execution, nothing is lost in translation. I am a designer who understands code, and a coder who knows design. My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
-        body7: "My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
-        body4: "Experimentation as a means of innovation.",
-        body5: "Building functional experiences optimized for conversion and engagement.", 
-        body6: "Embracing a multi-disciplinary approach to challenge design dogmas.",
+        span2: "and ",
+        span3: "Pragmatism",
+        body: "From concept to execution, nothing is lost in translation. I am a designer who understands code, and a coder who knows design.",
+        body2: "My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
+        // body4: "Experimentation as a means of innovation.",
+        // body5: "Building functional experiences optimized for conversion and engagement.", 
+        // body6: "Embracing a multi-disciplinary approach to challenge design dogmas.",
     },
 
     aboutList: [
@@ -226,7 +190,7 @@ const data = {
             skill1: "Strategic Thinking",
             skill2: "CRO",
             skill3: "Problem Solving",
-            skill4: "Cross-functional Collaboration",
+            skill4: "Collaboration",
             skill5: "Design Systems",
             skill6: "UX-Focused Copywriting",
             skill7: "Agile Collaboration",
@@ -708,7 +672,7 @@ const data = {
 
     contactForm: {
         title: "Get in touch 👋",
-        body: "I am available for freelance projects. Feel free to reach out for any inquiries, request my full portfolio, or just to say hi!",
+        body: "I am available for freelance projects. Feel free to reach out for any questions, request my portfolio, or just to say hello.",
     },
     footer: {
         body: "Designed and developed by Andrei Avram",

@@ -3,7 +3,6 @@ import './play.css';
 import { motion, AnimatePresence } from 'framer-motion'
 import { data } from '../../data/data.js';
 import SectionDivider from '../divider/Divider';
-import FloatingButton from '../button/FloatingButton'
 import ProjectCard from '../project/ProjectCard'
 import Dream from '../dream/Dream'
 import Beach from '../beach/Beach'

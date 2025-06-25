@@ -10,7 +10,6 @@ function Footer() {
                 </div> */}
                 <div className="footer_links-container">
                     <a className="text-note-bold" href="https://www.linkedin.com/in/andrei-avram-design/" target="_blank">LinkedIn</a>
-                    <a className="text-note-bold" href="mailto:hello@andreiavram.design" target="_blank">Email</a>
                     <a className="text-note-bold" href="https://github.com/andreiavm" target="_blank">GitHub</a>
                 </div>
             </footer>
