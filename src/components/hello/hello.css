@@ -141,6 +141,17 @@
 }
 
 @media screen and (max-width: 768px) {
+.hello-logo-wrapper {
+justify-content: flex-start;
+
+}
+  .hello-section {
+    text-align: left;
+  }
+
+  .hello-section_body {
+    flex-direction: column;
+  }
   .torus-wrapper {
     display: none;
   }
