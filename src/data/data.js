@@ -32,10 +32,11 @@ const data = {
     ],
     helloSection: {
         hello: {
-            title: "UX / Product Designer",
-            body: "research-led ",
-            body2: "&& ",
-            body3: "hypothesis-driven",
+            title: "UX Designer & Researcher",
+            body: "Solving complex product problems with evidence, empathy, and structure",
+            // body2: "&& ",
+            // body3: "hypothesis-driven",
+            body4: ""
         },
         buttons: {
             buttonPrimary: "see my work",
@@ -46,7 +47,7 @@ const data = {
 
         logo: {
             text: "andreiavram.design",
-            tags: "designer / vibe-coder / digital artisan",
+            tags: "designer / researcher / digital artisan",
         },
 
     },
@@ -147,8 +148,8 @@ const data = {
         span: "Creativity ",
         span2: "and ",
         span3: "Pragmatism",
-        body: "From concept to execution, nothing is lost in translation. I am a designer who understands code, and a coder who knows design.",
-        body2: "My approach is to get a holistic understanding of user goals, business objectives, and technical constraints, and use that as a catalyst for product innovation and personal growth.",
+        body: "I design functional, conversion-focused products by aligning user needs with business goals. I work across the full product lifecycle to deliver solutions that are clear, scalable, and grounded in evidence.",
+        body2: "With a background in UX research and product strategy, I bring empathy, systems thinking, and a solid grasp of technical constraints to help teams turn complex problems into simple, actionable outcomes.",
         // body4: "Experimentation as a means of innovation.",
         // body5: "Building functional experiences optimized for conversion and engagement.", 
         // body6: "Embracing a multi-disciplinary approach to challenge design dogmas.",
@@ -173,8 +174,8 @@ const data = {
             skill1: "Figma",
             skill2: "Sketch",
             skill3: "Adobe CC",
-            skill4: "Javascript (basic)",
-            skill5: "React (basic)",
+            skill4: "Javascript",
+            skill5: "React",
             skill6: "HTML & CSS",
             skill7: "Jira",
             skill12: "PostHog",

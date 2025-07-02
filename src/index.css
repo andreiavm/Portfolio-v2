@@ -222,6 +222,10 @@ body {
 /* Media queries */
 
 @media screen and (max-width: 768px) {
+
+  #contact {
+    display: none;
+  }
   .text-huge {
     font-size: 4rem;
   }
@@ -244,6 +248,10 @@ body {
   }
   .text-header-small {
     font-size: 1.25rem;
+  }
+
+  .text-note-bold {
+    font-size: 1rem;
   }
 }
 
