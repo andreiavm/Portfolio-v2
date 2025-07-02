@@ -44,7 +44,8 @@ const AboutSection = () => {
             {data.about.body2}
           </p>
         </div>
-        <div className="about-card about-card-side">                        <div className="about-wave_wrapper">
+        <div className="about-card about-card-side">                        
+          <div className="about-wave_wrapper">
                             <div className="wave">
                                 <div className="element" style={{ "--i": "0" }}></div>
                                 <div className="element" style={{ "--i": "1" }}></div>

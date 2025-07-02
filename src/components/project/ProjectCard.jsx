@@ -2,7 +2,7 @@ import './projectcard.css';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-const Title = styled.h2`
+const Title = styled.h3`
     color: ${props => {
         if (props.index === 0) return 'var(--secondary-blue)';
         if (props.index === 1) return 'var(--tertiary-red)';
@@ -23,7 +23,6 @@ function ProjectCard({ name, role, image, title, index }) {
                     <span className="project-card_category">{role}</span>
                     {/* <span className="project-card_date">{date}</span> */}
                 </div>
-
                 <div className="project-card_title text-header-large-variant">
                     <Title index={index}>{name}</Title>
                     <p className="project-card_description text-header-large">{title}</p>

@@ -13,14 +13,6 @@
   margin: 0 auto;
 }
 
-.hello-section_span-orange {
-  color: var(--secondary-orange);
-}
-
-.hello-section_span-blue {
-  color: var(--secondary-blue);
-}
-
 /* Graph  */
 /* 
 .graph {
@@ -190,7 +182,7 @@
 }
 
 .about-card-span {
-  color: var(--secondary-orange);
+  color: var(--tertiary-red);
   font-weight: bold;
 }
 
