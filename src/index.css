@@ -226,6 +226,11 @@ body {
   #contact {
     display: none;
   }
+
+  #work {
+    display: none;
+  }
+
   .text-huge {
     font-size: 4rem;
   }

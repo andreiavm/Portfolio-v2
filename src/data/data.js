@@ -33,7 +33,7 @@ const data = {
     helloSection: {
         hello: {
             title: "UX Designer & Researcher",
-            body: "Solving complex product problems with evidence, empathy, and structure",
+            body: "Solving complex product problems with evidence, empathy, and structure.",
             // body2: "&& ",
             // body3: "hypothesis-driven",
             body4: ""
