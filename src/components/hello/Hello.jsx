@@ -39,7 +39,7 @@ const HelloSection = () => {
           {data.helloSection.hello.title}
         </h1>
         <h2 className="hello-section_body">
-          <span className="hello-section_body-1 text-header">
+          <span className="hello-section_body-1 text-header-large">
             {data.helloSection.hello.body}
           </span>
           <span className="hello-section_body-2 text-header-variant">

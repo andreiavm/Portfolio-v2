@@ -32,15 +32,15 @@ const AboutSection = () => {
       <SectionDivider text={data.divider[0].text} number={data.divider[0].number} color={data.divider[0].color} slug={data.divider[0].slug} />
       <div className="about-top-grid">
         <div className="about-card about-card-me">
-          <h2 className="about-card-body text-header-large-variant">
+          <h2 className="about-card-body text-huge">
             <span className="about-card-span">{data.about.span}</span>
             {data.about.span2}
             <span className="about-card-span2">{data.about.span3}</span>
           </h2>
-          <span className="about-card-body text-header-small">
+          <span className="about-card-body text-header">
             {data.about.body}
           </span>
-          <p className="about-card-body text-header-small">
+          <p className="about-card-body text-header">
             {data.about.body2}
           </p>
         </div>

@@ -33,7 +33,7 @@ const data = {
     helloSection: {
         hello: {
             title: "UX Designer & Researcher",
-            body: "Solving complex product problems with evidence, empathy, and structure.",
+            body: "Hypothesis-driven designer that solves complex product problems using evidence, empathy, and structure.",
             // body2: "&& ",
             // body3: "hypothesis-driven",
             body4: ""
@@ -148,8 +148,8 @@ const data = {
         span: "Creativity ",
         span2: "and ",
         span3: "Pragmatism",
-        body: "I design functional, conversion-focused products by aligning user needs with business goals. I work across the full product lifecycle to deliver solutions that are clear, scalable, and grounded in evidence.",
-        body2: "With a background in UX research and product strategy, I bring empathy and a solid understanding of technical constraints to help teams turn complex problems into simple, actionable outcomes.",
+        body: "I design conversion-focused products by aligning user needs with business goals across the full product lifecycle.",
+        body2: "With a background in UX research and a solid understanding of technical constraints, I help teams turn complex problems into simple, actionable outcomes.",
         // body4: "Experimentation as a means of innovation.",
         // body5: "Building functional experiences optimized for conversion and engagement.", 
         // body6: "Embracing a multi-disciplinary approach to challenge design dogmas.",

@@ -20,6 +20,11 @@
   margin-bottom: 2rem;
 }
 
+.hello-section_title {
+  /* color: var(--tertiary-red); */
+}
+
+
 .logo {
   display: flex;
   align-items: center;
@@ -94,7 +99,7 @@
   position: absolute;
   width: 150px;
   height: 150px;
-  border: 2px dashed var(--secondary-orange);
+  border: 2px dashed var(--tertiary-red);
   box-sizing: border-box;
 }
 
