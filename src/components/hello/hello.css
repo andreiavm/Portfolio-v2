@@ -227,10 +227,7 @@ justify-content: flex-start;
   .torus-wrapper {
     display: none;
   }
-  
-  .logo-text {
-    /* display: none; */
-  }
+
   
   /* Hide typewriter animation on mobile, show static text */
   .typewriter-desktop {

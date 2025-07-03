@@ -39,7 +39,7 @@ const HelloSection = () => {
         <h1 className="hello-section_title text-huge">
           <span className="typewriter-desktop">
             <TypewriterText 
-              texts={["hello world ", "my name is andrei", "welcome to my page"]}
+              texts={["hello world ", "my name is Andrei", "welcome to my page"]}
               speed={100}
               deleteSpeed={50}
               pauseTime={2000}
