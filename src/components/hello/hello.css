@@ -214,7 +214,11 @@ justify-content: flex-start;
     display: none;
   }
   .hello-section_title {
-    margin: 0.5rem 0;
+    display: none;
+  }
+  
+  .logo-text {
+    display: none;
   }
   
   /* Hide typewriter animation on mobile, show static text */
@@ -223,45 +227,10 @@ justify-content: flex-start;
   }
   
   .static-mobile {
-    display: inline;
+    display: none;
   }
 
-  .cube {
-    margin: 2rem 0;
-    width: 80px;
-    height: 80px;
-    transform-style: preserve-3d;
-    animation: spin 15s infinite linear;
-    z-index: 0;
-  }
-
-  .face {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-  }
-
-  .front {
-    transform: rotateX(0deg) rotateY(0deg) translateZ(40px);
-  }
-
-  .back {
-    transform: rotateX(0deg) rotateY(180deg) translateZ(40px);
-  }
-
-  .left {
-    transform: rotateX(0deg) rotateY(-90deg) translateZ(40px);
-  }
-
-  .right {
-    transform: rotateX(0deg) rotateY(90deg) translateZ(40px);
-  }
-
-  .top {
-    transform: rotateX(-90deg) rotateY(0deg) translateZ(40px);
-  }
-
-  .bottom {
-    transform: rotateX(90deg) rotateY(0deg) translateZ(40px);
+  .hello-cube_wrapper {
+    display: none;
   }
 }
