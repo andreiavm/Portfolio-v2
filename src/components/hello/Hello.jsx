@@ -1,8 +1,9 @@
 import "./hello.css";
 import { data } from "../../data/data.js";
-// import ButtonPrimary from "../button/ButtonPrimary.jsx";
+import ButtonPrimary from "../button/ButtonPrimary.jsx";
 // import ButtonSecondary from "../button/ButtonSecondary.jsx";
 import TorusCanvas from "./ThreeCanvas.jsx";
+import TypewriterText from "./TypewriterText.jsx";
 
 const HelloSection = () => {
   //   const scrollToContact = () => {
@@ -12,13 +13,13 @@ const HelloSection = () => {
   //       section.scrollIntoView({ behavior: "smooth" });
   //     }
   //   };
-  //   const scrollToWork = () => {
-  //     const sectionId = "work";
-  //     const section = document.getElementById(sectionId);
-  //     if (section) {
-  //       section.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
+  const scrollToWork = () => {
+    const sectionId = "work";
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="content-container">
       <div className="torus-wrapper">
@@ -36,19 +37,31 @@ const HelloSection = () => {
           </p>
         </div>
         <h1 className="hello-section_title text-huge">
-          {data.helloSection.hello.title}
+          <span className="typewriter-desktop">
+            <TypewriterText 
+              texts={["hello world ", "my name is andrei", "welcome to my page"]}
+              speed={100}
+              deleteSpeed={50}
+              pauseTime={2000}
+            />
+          </span>
+          <span className="static-mobile">hello world</span>
         </h1>
-        <h2 className="hello-section_body">
-          <span className="hello-section_body-1 text-header-large">
+        <h2 className="hello-section_body-1 text-header-large">
             {data.helloSection.hello.body}
-          </span>
-          <span className="hello-section_body-2 text-header-variant">
-            {data.helloSection.hello.body2}
-          </span>
-          <span className="hello-section_body-3 text-header">
-            {data.helloSection.hello.body3}
-          </span>
         </h2>
+          <div className="key-facts">
+            <div className="key-fact-item">
+              <p className="hello-section_body-2 text-body-large">
+                {data.helloSection.hello.body2}
+              </p>
+            </div>
+            <div className="key-fact-item">
+              <p className="hello-section_body-3 text-body-large">
+                {data.helloSection.hello.body3}
+              </p>
+            </div>
+          </div>
         <section className="about-section_fact-wrapper">
           <div className="hello-cube_wrapper">
             <div className="cube-container">
@@ -62,7 +75,13 @@ const HelloSection = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section>      
+        {/* <div className="hello-button-wrapper">
+          <ButtonPrimary
+            label="view my work" 
+            onClick={scrollToWork}
+          />
+        </div> */}
       </section>
     </div>
   );

@@ -21,9 +21,18 @@
 }
 
 .hello-section_title {
-  /* color: var(--tertiary-red); */
+  color: var(--tertiary-red);
+  margin-bottom: 0.5rem;
 }
 
+/* Typewriter responsive control */
+.static-mobile {
+  display: none;
+}
+
+.typewriter-desktop {
+  display: inline;
+}
 
 .logo {
   display: flex;
@@ -52,13 +61,35 @@
   color: var(--tertiary-yellow);
 }
 
-.hello-section_body-2 {
-  /* color: var(--secondary-blue); */
-  font-family: NeueBit;
+
+/* Key Facts Section */
+.key-facts {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
-.hello-section_body-3 {
-  color: var(--tertiary-red);
+.key-fact-item  {
+  /* background-color: var(--transparent-background); */
+  padding: 0rem 1rem;
+  border-left: 2px dashed var(--secondary-blue);
+}
+
+.key-fact-item p {
+  margin: 0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.key-fact-item:hover {
+  border-left-color: var(--tertiary-yellow);
+}
+
+.key-fact-item:hover p {
+  transform: translateX(2px);
 }
 
 .torus {
@@ -84,6 +115,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+}
+
+.cube-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cube {
@@ -136,6 +174,8 @@
     transform: rotateX(360deg) rotateY(360deg);
   }
 }
+
+
 @media screen and (max-width: 1200px) {
     .logo-tags {
       display: none;
@@ -157,16 +197,34 @@ justify-content: flex-start;
   .hello-section_body {
     flex-direction: column;
   }
+  .key-facts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  
+  .key-facts p {
+    text-align: left;
+    padding: 0.6rem 1rem;
+  }
+  
   .torus-wrapper {
     display: none;
   }
   .hello-section_title {
     margin: 0.5rem 0;
   }
-
-  /* .hello-section_body {
+  
+  /* Hide typewriter animation on mobile, show static text */
+  .typewriter-desktop {
     display: none;
-  } */
+  }
+  
+  .static-mobile {
+    display: inline;
+  }
 
   .cube {
     margin: 2rem 0;

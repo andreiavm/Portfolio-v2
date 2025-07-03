@@ -32,8 +32,9 @@ const data = {
     ],
     helloSection: {
         hello: {
-            title: "UX Designer & Researcher",
-            body: "Hypothesis-driven designer that solves complex product problems using evidence, empathy, and structure.",
+            body: "I am a hypothesis-driven designer that solves complex product problems using evidence, empathy, and structure.",
+            body2: "🧑‍💻 UX Designer at Studyportals",
+            body3: "📌 Based in the Netherlands",
             // body2: "&& ",
             // body3: "hypothesis-driven",
             body4: ""
@@ -47,7 +48,7 @@ const data = {
 
         logo: {
             text: "andreiavram.design",
-            tags: "designer / researcher / digital artisan",
+            tags: "designer / developer / digital artisan",
         },
 
     },
@@ -56,7 +57,7 @@ const data = {
             text: "about",
             slug: "about",
             number: "01",
-            color: "var(--tertiary-red)",
+            color: "var(--secondary-blue)",
         },
         {
             text: "work",
@@ -149,7 +150,7 @@ const data = {
         span2: "and ",
         span3: "Pragmatism",
         body: "I design conversion-focused products by aligning user needs with business goals across the full product lifecycle.",
-        body2: "With a background in UX research and a solid understanding of technical constraints, I help teams turn complex problems into simple, actionable outcomes.",
+        body2: "With a background in qualitative research, conversion optimisation, and a solid grasp of technical constraints, I help teams turn complex problems into simple, actionable solutions.",
         // body4: "Experimentation as a means of innovation.",
         // body5: "Building functional experiences optimized for conversion and engagement.", 
         // body6: "Embracing a multi-disciplinary approach to challenge design dogmas.",

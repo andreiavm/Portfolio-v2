@@ -1,20 +1,13 @@
 .button-primary {
-  background: #111;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 16px;
-  padding: 0.9rem 2.2rem;
-  font-size: 1.25rem;
-  font-family: inherit;
-  font-weight: 500;
-  box-shadow: 0 0 0 3px rgba(255,255,255,0.25), 0 2px 16px 0 rgba(255,255,255,0.10);
-  transition: box-shadow 0.2s, transform 0.2s;
+  background-color: var(--transparent-background);
+  font-family: NeueBit, sans-serif;
+  box-shadow: none;
+  border: none;
+  font-size: 3rem;
+  color: var(--tertiary-green);
+  /* border-radius: 16px; */
+  padding: 1rem 2rem;
   cursor: pointer;
-  outline: none;
-}
-
-.button-primary:hover,
-.button-primary:focus {
-  box-shadow: 0 0 0 5px rgba(255,255,255,0.35), 0 4px 24px 0 rgba(255,255,255,0.18);
-  transform: translateY(-2px) scale(1.03);
+  white-space: nowrap;
+  position: relative;
 }
