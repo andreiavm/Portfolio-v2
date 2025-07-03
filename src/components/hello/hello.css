@@ -203,8 +203,22 @@ justify-content: flex-start;
     align-items: flex-start;
     gap: 1rem;
   }
-
   
+  .key-fact-item {
+    padding-left: 0.8rem;
+    border-left: 2px solid var(--secondary-blue);
+    width: 100%;
+  }
+  
+  /* Disable hover effects on mobile */
+  .key-fact-item:hover {
+    border-left-color: var(--secondary-blue);
+  }
+  
+  .key-fact-item:hover p {
+    transform: none;
+  }
+
   .key-facts p {
     text-align: left;
     padding: 0.6rem 1rem;
@@ -213,12 +227,9 @@ justify-content: flex-start;
   .torus-wrapper {
     display: none;
   }
-  .hello-section_title {
-    display: none;
-  }
   
   .logo-text {
-    display: none;
+    /* display: none; */
   }
   
   /* Hide typewriter animation on mobile, show static text */
@@ -227,7 +238,7 @@ justify-content: flex-start;
   }
   
   .static-mobile {
-    display: none;
+    display: block;
   }
 
   .hello-cube_wrapper {
