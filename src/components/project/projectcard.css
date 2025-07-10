@@ -10,11 +10,18 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 
 .project-card:hover {
     transform: translateY(-4px);
+}
+
+.project-card--active {
+    transform: translateY(-4px);
+    border-color: var(--tertiary-yellow);
+    box-shadow: 0 8px 32px rgba(255, 222, 34, 0.2);
 }
 
 .project-card_content {
@@ -104,4 +111,16 @@
     opacity: 0.15;
     z-index: 2;
     pointer-events: none;
+}
+
+.project-card_click-hint {
+    margin-top: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--tertiary-yellow);
+    font-style: italic;
+}
+
+.project-card:hover .project-card_click-hint {
+    opacity: 1;
 }

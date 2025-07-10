@@ -2,6 +2,7 @@ import React from 'react';
 import HelloSection from './components/hello/Hello';
 import AboutSection from './components/about/About';
 import WorkSection from './components/work/Work';
+import PlaySection from './components/play/Play';
 import ContactSection from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 function App() {
@@ -11,10 +12,10 @@ function App() {
       {/* <Nav /> */}
       {/* <NavMobile /> */}
       <HelloSection />
+      <PlaySection />
       <AboutSection />
       <WorkSection />
-      {/* <PlaySection /> */}
-      {/* <ContactSection /> */}
+      <ContactSection />
       <Footer />
     </>
   )

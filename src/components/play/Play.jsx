@@ -1,111 +1,40 @@
 import { useState, useEffect, useRef } from 'react'
 import './play.css';
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { data } from '../../data/data.js';
 import SectionDivider from '../divider/Divider';
-import ProjectCard from '../project/ProjectCard'
-import Dream from '../dream/Dream'
-import Beach from '../beach/Beach'
+import ScrollAnimatedSection from '../animations/ScrollAnimatedSection.jsx';
 
 const PlaySection = () => {
-    const [openCardIndex, setOpenCardIndex] = useState(-1);
-    const cardRefs = useRef([]);
-    const [isPlaySectionVisible, setIsPlaySectionVisible] = useState(false);
-    const playSectionRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                setIsPlaySectionVisible(entry.isIntersecting);
-            });
-        });
-
-        if (playSectionRef.current) {
-            observer.observe(playSectionRef.current);
-        }
-
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
-
-    useEffect(() => {
-        if (openCardIndex >= 0) {
-            cardRefs.current[openCardIndex]?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-        }
-    }, [openCardIndex]);
-
-    const handleNextClick = () => {
-        let nextIndex = openCardIndex + 1;
-        if (nextIndex > 1) {
-            nextIndex = 0;
-        }
-
-        setOpenCardIndex(nextIndex)
-    };
-    const handleCloseClick = () => {
-        setOpenCardIndex(-1);
-        const playSection = document.getElementById("play");
-
-        if (playSection) {
-            playSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-        }
-    };
     return (
         <div className="content-container" id="play">
-            <SectionDivider text={data.divider[2].text} number={data.divider[2].number} color={data.divider[2].color} slug={data.divider[2].slug} />
-            <section
-                className="work-section"
-                ref={playSectionRef} >
-                {
-                    data.play.map((project, index) => (
-                        <div
-                            key={index}
-                            ref={(el) => (cardRefs.current[index] = el)}>
-                            <ProjectCard
-                                name={project.name}
-                                role={project.role}
-                                image={project.image}
-                                title={project.title}
-                                color={project.color}
-                                isOpen={index === openCardIndex}
-                                onClick={() => {
-                                    setOpenCardIndex((prevIndex) =>
-                                        prevIndex === index ? -1 : index
-                                    );
-                                }}
-                            />
-                            {index === 0 && openCardIndex === 0 && <Dendi />}
-                            {index === 0 && openCardIndex === 0 && <Dream />}
-                            {index === 1 && openCardIndex === 1 && <Beach />}
-                        </div>
-                    ))
-                }
-                <AnimatePresence>
-                    {
-                        isPlaySectionVisible && openCardIndex >= 0 && (
-                            <motion.div
-                                initial={{ opacity: 0, y: 0 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                exit={{ opacity: 0, y: 0 }}
-                                transition={{ duration: 0.15 }}
-                                className="floating-button_wrapper">
-                                <FloatingButton label="Next" onClick={handleNextClick} />
-                                <FloatingButton label="Close" onClick={handleCloseClick} />
-                            </motion.div >
-                        )
-                    }
-                </AnimatePresence>
-            </section>
+            <ScrollAnimatedSection animationType="fadeUp" delay={0.5}>
+                <SectionDivider text={data.divider[2].text} number={data.divider[2].number} color={data.divider[2].color} slug={data.divider[2].slug} />
+            </ScrollAnimatedSection>
+            
+            <ScrollAnimatedSection animationType="fadeUp" delay={0.2}>
+                <section className="play-iframe-section">
+                    <motion.div 
+                        className="play-iframe-wrapper"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true, margin: "-100px" }}
+                    >
+                        <iframe
+                            src="https://dream-market-2050.netlify.app/"
+                            className="play-iframe"
+                            title="Dream Market 2050 - Portfolio Project"
+                            loading="lazy"
+                            allowFullScreen
+                            scrolling="no"
+                            style={{ pointerEvents: "none" }}
+                        />
+                    </motion.div>
+                </section>
+            </ScrollAnimatedSection>
         </div>
     );
 }
-
 
 export default PlaySection;

@@ -1,13 +1,18 @@
-.button-primary {
-  background-color: var(--transparent-background);
-  font-family: NeueBit, sans-serif;
-  box-shadow: none;
-  border: none;
-  font-size: 3rem;
-  color: var(--tertiary-green);
-  /* border-radius: 16px; */
-  padding: 1rem 2rem;
-  cursor: pointer;
-  white-space: nowrap;
-  position: relative;
+button {
+  background-color: #00bfff;         /* Bright sky blue */
+  color: white;                      /* White text for contrast */
+  border: none;                      /* Remove default border */
+  padding: 12px 28px;                /* More padding */
+  font-size: 18px;                   /* Bigger font */
+  font-weight: bold;                /* Make text bolder */
+  border-radius: 8px;                /* Rounded corners */
+  cursor: pointer;                   /* Pointer cursor on hover */
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.4);  /* Soft blue shadow */
+  transition: all 0.3s ease-in-out;  /* Smooth hover animation */
+}
+
+button:hover {
+  background-color: #009acd;         /* Slightly darker blue on hover */
+  transform: scale(1.05);            /* Slight scale effect */
+  box-shadow: 0 6px 18px rgba(0, 191, 255, 0.6);  /* Stronger shadow */
 }

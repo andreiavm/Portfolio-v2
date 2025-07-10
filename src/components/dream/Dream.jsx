@@ -1,8 +1,6 @@
 import './dream.css';
 import { data } from '../../data/data';
 import { motion } from 'framer-motion';
-import Overview from '../overview/Overview';
-import CaseTitle from '../casetitle/CaseTitle';
 
 const Dream = () => {
     return (

@@ -4,6 +4,8 @@ import ButtonPrimary from "../button/ButtonPrimary.jsx";
 // import ButtonSecondary from "../button/ButtonSecondary.jsx";
 import TorusCanvas from "./ThreeCanvas.jsx";
 import TypewriterText from "./TypewriterText.jsx";
+import { motion } from "framer-motion";
+import ScrollAnimatedSection from "../animations/ScrollAnimatedSection.jsx";
 
 const HelloSection = () => {
   //   const scrollToContact = () => {
@@ -25,8 +27,19 @@ const HelloSection = () => {
       <div className="torus-wrapper">
         <TorusCanvas />
       </div>
-      <section id="hello" className="hello-section">
-        <div className="hello-logo-wrapper">
+      <motion.section 
+        id="hello" 
+        className="hello-section"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <motion.div 
+          className="hello-logo-wrapper"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <div className="logo">
             <p className="logo-text text-body-large">
               {data.helloSection.logo.text}
@@ -35,8 +48,14 @@ const HelloSection = () => {
           <p className="logo-tags text-body-large">
             {data.helloSection.logo.tags}
           </p>
-        </div>
-        <h1 className="hello-section_title text-huge">
+        </motion.div>
+        
+        <motion.h1 
+          className="hello-section_title text-huge"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
           <span className="typewriter-desktop">
             <TypewriterText 
               texts={["hello world ", "my name is Andrei", "welcome to my page"]}
@@ -46,11 +65,23 @@ const HelloSection = () => {
             />
           </span>
           <span className="static-mobile">hello world</span>
-        </h1>
-        <h2 className="hello-section_body-1 text-header-large">
+        </motion.h1>
+        
+        <motion.h2 
+          className="hello-section_body-1 text-header-large"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
             {data.helloSection.hello.body}
-        </h2>
-          <div className="key-facts">
+        </motion.h2>
+        
+        <motion.div 
+          className="key-facts"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
             <div className="key-fact-item">
               <p className="hello-section_body-2 text-body-large">
                 {data.helloSection.hello.body2}
@@ -61,28 +92,31 @@ const HelloSection = () => {
                 {data.helloSection.hello.body3}
               </p>
             </div>
-          </div>
-        <section className="about-section_fact-wrapper">
-          <div className="hello-cube_wrapper">
-            <div className="cube-container">
-              <div className="cube">
-                <div className="face front"></div>
-                <div className="face back"></div>
-                <div className="face left"></div>
-                <div className="face right"></div>
-                <div className="face top"></div>
-                <div className="face bottom"></div>
+          </motion.div>
+        
+        <ScrollAnimatedSection animationType="scale" delay={0.5}>
+          <section className="about-section_fact-wrapper">
+            <div className="hello-cube_wrapper">
+              <div className="cube-container">
+                <div className="cube">
+                  <div className="face front"></div>
+                  <div className="face back"></div>
+                  <div className="face left"></div>
+                  <div className="face right"></div>
+                  <div className="face top"></div>
+                  <div className="face bottom"></div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>      
+          </section>
+        </ScrollAnimatedSection>      
         {/* <div className="hello-button-wrapper">
           <ButtonPrimary
             label="view my work" 
             onClick={scrollToWork}
           />
         </div> */}
-      </section>
+      </motion.section>
     </div>
   );
 };

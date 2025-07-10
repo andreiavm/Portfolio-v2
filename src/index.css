@@ -31,7 +31,6 @@
   --primary-white: #171717;
   --pure-white: #000000;
   --primary-grey: #000000;
-  --secondary-orange: #d24e15;
   --secondary-blue: #063ffa;
   --tertiary-yellow: #ffde22;
   --tertiary-red: #ca1111;
@@ -105,6 +104,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   width: 100%;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Performance optimization for animations */
+.modal-overlay,
+.modal-content,
+.project-card,
+.bento-item-bespoke,
+.about-card {
+  will-change: transform, opacity;
+}
+
+/* Reset will-change after animations complete */
+.modal-overlay:not(.animating),
+.modal-content:not(.animating),
+.project-card:not(.animating),
+.bento-item-bespoke:not(.animating),
+.about-card:not(.animating) {
+  will-change: auto;
 }
 
 /* Typography */
@@ -192,7 +229,7 @@ body {
   font-weight: normal;
   line-height: 150%;
 }
-.text-body-large-varant {
+.text-body-large-variant {
   font-size: 2rem;
   font-style: normal;
   font-weight: normal;

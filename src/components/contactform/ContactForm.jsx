@@ -3,6 +3,7 @@ import { useRef, useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { data } from '../../data/data.js';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
 
 export const ContactForm = () => {
     const [isEmailSent, setIsEmailSent] = useState(false);
@@ -57,12 +58,28 @@ export const ContactForm = () => {
     return (
         <>
             <div className="contact-form">
-                <div className="contact-form_text-wrapper">
+                <motion.div 
+                    className="contact-form_text-wrapper"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true, margin: "-50px" }}
+                >
                     <h1 className="contact-form_header text-header-large-variant">{data.contactForm.title}</h1>
                     <p className="contact-form_body text-body-large">{data.contactForm.body}</p>
-                </div>
-                <form className="contact-form" ref={form} onSubmit={sendEmail}>
-                    <label className="contact-form_name text-body-large-varant">name
+                </motion.div>
+                
+                <motion.form 
+                    className="contact-form" 
+                    ref={form} 
+                    onSubmit={sendEmail}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                >
+                    <label className="contact-form_name text-body-large-varant">
+                        name
                         <input
                             placeholder='your name here'
                             className="contact-form_name-input"
@@ -74,7 +91,8 @@ export const ContactForm = () => {
                         />
                     </label>
 
-                    <label className="contact-form_email text-body-large-varant">email
+                    <label className="contact-form_email text-body-large-varant">
+                        email
                         <input
                             placeholder='your email here'
                             className="contact-form_email-input"
@@ -86,7 +104,8 @@ export const ContactForm = () => {
                         />
                     </label>
 
-                    <label className="contact-form_text text-body-large-varant">message
+                    <label className="contact-form_text text-body-large-varant">
+                        message
                         <textarea
                             placeholder='your message here'
                             name="message"
@@ -95,17 +114,20 @@ export const ContactForm = () => {
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </label>
-                    <input
+                    
+                    <motion.input
                         className="contact-form_email-input"
                         type="submit"
-                        value="Send Email" />
-                </form>
+                        value="send email"
+                        whileTap={{ scale: 0.98 }}
+                    />
+                </motion.form>
             </div>
 
             {isEmailSent && createPortal(
                 <div className={`success-message text-header-small ${isClosing ? 'closing' : ''}`}>
                     <div className="text-header-small notification-wrapper">
-                        Message sent successfully 😎
+                        Message sent successfully 
                     </div>
                     <button className="notification-close" onClick={handleCloseNotification}>×</button>
                 </div>,
