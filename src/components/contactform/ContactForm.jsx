@@ -118,7 +118,7 @@ export const ContactForm = () => {
                     <motion.input
                         className="contact-form_email-input"
                         type="submit"
-                        value="send email"
+                        value="send message"
                         whileTap={{ scale: 0.98 }}
                     />
                 </motion.form>

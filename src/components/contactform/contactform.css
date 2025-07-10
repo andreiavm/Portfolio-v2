@@ -287,10 +287,6 @@
   font-size: 1.2rem;
 }
 
-.notification-close:hover {
-  opacity: 1;
-}
-
 @keyframes slideDown {
   from {
     opacity: 0;

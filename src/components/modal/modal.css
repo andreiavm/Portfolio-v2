@@ -45,7 +45,6 @@
     z-index: 1001;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    transition: all 0.2s ease;
 }
 
 /* .modal-close:hover {
