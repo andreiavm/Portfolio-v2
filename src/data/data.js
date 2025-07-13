@@ -63,13 +63,13 @@ const data = {
             color: "var(--secondary-blue)",
         },
         {
-            text: "Play",
+            text: "play",
             slug: "play",
             number: "01",
             color: "var(--secondary-blue)",
         },
         {
-            text: "Contact",
+            text: "contact",
             slug: "contact",
             number: "04",
             color: "var(--secondary-blue)",
