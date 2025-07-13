@@ -33,6 +33,28 @@ const PlaySection = () => {
                     </motion.div>
                 </section>
             </ScrollAnimatedSection>
+
+            <ScrollAnimatedSection animationType="fadeUp" delay={0.2}>
+                <section className="play-iframe-section">
+                    <motion.div 
+                        className="play-iframe-wrapper"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true, margin: "-100px" }}
+                    >
+                        <iframe
+                            src="https://delicate-gelato-61f0fd.netlify.app/"
+                            className="play-iframe"
+                            title="ThreeJS Exploration"
+                            loading="lazy"
+                            allowFullScreen
+                            scrolling="no"
+                            style={{ pointerEvents: "none" }}
+                        />
+                    </motion.div>
+                </section>
+            </ScrollAnimatedSection>
         </div>
     );
 }
