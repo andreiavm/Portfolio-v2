@@ -92,8 +92,8 @@
   gap: 1rem;
   margin: 2rem 0;
   grid-template-areas:
-    "services tools skills"
-    "services tools skills";
+    "skills services tools"
+    "skills services tools";
 }
 .about-card-body + .about-card-body {
   margin-top: 1rem;
@@ -124,7 +124,7 @@
 }
 
 .bento-title {
-  color: var(--tertiary-green);
+  color: var(--tertiary-yellow);
   margin-bottom: 0.5rem;
 }
 

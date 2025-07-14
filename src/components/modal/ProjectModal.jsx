@@ -9,7 +9,8 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         if (project.title === "under construction") {
             return (
                 <div className="project-modal-status">
-                    <h3 className="text-header-large">🚧 Under Construction</h3>
+                    <h3 className="text-header-large-variant">under construction</h3>
+                    <h4 className="text-huge">🚧</h4>
                 </div>
             );
         }
@@ -17,7 +18,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         // For future projects with full content, you can expand this
         return (
             <div className="project-modal-status">
-                <h3 className="text-header-large">📋 Project Details</h3>
+                <h3 className="text-header-large">📋 project Details</h3>
             </div>
         );
     };

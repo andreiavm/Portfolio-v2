@@ -10,6 +10,12 @@ const aboutList = data.aboutList;
 
 const bentoCards = [
   {
+    key: 'skills',
+    area: 'skills',
+    title: aboutList[2].title,
+    items: Object.values(aboutList[2]).filter((v, i) => i > 1),
+  },
+  {
     key: 'services',
     area: 'services',
     title: aboutList[0].title,
@@ -20,12 +26,6 @@ const bentoCards = [
     area: 'tools',
     title: aboutList[1].title,
     items: Object.values(aboutList[1]).filter((v, i) => i > 1),
-  },
-  {
-    key: 'skills',
-    area: 'skills',
-    title: aboutList[2].title,
-    items: Object.values(aboutList[2]).filter((v, i) => i > 1),
   },
 ];
 
