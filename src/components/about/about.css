@@ -211,11 +211,17 @@
   .bento-title {
     margin-bottom: 1rem;
   }
-  .about-wave_wrapper {
-    width: 100px;
-    height: 100px;
-  }
+
   .element {
     width: calc(var(--i) * 25px);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-card-side {
+    display: none;
+  }
+  .about-top-grid {
+    grid-template-columns: 1fr;
   }
 }

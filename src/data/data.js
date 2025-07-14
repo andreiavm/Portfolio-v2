@@ -184,7 +184,6 @@ const data = {
             skill14: "Github",
             skill15: "Framer",
             skill16: "Make",
-            skill17: "+ more",
         },
         {
             title: "Skills I bring",
