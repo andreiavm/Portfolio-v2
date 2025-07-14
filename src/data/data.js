@@ -53,19 +53,19 @@ const data = {
         {
             text: "about",
             slug: "about",
-            number: "02",
+            number: "01",
             color: "var(--secondary-blue)",
         },
         {
             text: "work",
             slug: "work",
-            number: "03",
+            number: "02",
             color: "var(--secondary-blue)",
         },
         {
             text: "play",
             slug: "play",
-            number: "01",
+            number: "03",
             color: "var(--secondary-blue)",
         },
         {

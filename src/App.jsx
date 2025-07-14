@@ -12,9 +12,9 @@ function App() {
       {/* <Nav /> */}
       {/* <NavMobile /> */}
       <HelloSection />
-      <PlaySection />
       <AboutSection />
       <WorkSection />
+      <PlaySection />
       <ContactSection />
       <Footer />
     </>
