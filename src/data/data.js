@@ -32,7 +32,8 @@ const data = {
     ],
     helloSection: {
         hello: {
-            body: "I am a hypothesis-driven designer that solves complex product problems using evidence, empathy, and structure.",
+            subtext: "Hi, I am Andrei",
+            body: "I am a hypothesis-driven designer that turns data into measurable conversion growth.",
             body2: "🧑‍💻 UX Designer at Studyportals",
             body3: "📌 Based in the Netherlands",
         },
@@ -45,7 +46,7 @@ const data = {
 
         logo: {
             text: "andreiavram.design",
-            tags: "designer / developer / digital artisan",
+            tags: "designer / experimenter / digital artisan",
         },
 
     },
@@ -98,7 +99,7 @@ const data = {
     ],
     project: [
         {
-            name: "coming soon",
+            name: "the best is yet to come",
             role: "CRO",
             title: "under construction",
             color: "var(--tertiary-green)",
@@ -139,10 +140,8 @@ const data = {
     ],
 
     about: {
-        span: "Creativity ",
-        span2: "and ",
-        span3: "Pragmatism",
-        body: "I design conversion-focused products by aligning user needs with business goals across the full product lifecycle.",
+
+        body: "I design intuitive and conversion-focused products by aligning user needs with business goals across the full product lifecycle.",
         body2: "With a background in qualitative research, conversion optimisation, and a solid grasp of technical constraints, I help teams turn complex problems into simple, actionable solutions.",
         // body3: "Experimentation as a means of innovation.",
         // body4: "Building functional experiences optimized for conversion and engagement.", 
@@ -154,24 +153,24 @@ const data = {
             title: "Things I do",
             number: "01",
             skill0: "User Research",
-            skill2: "UI Design",
-            skill3: "Interaction Design",
+            // skill2: "UI Design",
+            skill3: "UX Design",
             skill4: "Workshop Facilitation",
             // skill5: "Information Architecture",
             skill6: "A/B Testing",
-            skill7: "Accessibility (a11y)",
-            skill8: "Prompt Engineering",
-            skill9: "Front-end Implementation",
+            skill7: "Design Systems",
+            skill8: "AI-driven Prototyping",
+            skill9: "Prompt Engineering",
         },
         {
             title: "Tools I use",
             number: "02",
             skill0: "Figma",
-            skill1: "Sketch",
+            // skill1: "Sketch",
             skill3: "Miro",
-            skill2: "Design Systems",
+            // skill2: "Design Systems",
             skill4: "Javascript",
-            skill4: "Storybook",
+            // skill4: "Storybook",
             skill5: "React",
             skill6: "HTML & CSS",
             skill7: "Jira",
@@ -188,9 +187,8 @@ const data = {
         {
             title: "Skills I bring",
             number: "03",
-            skill0: "Systems Thinking",
-            skill1: "Conversion Optimization",
-            skill2: "Experimentation",
+            skill0: "Conversion Optimisation",
+            skill1: "Systems Thinking",
             skill3: "Problem Solving",
             skill4: "Collaboration",
             skill5: "Communication",

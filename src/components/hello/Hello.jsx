@@ -1,9 +1,8 @@
 import "./hello.css";
 import { data } from "../../data/data.js";
 import ButtonPrimary from "../button/ButtonPrimary.jsx";
-// import ButtonSecondary from "../button/ButtonSecondary.jsx";
 import TorusCanvas from "./ThreeCanvas.jsx";
-import TypewriterText from "./TypewriterText.jsx";
+// import TypewriterText from "./TypewriterText.jsx";
 import { motion } from "framer-motion";
 import ScrollAnimatedSection from "../animations/ScrollAnimatedSection.jsx";
 
@@ -27,14 +26,14 @@ const HelloSection = () => {
       <div className="torus-wrapper">
         <TorusCanvas />
       </div>
-      <motion.section 
-        id="hello" 
+      <motion.section
+        id="hello"
         className="hello-section"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <motion.div 
+        <motion.div
           className="hello-logo-wrapper"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,52 +48,57 @@ const HelloSection = () => {
             {data.helloSection.logo.tags}
           </p>
         </motion.div>
-        
-        <motion.h1 
-          className="hello-section_title text-huge"
+        <motion.h2
+          className="hello-section_title text-header-variant"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <span className="typewriter-desktop">
-            <TypewriterText 
-              texts={["hello world ", "my name is Andrei", "welcome to my page"]}
-              speed={100}
-              deleteSpeed={50}
-              pauseTime={2000}
-            />
-          </span>
-          <span className="static-mobile">hello world</span>
-        </motion.h1>
-        
-        <motion.h2 
+          {data.helloSection.hello.subtext}
+        </motion.h2>
+        <motion.h1
           className="hello-section_body-1 text-header-large"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-            {data.helloSection.hello.body}
-        </motion.h2>
-        
-        <motion.div 
+          {data.helloSection.hello.body}
+        </motion.h1>
+        <motion.div
           className="key-facts"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-            <div className="key-fact-item">
-              <p className="hello-section_body-2 text-body-large">
-                {data.helloSection.hello.body2}
-              </p>
-            </div>
-            <div className="key-fact-item">
-              <p className="hello-section_body-3 text-body-large">
-                {data.helloSection.hello.body3}
-              </p>
-            </div>
-          </motion.div>
-        
-        <ScrollAnimatedSection animationType="scale" delay={0.5}>
+          <div className="key-fact-item">
+            <p className="hello-section_body-2 text-body-large">
+              {data.helloSection.hello.body2}
+            </p>
+          </div>
+          <div className="key-fact-item">
+            <p className="hello-section_body-3 text-body-large">
+              {data.helloSection.hello.body3}
+            </p>
+          </div>
+        </motion.div>
+                    <motion.div
+              className="hello-link-wrapper"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+            >
+              <a
+                href="#work"
+                className="hello-link text-header-variant"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToWork();
+                }}
+              >
+                view my work <span aria-hidden="true">↗</span>
+              </a>
+            </motion.div>
+            <ScrollAnimatedSection animationType="scale" delay={0.5}>
           <section className="about-section_fact-wrapper">
             <div className="hello-cube_wrapper">
               <div className="cube-container">
@@ -109,13 +113,7 @@ const HelloSection = () => {
               </div>
             </div>
           </section>
-        </ScrollAnimatedSection>      
-        {/* <div className="hello-button-wrapper">
-          <ButtonPrimary
-            label="view my work" 
-            onClick={scrollToWork}
-          />
-        </div> */}
+        </ScrollAnimatedSection>
       </motion.section>
     </div>
   );

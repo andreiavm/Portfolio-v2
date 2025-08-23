@@ -1,12 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HelloSection from './components/hello/Hello';
 import AboutSection from './components/about/About';
 import WorkSection from './components/work/Work';
 import PlaySection from './components/play/Play';
 import ContactSection from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-function App() {
+import ProjectDetailPage from './components/project/ProjectDetailPage';
 
+// Home page component
+function HomePage() {
   return (
     <>
       {/* <Nav /> */}
@@ -18,7 +21,18 @@ function App() {
       <ContactSection />
       <Footer />
     </>
-  )
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/project/:projectId" element={<ProjectDetailPage />} /> */}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

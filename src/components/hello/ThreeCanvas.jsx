@@ -20,10 +20,10 @@ const ThreeCanvas = () => {
             // torusRef.current.rotation.x += 0.001;
             // torusRef.current.rotation.z += 0.001;
 
-            const smoothOffsetX = Math.sin(time * 0.002);
+            const smoothOffsetX = Math.sin(time * 0.0002);
             const smoothOffsetY = Math.sin(time * 0.001);
 
-            const newDisplacementBias = 1 + Math.sin(time * 0.25) * 0.5;
+            const newDisplacementBias = 1 + Math.sin(time * 0.25) * 0.25;
 
             setDisplacementBias(newDisplacementBias);
 
@@ -80,7 +80,7 @@ const ThreeCanvas = () => {
                             displacementScale={4}
                             displacementBias={displacementBias}
                             transparent
-                            opacity={0.4}
+                            opacity={0.35}
                             displacementMap-offset={new THREE.Vector2(displacementOffset.x, displacementOffset.y)}
                         />
                     </TorusKnot>

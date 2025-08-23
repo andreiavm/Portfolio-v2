@@ -1,30 +1,13 @@
-import { useState } from 'react'
 import './work.css'
 import { motion } from 'framer-motion'
 import { data } from '../../data/data.js'
 import SectionDivider from '../divider/Divider'
 import ProjectCard from '../project/ProjectCard.jsx'
-import ProjectModal from '../modal/ProjectModal.jsx'
 import ScrollAnimatedSection from '../animations/ScrollAnimatedSection.jsx'
 import { useStaggeredScrollAnimation } from '../../hooks/useScrollAnimation.js'
 
 const WorkSection = () => {
-    const [openCardIndex, setOpenCardIndex] = useState(-1);
-    const [selectedProject, setSelectedProject] = useState(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const [containerRef, visibleItems] = useStaggeredScrollAnimation(data.project.length);
-
-    const handleCardClick = (project, index) => {
-        setSelectedProject(project);
-        setOpenCardIndex(index);
-        setIsModalOpen(true);
-    };
-
-    const handleCloseModal = () => {
-        setIsModalOpen(false);
-        setOpenCardIndex(-1);
-        setSelectedProject(null);
-    };
 
     return (
         <div className="content-container" id="work">
@@ -56,20 +39,12 @@ const WorkSection = () => {
                                     role={project.role}
                                     image={project.image}
                                     title={project.title}
-                                    isOpen={index === openCardIndex}
-                                    onClick={() => handleCardClick(project, index)}
                                 />
                             </motion.div>
                         ))}
                     </div>
                 </div>
             </ScrollAnimatedSection>
-            
-            <ProjectModal 
-                isOpen={isModalOpen}
-                onClose={handleCloseModal}
-                project={selectedProject}
-            />
         </div>
     );
 };

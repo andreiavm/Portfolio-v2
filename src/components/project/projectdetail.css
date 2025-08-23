@@ -1,0 +1,114 @@
+.torus-wrapper {
+    z-index: -100;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.project-detail {
+    min-height: 100vh;
+    padding: 2rem 0;
+    color: var(--primary-white);
+    position: relative;
+    z-index: 1;
+}
+
+.project-detail__header {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.project-detail__back-btn {
+    background: none;
+    border: 1px solid var(--primary-white);
+    color: var(--primary-white);
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.project-detail__back-btn:hover {
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+}
+
+.project-detail__hero {
+    text-align: center;
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-detail__role {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-blue);
+    color: var(--primary-black);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.project-detail__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    line-height: 1.1;
+}
+
+.project-detail__subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-detail__body {
+    padding: 4rem 0;
+    display: grid;
+    gap: 3rem;
+}
+
+.project-detail__section {
+    max-width: 800px;
+}
+
+.project-detail__section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--secondary-blue);
+}
+
+.project-detail__section p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+    .project-detail {
+        padding: 1rem;
+    }
+    
+    .project-detail__title {
+        font-size: 2.5rem;
+    }
+    
+    .project-detail__hero {
+        padding: 2rem 0;
+    }
+    
+    .project-detail__body {
+        padding: 2rem 0;
+    }
+}

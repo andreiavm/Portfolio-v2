@@ -1,5 +1,6 @@
 import './projectcard.css';
 import { motion } from 'framer-motion';
+// import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Title = styled.h3`
@@ -10,15 +11,20 @@ const Title = styled.h3`
     }};
 `;
 
-function ProjectCard({ name, role, image, title, index, onClick, isOpen }) {
+function ProjectCard({ name, role, image, title, index }) {
+    // const navigate = useNavigate();
+    // const handleClick = () => {
+    //     navigate(`/project/${index}`);
+    // };
+
     return (
         <motion.article
-            className={`project-card ${isOpen ? 'project-card--active' : ''}`}
+            className="project-card"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            onClick={onClick}
-            style={{ cursor: 'pointer' }}
+            // onClick={handleClick}
+            // style={{ cursor: 'pointer' }}
         >
             <div className="project-card_content">
                 <div className="project-card_top">
@@ -30,7 +36,7 @@ function ProjectCard({ name, role, image, title, index, onClick, isOpen }) {
                     <p className="project-card_description text-header-large">{title}</p>
                 </div>
                 <div className="project-card_click-hint">
-                    <span className="text-body-large-variant">view details</span>
+                    <span className="text-body-large-variant">details coming soon</span>
                 </div>
             </div>
 
