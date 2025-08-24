@@ -1,2 +1,28 @@
 .button-primary {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	background: transparent;
+	border: none;
+	color: var(--tertiary-yellow);
+	font: inherit;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 0.5rem 0.25rem;
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.button-primary::after {
+	content: '↗';
+	display: inline-block;
+	transform: translateY(1px);
+	transition: transform 0.2s ease;
+}
+
+.button-primary:hover {
+	color: var(--secondary-orange);
+}
+
+.button-primary:hover::after {
+	transform: translate(2px, -2px);
 }

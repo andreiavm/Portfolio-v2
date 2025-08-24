@@ -57,7 +57,7 @@ function ProjectDetailPage() {
                     
                     <div className="project-detail__section">
                         <h2>Status</h2>
-                        <p>The best is yet to come</p>
+                        <p>Coming Soon</p>
                     </div>
                 </div>
             </div>

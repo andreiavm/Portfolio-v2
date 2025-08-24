@@ -1,4 +1,3 @@
-import './button.css';
 
 const ButtonPrimary = ({ label, onClick }) => {
     return (

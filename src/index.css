@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
   font-family: "NeueMontreal";
-  src: url(./fonts/PPNeueMontreal-Bold.otf);
+  src: url(./fonts/PPNeueMontreal-Bold.woff);
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "NeueMontreal";
-  src: url(./fonts/PPNeueMontreal-Medium.otf);
+  src: url(./fonts/PPNeueMontreal-Medium.woff);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: "NeueBit";
-  src: url(./fonts/PPNeueBit-Bold.otf);
+  src: url(./fonts/PPNeueBit-Bold.woff);
   font-weight: bold;
   font-style: normal;
   font-display: swap;
