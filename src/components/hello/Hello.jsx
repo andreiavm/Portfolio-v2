@@ -1,8 +1,11 @@
 import "./hello.css";
 import { data } from "../../data/data.js";
-import TorusCanvas from "./ThreeCanvas.jsx";
 import { motion } from "framer-motion";
 import ScrollAnimatedSection from "../animations/ScrollAnimatedSection.jsx";
+import { lazy, Suspense } from "react";
+
+// Lazy load the heavy Three.js canvas
+const TorusCanvas = lazy(() => import("./ThreeCanvas.jsx"));
 
 const HelloSection = () => {
   //   const scrollToContact = () => {
@@ -22,7 +25,9 @@ const HelloSection = () => {
   return (
     <div className="content-container">
       <div className="torus-wrapper">
-        <TorusCanvas />
+        <Suspense fallback={<div />}>
+          <TorusCanvas />
+        </Suspense>
       </div>
       <motion.section
         id="hello"
@@ -54,14 +59,9 @@ const HelloSection = () => {
         >
           {data.helloSection.hello.subtext}
         </motion.p>
-        <motion.h1
-          className="hello-section_body-1 text-header-large"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
+        <h1 className="hello-section_body-1 text-header-large">
           {data.helloSection.hello.body}
-        </motion.h1>
+        </h1>
         <motion.div
           className="key-facts"
           initial={{ opacity: 0, y: 20 }}
