@@ -58,7 +58,7 @@ const HelloSection = () => {
           className="hello-section_body-1 text-header-large"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.8 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
         >
           {data.helloSection.hello.body}
         </motion.h1>

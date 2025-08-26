@@ -1,35 +1,35 @@
 const data = {
-    navigation: [
-        {
-            title: "About",
-            slug: "about",
-            color: "var(--primary-black)",
-            background: "var(--secondary-orange)",
-            number: 1,
-        },
-        {
-            title: "Work",
-            slug: "work",
-            color: "var(--primary-black)",
-            background: "var(--secondary-blue)",
-            number: 2,
-        },
-        {
-            title: "Play",
-            slug: "play",
-            color: "var(--primary-white)",
-            background: "var(--tertiary-yellow)",
-            number: 3,
-        },
-        {
-            title: "Contact",
-            slug: "contact",
-            color: "var(--primary-black)",
-            background: "var(--tertiary-red)",
-            number: 4,
-        },
+    // navigation: [
+    //     {
+    //         title: "About",
+    //         slug: "about",
+    //         color: "var(--primary-black)",
+    //         background: "var(--secondary-orange)",
+    //         number: 1,
+    //     },
+    //     {
+    //         title: "Work",
+    //         slug: "work",
+    //         color: "var(--primary-black)",
+    //         background: "var(--secondary-blue)",
+    //         number: 2,
+    //     },
+    //     {
+    //         title: "Play",
+    //         slug: "play",
+    //         color: "var(--primary-white)",
+    //         background: "var(--tertiary-yellow)",
+    //         number: 3,
+    //     },
+    //     {
+    //         title: "Contact",
+    //         slug: "contact",
+    //         color: "var(--primary-black)",
+    //         background: "var(--tertiary-red)",
+    //         number: 4,
+    //     },
 
-    ],
+    // ],
     helloSection: {
         hello: {
             subtext: "Hi, I am Andrei",
