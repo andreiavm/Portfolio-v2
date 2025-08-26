@@ -65,7 +65,7 @@ export const ContactForm = () => {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true, margin: "-50px" }}
                 >
-                    <h1 className="contact-form_header text-header-large-variant">{data.contactForm.title}</h1>
+                    <h3 className="contact-form_header text-header-large-variant">{data.contactForm.title}</h3>
                     <p className="contact-form_body text-body-large">{data.contactForm.body}</p>
                 </motion.div>
                 

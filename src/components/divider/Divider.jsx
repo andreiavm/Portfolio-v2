@@ -16,7 +16,7 @@ function SectionDivider({ text, number, color, slug }) {
     return (
         <SectionDividerWrapper color={color}>
             <div className="section-divider">
-                <p className="section-divider_text text-header">{text}</p>
+                <h2 className="section-divider_text text-header">{text}</h2>
                 <div className="section-divider_description-wrapper">
                     <div className="section-divider-text-wrapper">
                         {/* <p className="section-divider_description text-title">

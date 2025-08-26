@@ -1,8 +1,6 @@
 import "./hello.css";
 import { data } from "../../data/data.js";
-import ButtonPrimary from "../button/ButtonPrimary.jsx";
 import TorusCanvas from "./ThreeCanvas.jsx";
-// import TypewriterText from "./TypewriterText.jsx";
 import { motion } from "framer-motion";
 import ScrollAnimatedSection from "../animations/ScrollAnimatedSection.jsx";
 
@@ -48,14 +46,14 @@ const HelloSection = () => {
             {data.helloSection.logo.tags}
           </p>
         </motion.div>
-        <motion.h2
+        <motion.p
           className="hello-section_title text-header-variant"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           {data.helloSection.hello.subtext}
-        </motion.h2>
+        </motion.p>
         <motion.h1
           className="hello-section_body-1 text-header-large"
           initial={{ opacity: 0, y: 20 }}

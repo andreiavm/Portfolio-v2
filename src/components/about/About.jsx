@@ -47,9 +47,9 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true, margin: "-100px" }}
           >
-            <span className="about-card-body text-header">
+            <p className="about-card-body text-header">
               {data.about.body}
-            </span>
+            </p>
             <p className="about-card-body text-header">
               {data.about.body2}
             </p>
@@ -94,7 +94,7 @@ const AboutSection = () => {
                 ease: [0.25, 0.46, 0.45, 0.94]
               }}
             >
-              <h2 className="bento-title text-header-large-variant">{card.title}</h2>
+              <h3 className="bento-title text-header-large-variant">{card.title}</h3>
               <ul className="bento-list">
                 {card.items.map((item, idx2) => (
                   <motion.li 
