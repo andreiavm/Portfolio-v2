@@ -80,7 +80,7 @@ const ThreeCanvas = () => {
                             displacementScale={4}
                             displacementBias={displacementBias}
                             transparent
-                            opacity={0.35}
+                            opacity={0.15}
                             displacementMap-offset={new THREE.Vector2(displacementOffset.x, displacementOffset.y)}
                         />
                     </TorusKnot>

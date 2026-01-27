@@ -58,13 +58,13 @@ const data = {
             color: "var(--secondary-blue)",
         },
         {
-            text: "work",
+            text: "my work",
             slug: "work",
             number: "02",
             color: "var(--secondary-blue)",
         },
         {
-            text: "play",
+            text: "personal projects",
             slug: "play",
             number: "03",
             color: "var(--secondary-blue)",
