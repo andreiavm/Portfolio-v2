@@ -1,0 +1,22 @@
+[prerender]
+# Only prerender for real search engines
+allowedUserAgents = [
+  "Googlebot",
+  "Bingbot",
+  "DuckDuckBot",
+  "Slurp",
+  "YandexBot"
+]
+
+# Explicitly ignore social / in-app browsers
+ignoredUserAgents = [
+  "Instagram",
+  "FBAN",
+  "FBAV",
+  "FacebookExternalHit",
+  "LinkedIn",
+  "LinkedInBot",
+  "Twitterbot",
+  "Slackbot",
+  "WhatsApp"
+]

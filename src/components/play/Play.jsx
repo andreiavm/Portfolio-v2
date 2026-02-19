@@ -28,6 +28,7 @@ const PlaySection = () => {
                             loading="lazy"
                             allowFullScreen
                             scrolling="no"
+                            tabindex="-1"
                             style={{ pointerEvents: "none" }}
                         />
                     </motion.div>

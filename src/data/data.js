@@ -33,7 +33,7 @@ const data = {
     helloSection: {
         hello: {
             subtext: "Hi, I am Andrei",
-            body: "I am a hypothesis-driven designer that turns data into measurable conversion growth.",
+            body: "Hypothesis-driven designer that turns data into measurable conversion growth.",
             body2: "🧑‍💻 UX Designer at Studyportals",
             body3: "📌 Based in the Netherlands",
         },
@@ -58,13 +58,13 @@ const data = {
             color: "var(--secondary-blue)",
         },
         {
-            text: "my work",
+            text: "work",
             slug: "work",
             number: "02",
             color: "var(--secondary-blue)",
         },
         {
-            text: "personal projects",
+            text: "play",
             slug: "play",
             number: "03",
             color: "var(--secondary-blue)",
