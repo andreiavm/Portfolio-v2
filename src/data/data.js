@@ -52,8 +52,8 @@ const data = {
     divider: [
         {
             text: "testimonials",
-            slug: "about",
-            number: "01",
+            slug: "testimonials",
+            number: "02",
             color: "var(--secondary-blue)",
         },
         {
@@ -71,7 +71,7 @@ const data = {
         {
             text: "contact",
             slug: "contact",
-            number: "02",
+            number: "03",
             color: "var(--secondary-blue)",
         },
     ],
