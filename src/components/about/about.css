@@ -230,7 +230,7 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 18px;
-  border: 1px solid transparent;
+  border: 2px dashed var(--border-color);
   padding: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -258,7 +258,7 @@
   flex-direction: column;
   gap: 0.35rem;
   padding-top: 0.5rem;
-  border-top: 1px dashed color-mix(in srgb, var(--primary-black) 20%, transparent);
+  border-top: 1px dashed var(--border-color);
 }
 
 .testimonial-card_name {

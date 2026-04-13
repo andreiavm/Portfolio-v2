@@ -34,8 +34,8 @@ const data = {
         hello: {
             subtext: "Hi, I am Andrei",
             body: "Product designer focused on turning hypotheses into measurable outcomes.",
-            body2: "🧑‍💻 UX Designer at Studyportals",
-            body3: "📌 Based in the Netherlands",
+            body2: "UX Designer at Studyportals",
+            body3: " Based in the Netherlands",
         },
         buttons: {
             buttonPrimary: "see my work",
@@ -79,7 +79,7 @@ const data = {
         {
             text: "As an industry, we are trying to understand the impact of Generative AI on everyday products. I believe Andrei’s curiosity has been instrumental in helping us shape a forward-looking strategy.",
             name: "~ Bianca Gorini",
-            position: "Head of Product",
+            position: "Manager Product Owners & UX",
             company: "@Studyportals",
             image: "var(--secondary-blue)"
         }, {
