@@ -4,12 +4,14 @@ import { Preload, TorusKnot } from '@react-three/drei';
 import * as THREE from 'three';
 import displacementMapImage from './displacement-map.webp';
 
-const ThreeCanvas = () => {
+const ThreeCanvas = ({ theme }) => {
     const torusRef = useRef();
 
     const [displacementMap, setDisplacementMap] = useState(null);
     const [displacementOffset, setDisplacementOffset] = useState({ x: 0, y: 0 });
     const [displacementBias, setDisplacementBias] = useState(10);
+    const torusColor = theme === 'dark' ? 0x747470 : 0x4a4a4a;
+    const torusOpacity = theme === 'dark' ? 0.1 : 0.07;
     // const [displacementScale, setDisplacementScale] = useState(10);
 
     useFrame((state) => {
@@ -75,12 +77,12 @@ const ThreeCanvas = () => {
                     >
                         <meshStandardMaterial
                             wireframe={true}
-                            color={0x888888}
+                            color={torusColor}
                             displacementMap={displacementMap}
                             displacementScale={4}
                             displacementBias={displacementBias}
                             transparent
-                            opacity={0.35}
+                            opacity={torusOpacity}
                             displacementMap-offset={new THREE.Vector2(displacementOffset.x, displacementOffset.y)}
                         />
                     </TorusKnot>
@@ -90,7 +92,7 @@ const ThreeCanvas = () => {
     );
 };
 
-const TorusCanvas = () => {
+const TorusCanvas = ({ theme }) => {
     return (
         <Canvas
             shadows
@@ -102,7 +104,7 @@ const TorusCanvas = () => {
             }}
         >
             <Suspense fallback={null}>
-                <ThreeCanvas />
+                <ThreeCanvas theme={theme} />
             </Suspense>
             <Preload all />
         </Canvas>

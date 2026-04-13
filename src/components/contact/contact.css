@@ -2,7 +2,5 @@
     display: flex;
     gap: 5rem;
     flex-direction: column;
-        background-color: rgba(139, 139, 139, 0.1); /* Transparent white */
-;
+    background-color: var(--transparent-background);
 }
-

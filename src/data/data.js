@@ -33,7 +33,7 @@ const data = {
     helloSection: {
         hello: {
             subtext: "Hi, I am Andrei",
-            body: "I am a hypothesis-driven designer that turns data into measurable conversion growth.",
+            body: "Product designer focused on turning hypotheses into measurable outcomes.",
             body2: "🧑‍💻 UX Designer at Studyportals",
             body3: "📌 Based in the Netherlands",
         },
@@ -46,13 +46,12 @@ const data = {
 
         logo: {
             text: "andreiavram.design",
-            tags: "designer / experimenter / digital artisan",
         },
 
     },
     divider: [
         {
-            text: "about",
+            text: "testimonials",
             slug: "about",
             number: "01",
             color: "var(--secondary-blue)",
@@ -60,7 +59,7 @@ const data = {
         {
             text: "work",
             slug: "work",
-            number: "02",
+            number: "01",
             color: "var(--secondary-blue)",
         },
         {
@@ -72,28 +71,34 @@ const data = {
         {
             text: "contact",
             slug: "contact",
-            number: "04",
+            number: "02",
             color: "var(--secondary-blue)",
         },
     ],
     testimonial: [
         {
-            text: "He can lead a project perfectly from A to Z, and his technical knowledge helps him find a mutual language with developers.",
-            name: "~Sanaz Amouzadeh /",
-            position: "Senior UX Designer",
+            text: "As an industry, we are trying to understand the impact of Generative AI on everyday products. I believe Andrei’s curiosity has been instrumental in helping us shape a forward-looking strategy.",
+            name: "~ Bianca Gorini",
+            position: "Head of Product",
             company: "@Studyportals",
             image: "var(--secondary-blue)"
         }, {
+            text: "He can lead a project perfectly from A to Z, and his technical knowledge helps him find a mutual language with developers.",
+            name: "~Sanaz Amouzadeh",
+            position: "Senior UX Designer",
+            company: "@JBT Marel",
+            image: "var(--secondary-blue)"
+        }, {
             text: "We were truly blown away by the level of research you conducted and how well you always incorporate our input into the process.",
-            name: "~ Jodi Hirschfeld /",
+            name: "~ Jodi Hirschfeld",
             position: "Participation Advisor",
             company: "@The Hague Municipality",
             image: "var(--secondary-orange)"
         }, {
             text: "Andrei is very professional with a sense of humour, which makes him very approachable and easy to collaborate with.",
-            name: "~ Massimo Coduti /",
-            position: "Senior Product Owner",
-            company: "@Studyportals",
+            name: "~ Massimo Coduti",
+            position: "Innovation Coach",
+            company: "@Politie",
             image: "var(--tertiary-green)"
         }
     ],
@@ -140,9 +145,8 @@ const data = {
     ],
 
     about: {
-
-        body: "I design intuitive and conversion-focused products by aligning user needs with business goals across the full product lifecycle.",
-        body2: "With a background in qualitative research, conversion optimisation, and a solid grasp of technical constraints, I help teams turn complex problems into simple, actionable solutions.",
+        body: "I approach product design as a continuous loop of research, experimentation, and iteration.",
+        body2: "By combining qualitative insights, data, and AI prototyping, I help teams turn complex problems into clear, testable decisions.",
         // body3: "Experimentation as a means of innovation.",
         // body4: "Building functional experiences optimized for conversion and engagement.", 
         // body5: "Embracing a multi-disciplinary approach to challenge design dogmas.",
@@ -229,8 +233,8 @@ const data = {
     },
 
     contactForm: {
-        title: "Get in touch 👋",
-        body: "I am available for freelance projects. Feel free to reach out for any questions, request my portfolio, or just to say hello.",
+        title: "Get in touch",
+        body: "I am available for freelance projects. Feel free to reach out for any questions, request my portfolio, or just to say hello!",
     },
     footer: {
         body: "Designed and developed by Andrei Avram",

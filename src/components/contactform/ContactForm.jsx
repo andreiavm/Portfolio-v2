@@ -115,12 +115,14 @@ export const ContactForm = () => {
                         />
                     </label>
                     
-                    <motion.input
-                        className="contact-form_email-input"
+                    <motion.button
+                        className="contact-form_submit text-header-variant"
                         type="submit"
-                        value="send message"
                         whileTap={{ scale: 0.98 }}
-                    />
+                    >
+                        <span>send message</span>
+                        <span aria-hidden="true">↗</span>
+                    </motion.button>
                 </motion.form>
             </div>
 

@@ -26,22 +26,61 @@
 /* Variables  */
 :root {
   --font: "NeueMontreal", sans-serif;
-  --primary-black: #e2e2e2;
-  --transparent-background: rgba(139, 139, 139, 0.1);
-  --primary-white: #171717;
-  --pure-white: #000000;
-  --primary-grey: #000000;
+  --primary-black: #171717;
+  --primary-white: #f7f5ef;
+  --pure-white: #ffffff;
+  --primary-grey: #f3efe4;
+  --transparent-background: rgba(255, 255, 255, 0.62);
+  --secondary-orange: #f26a1b;
   --secondary-blue: #063ffa;
-  --tertiary-yellow: #ffde22;
+  --tertiary-yellow: #e6a800;
   --tertiary-red: #ca1111;
   --tertiary-purple: #9610fe;
-  --tertiary-green: #58da4d;
+  --tertiary-green: #2aa61f;
+  --surface-strong: #fffdfa;
+  --surface-soft: rgba(23, 23, 23, 0.06);
+  --surface-muted: rgba(23, 23, 23, 0.08);
+  --surface-overlay: rgba(243, 239, 228, 0.82);
+  --surface-overlay-start: rgba(255, 253, 250, 0.7);
+  --surface-overlay-end: rgba(243, 239, 228, 0.92);
+  --border-color: rgba(23, 23, 23, 0.12);
+  --input-background: #fffdfa;
+  --notification-foreground: #171717;
+  --shadow-soft: none;
+  --panel-border: rgba(23, 23, 23, 0.08);
+  --panel-texture: none;
+}
+
+:root[data-theme="dark"] {
+  --primary-black: #efefec;
+  --primary-white: #171717;
+  --pure-white: #050505;
+  --primary-grey: #030303;
+  --transparent-background: rgba(8, 8, 8, 0.34);
+  --secondary-orange: #ff4636;
+  --secondary-blue: #1e4dff;
+  --tertiary-yellow: #ffd91a;
+  --tertiary-red: #f12a23;
+  --tertiary-purple: #b67cff;
+  --tertiary-green: #8ad56c;
+  --surface-strong: #080808;
+  --surface-soft: rgba(255, 255, 255, 0.06);
+  --surface-muted: rgba(255, 255, 255, 0.08);
+  --surface-overlay: rgba(5, 5, 5, 0.92);
+  --surface-overlay-start: rgba(10, 10, 10, 0.58);
+  --surface-overlay-end: rgba(5, 5, 5, 0.94);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --input-background: #090909;
+  --notification-foreground: #efefec;
+  --shadow-soft: none;
+  --panel-border: rgba(255, 255, 255, 0.06);
 }
 
 /* Reset */
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background-color: var(--primary-grey);
 }
 
 *,
@@ -104,6 +143,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   width: 100%;
+  transition: background-color 0.35s ease, color 0.35s ease;
 }
 
 /* Smooth scrolling for the entire page */
@@ -131,7 +171,10 @@ html {
 .modal-content,
 .project-card,
 .bento-item-bespoke,
-.about-card {
+.about-card,
+.theme-toggle,
+.contact-form input,
+.contact-form textarea {
   will-change: transform, opacity;
 }
 
@@ -140,7 +183,10 @@ html {
 .modal-content:not(.animating),
 .project-card:not(.animating),
 .bento-item-bespoke:not(.animating),
-.about-card:not(.animating) {
+.about-card:not(.animating),
+.theme-toggle:not(.animating),
+.contact-form input:not(.animating),
+.contact-form textarea:not(.animating) {
   will-change: auto;
 }
 
@@ -253,12 +299,38 @@ html {
 /* Layout */
 body {
   width: 100%;
-  margin: 1rem auto;
+}
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+}
+
+.app-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.app-background canvas {
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
 }
 
 /* Media queries */
 
 @media screen and (max-width: 768px) {
+
+  .app-background {
+    display: none;
+  }
 
   #contact {
     display: none;

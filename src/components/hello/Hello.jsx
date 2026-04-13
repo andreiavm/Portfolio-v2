@@ -1,17 +1,95 @@
 import "./hello.css";
 import { data } from "../../data/data.js";
-import TorusCanvas from "./ThreeCanvas.jsx";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ScrollAnimatedSection from "../animations/ScrollAnimatedSection.jsx";
 
-const HelloSection = () => {
-  //   const scrollToContact = () => {
-  //     const sectionId = "contact";
-  //     const section = document.getElementById(sectionId);
-  //     if (section) {
-  //       section.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
+const skullMask = [
+  "          ####################          ",
+  "        ########################        ",
+  "      ############################      ",
+  "     ##############################     ",
+  "    ################################    ",
+  "   ##################################   ",
+  "  ####################################  ",
+  "  ####################################  ",
+  "  ####################################  ",
+  "  ####################################  ",
+  "  ###   ##########    ##########   ###  ",
+  "  ###   ##########    ##########   ###  ",
+  "  ###   ##########    ##########   ###  ",
+  "  ###   ##########    ##########   ###  ",
+  "  ####################################  ",
+  "  ##############  ####  ##############  ",
+  "  ###############  ##  ###############  ",
+  "  ####################################  ",
+  "  ##  ####  ####  ####  ####  ####  ##  ",
+  "  ##  ####  ####  ####  ####  ####  ##  ",
+  "      ####      ####      ####          ",
+  "      ####      ####      ####          ",
+];
+
+const noise = "01010110101011010101101010110101010011";
+const extras = "!@#$%&ABCDEFabcdef:;.,|/\\^*+-=";
+const allChars = noise + extras;
+
+const randChar = () =>
+  Math.random() < 0.8
+    ? Math.random() < 0.5
+      ? "0"
+      : "1"
+    : allChars[Math.floor(Math.random() * allChars.length)];
+
+const createSkullGrid = () =>
+  skullMask.map((row) =>
+    row
+      .split("")
+      .map((cell) => (cell === "#" ? randChar() : " "))
+      .join("")
+  );
+
+function SkullAscii() {
+  const [skullFrame, setSkullFrame] = useState(() => createSkullGrid().join("\n"));
+
+  useEffect(() => {
+    const grid = createSkullGrid().map((row) => row.split(""));
+
+    const intervalId = window.setInterval(() => {
+      const nextGrid = grid.map((row, rowIndex) =>
+        row.map((cell, columnIndex) => {
+          if (skullMask[rowIndex][columnIndex] === "#" && Math.random() < 0.08) {
+            return randChar();
+          }
+
+          return cell;
+        })
+      );
+
+      nextGrid.forEach((row, rowIndex) => {
+        grid[rowIndex] = row;
+      });
+
+      setSkullFrame(nextGrid.map((row) => row.join("")).join("\n"));
+    }, 80);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
+
+  return (
+    <div className="hello-skull_wrapper" aria-hidden="true">
+      <pre className="hello-skull">{skullFrame}</pre>
+    </div>
+  );
+}
+
+const HelloSection = ({ theme, onToggleTheme }) => {
+    const scrollToContact = () => {
+      const sectionId = "contact";
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    };
   const scrollToWork = () => {
     const sectionId = "work";
     const section = document.getElementById(sectionId);
@@ -21,9 +99,6 @@ const HelloSection = () => {
   };
   return (
     <div className="content-container">
-      <div className="torus-wrapper">
-        <TorusCanvas />
-      </div>
       <motion.section
         id="hello"
         className="hello-section"
@@ -42,9 +117,22 @@ const HelloSection = () => {
               {data.helloSection.logo.text}
             </p>
           </div>
-          <p className="logo-tags text-body-large">
-            {data.helloSection.logo.tags}
-          </p>
+          <button 
+            type="button"
+            className="theme-toggle"
+            onClick={onToggleTheme}
+            role="switch"
+            aria-checked={theme === "dark"}
+            aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+            aria-pressed={theme === "dark"}
+          >
+            <span className="theme-toggle_label">
+              {theme === "dark" ? "dark" : "light"}
+            </span>
+            <span className="theme-toggle_track" aria-hidden="true">
+              <span className="theme-toggle_icon" />
+            </span>
+          </button>
         </motion.div>
         <motion.p
           className="hello-section_title text-header-variant"
@@ -97,20 +185,9 @@ const HelloSection = () => {
               </a>
             </motion.div>
             <ScrollAnimatedSection animationType="scale" delay={0.5}>
-          <section className="about-section_fact-wrapper">
-            <div className="hello-cube_wrapper">
-              <div className="cube-container">
-                <div className="cube">
-                  <div className="face front"></div>
-                  <div className="face back"></div>
-                  <div className="face left"></div>
-                  <div className="face right"></div>
-                  <div className="face top"></div>
-                  <div className="face bottom"></div>
-                </div>
-              </div>
-            </div>
-          </section>
+              <section className="about-section_fact-wrapper">
+                <SkullAscii />
+              </section>
         </ScrollAnimatedSection>
       </motion.section>
     </div>

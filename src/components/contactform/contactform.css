@@ -1,9 +1,10 @@
 .contact-section {
   margin-top: 2rem;
   background-color: var(--transparent-background);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
+  border: 1px solid transparent;
   padding: 2rem;
   text-align: center;
   scroll-margin-top: 2rem;
@@ -33,7 +34,7 @@
 }
 
 .contact-form_header {
-  color: var(--secondary-orange);
+  color: var(--tertiary-yellow);
 }
 
 .contact-form label {
@@ -57,7 +58,7 @@
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  background-color: var(--pure-white);
+  background-color: var(--input-background);
   color: var(--primary-black);
   width: 100%;
   padding: 1rem;
@@ -87,43 +88,49 @@
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
   transform: translateY(-2px) translateZ(0);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
-.contact-form input[type="submit"] {
+.contact-form_submit {
   margin-top: 1rem;
   font-family: NeueBit, sans-serif;
   align-self: flex-start;
-  /* background-color: var(--transparent-background); */
-  font-weight: bold;
-  font-size: 2rem;
-  color: var(--primary-white);
-  padding: 1rem 1.5rem;
+  color: var(--tertiary-red);
+  padding: 0;
   cursor: pointer;
-  border-radius: 14px;
+  border-radius: 0;
   border: none;
-  transition: all 0.3s ease;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s ease, transform 0.2s ease;
   transform: translateZ(0);
-  position: relative;
-  overflow: hidden;
   text-decoration: none;
 }
 
-.contact-form input[type="submit"]:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+.contact-form_submit:hover {
+  color: var(--secondary-orange);
 }
 
-.contact-form input[type="submit"]:focus {
-  border: solid 2px var(--secondary-blue);
-  box-shadow: none;
+.contact-form_submit span:last-child {
+  display: inline-block;
+  transform: translateY(1px);
+  transition: transform 0.2s ease;
+}
+
+.contact-form_submit:hover span:last-child {
+  transform: translate(2px, -2px);
+}
+
+.contact-form_submit:focus {
+  outline: 2px solid var(--secondary-blue);
+  outline-offset: 4px;
 }
 
 
-.contact-form input[type="submit"]:focus:not(:focus-visible) {
-  border: none;
-  box-shadow: none;
+.contact-form_submit:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .contact-form_content {
@@ -163,7 +170,7 @@
 }
 
 .email-link:hover {
-  box-shadow: var(--shadow-mid);
+  box-shadow: none;
   transform: translateY(-2px);
   background-color: var(--secondary-orange);
   color: var(--pure-white);
@@ -248,7 +255,7 @@
   top: 24px;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: var(--notification-foreground);
   padding: 1rem 1.5rem;
   border-radius: 12px;
   animation: slideDown 0.3s ease-out forwards;
@@ -276,7 +283,7 @@
 .notification-close {
   background: transparent;
   border: none;
-  color: white;
+  color: var(--notification-foreground);
   cursor: pointer;
   padding: 4px;
   display: flex;

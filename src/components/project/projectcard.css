@@ -3,10 +3,10 @@
     width: 100%;
     min-height: 450px;
     height: 100%;
-    background-color: #111111;
+    background-color: var(--surface-strong);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
 .project-card--active {
     transform: translateY(-4px);
     border-color: var(--tertiary-yellow);
-    box-shadow: 0 8px 32px rgba(255, 222, 34, 0.2);
+    box-shadow: none;
 }
 
 .project-card_content {
@@ -31,7 +31,7 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    color: #ffffff;
+    color: var(--primary-black);
 }
 
 @media (min-width: 640px) {
@@ -53,7 +53,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 0.5rem 0.75rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--surface-muted);
     border-radius: 2px;
 }
 
@@ -73,11 +73,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(17, 17, 17, 0.7) 0%,
-        rgba(17, 17, 17, 0.9) 100%
-    );
+    background: transparent;
     z-index: 1;
 }
 
@@ -104,11 +100,11 @@
     width: 100%;
     height: 100%;
     background-image: radial-gradient(
-        rgba(255, 255, 255, 0.1) 1px,
+        var(--border-color) 1px,
         transparent 1px
     );
     background-size: 4px 4px;
-    opacity: 0.15;
+    opacity: 0.24;
     z-index: 2;
     pointer-events: none;
 }

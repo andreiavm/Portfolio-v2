@@ -40,7 +40,7 @@
 .project-detail__hero {
     text-align: center;
     padding: 4rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .project-detail__role {
@@ -65,7 +65,7 @@
 
 .project-detail__subtitle {
     font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.7);
     margin: 0;
     max-width: 600px;
     margin-left: auto;
@@ -92,7 +92,7 @@
 .project-detail__section p {
     font-size: 1.125rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.85);
 }
 
 @media (max-width: 768px) {
